@@ -8,7 +8,9 @@
     "conditions": {
       "sl_pts": 113.7,
       "risk_inr": 8525
-    }
+    },
+    "skip_reason": "extreme_compression",
+    "compression_pct": 82
   },
   {
     "datetime": "2026-05-12T10:03:01.071716",
@@ -18,7 +20,8 @@
     "reason": "ADX 56.7 >= 50 (exhaustion)",
     "conditions": {
       "adx": 56.7
-    }
+    },
+    "skip_reason": "adx_exhaustion"
   },
   {
     "datetime": "2026-05-14T09:41:19.177712",
@@ -29,7 +32,9 @@
     "conditions": {
       "sl_pts": 67.9,
       "risk_inr": 5091
-    }
+    },
+    "skip_reason": "extreme_compression",
+    "compression_pct": 71
   },
   {
     "datetime": "2026-05-14T10:09:21.985979",
@@ -39,7 +44,8 @@
     "reason": "ADX 20.2 < 22",
     "conditions": {
       "adx": 20.2
-    }
+    },
+    "skip_reason": "adx_too_low"
   },
   {
     "datetime": "2026-05-18T09:16:14.120733",
@@ -50,7 +56,9 @@
     "conditions": {
       "sl_pts": 109.7,
       "risk_inr": 8227
-    }
+    },
+    "skip_reason": "extreme_compression",
+    "compression_pct": 82
   },
   {
     "datetime": "2026-05-18T09:16:14.932166",
@@ -61,7 +69,9 @@
     "conditions": {
       "sl_pts": 148.6,
       "risk_inr": 11148
-    }
+    },
+    "skip_reason": "extreme_compression",
+    "compression_pct": 87
   },
   {
     "datetime": "2026-05-18T10:01:42.171680",
@@ -71,7 +81,8 @@
     "reason": "ADX 56.1 >= 50 (exhaustion)",
     "conditions": {
       "adx": 56.1
-    }
+    },
+    "skip_reason": "adx_exhaustion"
   },
   {
     "datetime": "2026-05-19T09:17:06.868688",
@@ -82,7 +93,9 @@
     "conditions": {
       "sl_pts": 49.5,
       "risk_inr": 3714
-    }
+    },
+    "skip_reason": "extreme_compression",
+    "compression_pct": 60
   },
   {
     "datetime": "2026-05-19T10:01:42.174187",
@@ -93,7 +106,9 @@
     "conditions": {
       "sl_pts": 56.0,
       "risk_inr": 4196
-    }
+    },
+    "skip_reason": "extreme_compression",
+    "compression_pct": 64
   },
   {
     "datetime": "2026-05-19T10:06:55.542740",
@@ -104,6 +119,8 @@
     "conditions": {
       "sl_pts": 57.3,
       "risk_inr": 4297
-    }
+    },
+    "skip_reason": "extreme_compression",
+    "compression_pct": 65
   }
 ]
