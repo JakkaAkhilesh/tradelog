@@ -25,6 +25,7 @@
   .nav-tab.active{background:var(--bg4);color:var(--accent);}
   .mode-badge{padding:4px 12px;border-radius:20px;font-size:11px;font-weight:500;letter-spacing:1px;text-transform:uppercase;}
   .mode-badge.live{background:rgba(79,255,176,0.12);color:var(--accent);border:1px solid rgba(79,255,176,0.25);}
+  .mode-badge.paper{background:rgba(255,184,48,0.12);color:var(--amber);border:1px solid rgba(255,184,48,0.25);}
   .page{display:none;padding:32px;max-width:1400px;margin:0 auto;}
   .page.active{display:block;}
   .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px;}
@@ -111,7 +112,19 @@
     <button class="nav-tab" onclick="showPage('skipped')">Skipped Signals</button>
     <button class="nav-tab" onclick="showPage('analytics')">Analytics</button>
   </div>
-  <span class="mode-badge live">LIVE</span>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text2);">
+      <span>Paper</span>
+      <label style="position:relative;width:40px;height:22px;cursor:pointer;display:inline-block;">
+        <input type="checkbox" id="modeToggle" onchange="toggleFilter()" style="opacity:0;width:0;height:0;">
+        <span id="toggleSlider" style="position:absolute;inset:0;background:var(--bg4);border-radius:11px;transition:0.3s;border:1px solid var(--border2);">
+          <span id="toggleDot" style="position:absolute;height:16px;width:16px;left:2px;bottom:2px;background:var(--text3);border-radius:50%;transition:0.3s;display:block;"></span>
+        </span>
+      </label>
+      <span>Live</span>
+    </div>
+    <span class="mode-badge paper" id="modeBadge">PAPER</span>
+  </div>
 </div>
 
 <div class="notif" id="notif"></div>
@@ -229,7 +242,7 @@
         <thead><tr>
           <th>#</th><th>Date</th><th>Time</th><th>Strategy</th><th>Dir</th>
           <th>Strike</th><th>Entry</th><th>SL</th><th>Target</th><th>Exit</th>
-          <th>Points</th><th>P&L</th><th>ADX</th><th>VIX</th><th>Result</th>
+          <th>Points</th><th>P&L</th><th>ADX</th><th>VIX</th><th>Result</th><th>Mode</th>
         </tr></thead>
         <tbody id="all-tbody"></tbody>
       </table>
@@ -342,6 +355,37 @@
 
 <script>
 // ══════════════════════ DATA ══════════════════════
+let showMode = 'all'; // 'all', 'paper', 'live'
+
+function toggleFilter() {
+  const isLive = document.getElementById('modeToggle').checked;
+  showMode = isLive ? 'live' : 'paper';
+  const badge = document.getElementById('modeBadge');
+  const dot = document.getElementById('toggleDot');
+  const slider = document.getElementById('toggleSlider');
+  if (isLive) {
+    badge.textContent = 'LIVE';
+    badge.className = 'mode-badge live';
+    dot.style.transform = 'translateX(18px)';
+    dot.style.background = 'var(--accent)';
+    slider.style.background = 'rgba(79,255,176,0.15)';
+    slider.style.borderColor = 'var(--accent)';
+  } else {
+    badge.textContent = 'PAPER';
+    badge.className = 'mode-badge paper';
+    dot.style.transform = 'translateX(0)';
+    dot.style.background = 'var(--text3)';
+    slider.style.background = 'var(--bg4)';
+    slider.style.borderColor = 'var(--border2)';
+  }
+  renderDashboard();
+  renderTrades();
+}
+
+function filterByMode(list) {
+  if (showMode === 'all') return list;
+  return list.filter(t => (t.mode||'paper').toLowerCase() === showMode);
+}
 // Data loaded from trades.json and skipped_signals.json
 // These files are auto-synced from the trading bot on Google Cloud
 // via github_sync.py after every trade
@@ -389,14 +433,15 @@ function renderDashboard() {
   document.getElementById('dash-date').textContent =
     now.toLocaleDateString('en-IN', {weekday:'long',year:'numeric',month:'long',day:'numeric'});
 
-  const closed = trades.filter(t => t.result && t.result !== 'open');
+  const filtered_trades = filterByMode(trades);
+  const closed = filtered_trades.filter(t => t.result && t.result !== 'open');
   const wins = closed.filter(t => t.result === 'target');
   const losses = closed.filter(t => t.result === 'sl');
   const bes = closed.filter(t => t.result === 'be');
 
-  const totalPnl = trades.reduce((s,t) => s + (t.pnl||0), 0);
+  const totalPnl = filtered_trades.reduce((s,t) => s + (t.pnl||0), 0);
   const wr = closed.length ? ((wins.length/closed.length)*100).toFixed(1) : 0;
-  const totalPts = trades.reduce((s,t) => s + (t.points||0), 0);
+  const totalPts = filtered_trades.reduce((s,t) => s + (t.points||0), 0);
 
   // Today's trades
   const today = now.toISOString().split('T')[0];
@@ -445,6 +490,7 @@ function renderDashboard() {
     <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
     <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
     <td><span class="result-badge ${(t.result||'open').toLowerCase()}">${t.result||'open'}</span></td>
+    <td><span style="padding:2px 7px;border-radius:4px;font-size:10px;background:${(t.mode||'paper')==='live'?'rgba(79,255,176,0.1)':'rgba(255,184,48,0.1)'};color:${(t.mode||'paper')==='live'?'var(--accent)':'var(--amber)'};">${(t.mode||'paper').toUpperCase()}</span></td>
   </tr>`).join('');
 }
 
@@ -495,7 +541,7 @@ function renderTrades() {
   const fs = document.getElementById('filter-strategy').value;
   const fr = document.getElementById('filter-result').value;
   const fd = document.getElementById('filter-dir').value;
-  let filtered = trades.filter(t =>
+  let filtered = filterByMode(trades).filter(t =>
     (!fs || t.strategy === fs) &&
     (!fr || (t.result||'').toLowerCase() === fr) &&
     (!fd || t.direction === fd)
@@ -521,6 +567,7 @@ function renderTrades() {
     <td style="color:var(--text2)">${t.adx||'—'}</td>
     <td style="color:var(--text2)">${t.vix_ratio||'—'}</td>
     <td><span class="result-badge ${(t.result||'open').toLowerCase()}">${t.result||'open'}</span></td>
+    <td><span style="padding:2px 7px;border-radius:4px;font-size:10px;background:${(t.mode||'paper')==='live'?'rgba(79,255,176,0.1)':'rgba(255,184,48,0.1)'};color:${(t.mode||'paper')==='live'?'var(--accent)':'var(--amber)'};">${(t.mode||'paper').toUpperCase()}</span></td>
   </tr>`).join('');
 }
 
