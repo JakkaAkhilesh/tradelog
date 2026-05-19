@@ -1,0 +1,109 @@
+[
+  {
+    "datetime": "2026-05-12T09:21:32.631731",
+    "date": "2026-05-12",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "reason": "SL compressed 82% from original. Strategy needs 113.7 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 113.7,
+      "risk_inr": 8525
+    }
+  },
+  {
+    "datetime": "2026-05-12T10:03:01.071716",
+    "date": "2026-05-12",
+    "strategy": "TRAP",
+    "direction": "SELL",
+    "reason": "ADX 56.7 >= 50 (exhaustion)",
+    "conditions": {
+      "adx": 56.7
+    }
+  },
+  {
+    "datetime": "2026-05-14T09:41:19.177712",
+    "date": "2026-05-14",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "reason": "SL compressed 71% from original. Strategy needs 67.9 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 67.9,
+      "risk_inr": 5091
+    }
+  },
+  {
+    "datetime": "2026-05-14T10:09:21.985979",
+    "date": "2026-05-14",
+    "strategy": "TRAP",
+    "direction": "BUY",
+    "reason": "ADX 20.2 < 22",
+    "conditions": {
+      "adx": 20.2
+    }
+  },
+  {
+    "datetime": "2026-05-18T09:16:14.120733",
+    "date": "2026-05-18",
+    "strategy": "NTS",
+    "direction": "SELL",
+    "reason": "SL compressed 82% from original. Strategy needs 109.7 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 109.7,
+      "risk_inr": 8227
+    }
+  },
+  {
+    "datetime": "2026-05-18T09:16:14.932166",
+    "date": "2026-05-18",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "reason": "SL compressed 87% from original. Strategy needs 148.6 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 148.6,
+      "risk_inr": 11148
+    }
+  },
+  {
+    "datetime": "2026-05-18T10:01:42.171680",
+    "date": "2026-05-18",
+    "strategy": "TRAP",
+    "direction": "BUY",
+    "reason": "ADX 56.1 >= 50 (exhaustion)",
+    "conditions": {
+      "adx": 56.1
+    }
+  },
+  {
+    "datetime": "2026-05-19T09:17:06.868688",
+    "date": "2026-05-19",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "reason": "SL compressed 60% from original. Strategy needs 49.5 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 49.5,
+      "risk_inr": 3714
+    }
+  },
+  {
+    "datetime": "2026-05-19T10:01:42.174187",
+    "date": "2026-05-19",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "reason": "SL compressed 64% from original. Strategy needs 56.0 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 56.0,
+      "risk_inr": 4196
+    }
+  },
+  {
+    "datetime": "2026-05-19T10:06:55.542740",
+    "date": "2026-05-19",
+    "strategy": "TRAP",
+    "direction": "BUY",
+    "reason": "SL compressed 65% from original. Strategy needs 57.3 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 57.3,
+      "risk_inr": 4297
+    }
+  }
+]
