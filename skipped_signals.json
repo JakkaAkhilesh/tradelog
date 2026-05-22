@@ -122,5 +122,81 @@
     },
     "skip_reason": "extreme_compression",
     "compression_pct": 65
+  },
+  {
+    "datetime": "2026-05-20T09:27:56.015922",
+    "date": "2026-05-20",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "reason": "SL compressed 71% from original. Strategy needs 68.7 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 68.7,
+      "risk_inr": 5150
+    }
+  },
+  {
+    "datetime": "2026-05-20T10:06:03.745768",
+    "date": "2026-05-20",
+    "strategy": "TRAP",
+    "direction": "SELL",
+    "reason": "SL compressed 60% from original. Strategy needs 50.0 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 50.0,
+      "risk_inr": 3750
+    }
+  },
+  {
+    "datetime": "2026-05-21T09:20:03.293390",
+    "date": "2026-05-21",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "reason": "SL compressed 66% from original. Strategy needs 59.6 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 59.6,
+      "risk_inr": 4469
+    }
+  },
+  {
+    "datetime": "2026-05-21T09:31:24.557393",
+    "date": "2026-05-21",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "reason": "SL compressed 80% from original. Strategy needs 98.8 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 98.8,
+      "risk_inr": 7409
+    }
+  },
+  {
+    "datetime": "2026-05-21T09:37:35.171609",
+    "date": "2026-05-21",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "reason": "SL compressed 59% from original. Strategy needs 48.4 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 48.4,
+      "risk_inr": 3632
+    }
+  },
+  {
+    "datetime": "2026-05-21T10:16:43.687467",
+    "date": "2026-05-21",
+    "strategy": "TRAP",
+    "direction": "BUY",
+    "reason": "SL compressed 56% from original. Strategy needs 45.3 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 45.3,
+      "risk_inr": 3396
+    }
+  },
+  {
+    "datetime": "2026-05-22T14:01:08.847630",
+    "date": "2026-05-22",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "reason": "ADX 20.7 < 22",
+    "conditions": {
+      "adx": 20.7
+    }
   }
 ]
