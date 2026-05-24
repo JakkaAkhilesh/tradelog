@@ -73,11 +73,12 @@ class LiveTrader:
             return None
 
     def get_live_option_price(self, symbol: str) -> float:
-        """Get live LTP of an option from Zerodha."""
+        """Get live LTP of an option from Zerodha Connect API."""
         try:
             instrument = f"NFO:{symbol}"
             quote = self.kite.ltp([instrument])
             ltp = quote[instrument]['last_price']
+            logger.debug("LTP %s: Rs.%s", symbol, ltp)
             return float(ltp)
         except Exception as e:
             logger.debug("LTP fetch error for %s: %s", symbol, e)
@@ -106,7 +107,7 @@ class LiveTrader:
                 quantity=quantity,
                 product=self.kite.PRODUCT_MIS,
                 order_type=self.kite.ORDER_TYPE_LIMIT,
-                price=round(self.get_live_option_price(symbol) * 1.02, 1) or 1,
+                price=round(self.get_live_option_price(symbol) * 1.02, 1) or 100,
             )
 
             logger.info("Order placed: order_id=%s", order_id)
