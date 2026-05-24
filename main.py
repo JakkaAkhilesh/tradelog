@@ -271,7 +271,11 @@ class TradingBot:
         df_15m = self.fetcher.get_candles('NIFTY50', '15minute', 300)
 
         # Fetch VIX once per scan
-        vix_data = self._get_vix()
+        # Use Kite VIX if available (Connect plan), else fallback
+        if self.kite and self.mode == 'live':
+            vix_data = self.fetcher.get_vix_from_kite(self.kite)
+        else:
+            vix_data = self._get_vix()
 
         for name, strategy in self.strategies.items():
             try:
