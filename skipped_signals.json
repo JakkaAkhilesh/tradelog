@@ -330,5 +330,15 @@
     "conditions": {
       "adx": 14.6
     }
+  },
+  {
+    "datetime": "2026-05-25T14:01:33.277058",
+    "date": "2026-05-25",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "reason": "ADX 14.7 < 22",
+    "conditions": {
+      "adx": 14.7
+    }
   }
 ]
