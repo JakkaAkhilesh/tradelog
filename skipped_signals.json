@@ -250,5 +250,15 @@
       "sl_pts": 144.3,
       "risk_inr": 9380
     }
+  },
+  {
+    "datetime": "2026-05-25T13:41:04.255599",
+    "date": "2026-05-25",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "reason": "ADX 16.4 < 22",
+    "conditions": {
+      "adx": 16.4
+    }
   }
 ]
