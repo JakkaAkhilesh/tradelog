@@ -477,7 +477,7 @@ class TradingBot:
                ' (ADX=' + str(trade.get('adx_at_entry', '?')) + ')\n'
                'Index Entry: ' + str(trade['entry']) + '\n'
                'Option Premium: Rs.' + str(trade['entry_premium']) + '/unit (LIVE)\n'
-               'Total Premium: Rs.' + str(trade['entry_premium'] * trade['lots'] * 75) + '\n'
+               'Total Premium: Rs.' + str(round(trade['entry_premium'] * trade['lots'] * CAPITAL['lot_size'], 2)) + '\n'
                'Spot SL: ' + str(trade['sl']) + '\n'
                'Premium SL: Rs.' + str(prem_sl) + '/unit\n'
                '  (' + prem_sl_data.get('method', '') + ')\n'
@@ -593,7 +593,13 @@ class TradingBot:
         d = trade['direction']
         points = (exit_price - trade['entry'] if d == 'BUY'
                   else trade['entry'] - exit_price)
-        pnl = round(points * trade.get('lots', 1) * 75, 2)
+        lot_size = CAPITAL.get('lot_size', 65)
+        entry_prem_calc = trade.get('entry_premium', 0)
+        exit_prem_calc = trade.get('current_premium_at_exit', 0)
+        if entry_prem_calc > 0 and exit_prem_calc > 0:
+            pnl = round((exit_prem_calc - entry_prem_calc) * trade.get('lots', 1) * lot_size, 2)
+        else:
+            pnl = round(points * trade.get('lots', 1) * lot_size * 0.05, 2)
 
         self.current_capital = round(self.current_capital + pnl, 2)
         if self.capital_tracker:
@@ -632,7 +638,7 @@ class TradingBot:
             try:
                 exit_result = self.live_trader.place_exit_order(
                     symbol=trade.get('option_symbol', ''),
-                    quantity=trade.get('lots', 1) * 75
+                    quantity=trade.get('lots', 1) * CAPITAL['lot_size']
                 )
                 if exit_result.get('fill_price', 0) > 0:
                     trade['exit_premium'] = exit_result['fill_price']
