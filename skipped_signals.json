@@ -228,5 +228,27 @@
     "conditions": {
       "adx": 21.3
     }
+  },
+  {
+    "datetime": "2026-05-25T09:16:16.646409",
+    "date": "2026-05-25",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "reason": "SL compressed 55% from original. Strategy needs 51.6 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 51.6,
+      "risk_inr": 3356
+    }
+  },
+  {
+    "datetime": "2026-05-25T09:16:17.463476",
+    "date": "2026-05-25",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "reason": "SL compressed 84% from original. Strategy needs 144.3 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 144.3,
+      "risk_inr": 9380
+    }
   }
 ]
