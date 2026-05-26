@@ -130,12 +130,48 @@ class LiveTrader:
             logger.error("Order placement error: %s", e)
             return {'error': str(e), 'status': 'failed'}
 
+    def place_sl_order(self, symbol: str, quantity: int,
+                       trigger_price: float) -> dict:
+        """Place SL-M order on Zerodha as safety net."""
+        try:
+            trigger = round(trigger_price, 1)
+            logger.info("Placing SL order: %s trigger=%.1f", symbol, trigger)
+            sl_order_id = self.kite.place_order(
+                variety=self.kite.VARIETY_REGULAR,
+                exchange=self.kite.EXCHANGE_NFO,
+                tradingsymbol=symbol,
+                transaction_type='SELL',
+                quantity=quantity,
+                product=self.kite.PRODUCT_MIS,
+                order_type=self.kite.ORDER_TYPE_SLM,
+                trigger_price=trigger,
+            )
+            logger.info("SL order placed: %s", sl_order_id)
+            return {'order_id': sl_order_id, 'status': 'placed'}
+        except Exception as e:
+            logger.error("SL order error: %s", e)
+            return {'error': str(e), 'status': 'failed'}
+
+    def cancel_order(self, order_id: str) -> bool:
+        """Cancel an open order."""
+        try:
+            self.kite.cancel_order(
+                variety=self.kite.VARIETY_REGULAR,
+                order_id=order_id)
+            logger.info("Order cancelled: %s", order_id)
+            return True
+        except Exception as e:
+            logger.error("Cancel order error: %s", e)
+            return False
+
     def place_exit_order(self, symbol: str, quantity: int,
                          order_id: str = None) -> dict:
         """Place exit order."""
         try:
             logger.info("Placing exit: SELL %s qty=%d", symbol, quantity)
 
+            # Exit always uses MARKET order for guaranteed execution
+            # Never use LIMIT for exits — position must close immediately
             exit_order_id = self.kite.place_order(
                 variety=self.kite.VARIETY_REGULAR,
                 exchange=self.kite.EXCHANGE_NFO,
@@ -143,8 +179,7 @@ class LiveTrader:
                 transaction_type='SELL',
                 quantity=quantity,
                 product=self.kite.PRODUCT_MIS,
-                order_type=self.kite.ORDER_TYPE_LIMIT,
-                price=0,
+                order_type=self.kite.ORDER_TYPE_MARKET,
             )
 
             logger.info("Exit order placed: %s", exit_order_id)
