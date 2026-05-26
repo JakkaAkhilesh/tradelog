@@ -377,15 +377,21 @@ class TradingBot:
         option_info = self.risk.select_option_type(
             entry, direction, adx)
 
-        # ── REAL PREMIUM FROM NSE ────────────────────────────
-        real_premium = self.fetcher.get_option_premium(
-            option_info['strike'],
-            'CE' if direction == 'BUY' else 'PE')
-
+        # ── REAL PREMIUM FROM KITE (Connect plan) ───────────
+        real_premium = 0
+        if self.live_trader:
+            real_premium = self.live_trader.get_live_option_price(
+                option_info['option_symbol'])
+        if real_premium <= 0:
+            real_premium = self.fetcher.get_option_premium(
+                option_info['strike'],
+                'CE' if direction == 'BUY' else 'PE')
         if real_premium <= 0:
             try:
                 atr = self.ind.atr_value(df, 14)
                 real_premium = max(80, min(300, round(atr * 0.4, 0)))
+            except Exception:
+                real_premium = 120
             except Exception:
                 real_premium = 120
 
@@ -442,6 +448,18 @@ class TradingBot:
     def _execute_trade(self, trade):
         trade['status'] = 'open'
         trade['mode'] = self.mode
+        # Prevent duplicate direction trades
+        for existing in self.open_trades.values():
+            if existing['direction'] == trade['direction']:
+                logger.warning("[%s] SKIPPED: Already have open %s trade (%s)",
+                               trade['strategy'], trade['direction'],
+                               existing['strategy'])
+                msg = ('Signal Skipped - Duplicate Direction' +
+                    ' Strategy: ' + trade['strategy'] +
+                    ' Already have open ' + trade['direction'] + ' trade from ' +
+                    existing['strategy'])
+                self.alerter.send(msg)
+                return
         self.open_trades[trade['id']] = trade
         self.risk.record_trade_entry(trade)
         self._log_to_journal(trade)
@@ -462,9 +480,39 @@ class TradingBot:
                 return
             trade['order_id'] = order_result.get('order_id')
             trade['option_symbol'] = order_result.get('symbol', trade['option_symbol'])
-            trade['entry_premium'] = order_result.get('fill_price', trade['entry_premium'])
+            fill_price = order_result.get('fill_price', 0)
+            # Verify order actually filled
+            if fill_price <= 0:
+                logger.error('Order fill price is 0 - order may not have filled!')
+                self.alerter.send('WARNING: Order may not have filled! Check Zerodha app! Strategy: ' + trade['strategy'])
+            trade['entry_premium'] = fill_price if fill_price > 0 else trade['entry_premium']
             logger.info('Live order placed: %s at Rs.%s',
-                        order_result.get('symbol'), order_result.get('fill_price'))
+                        order_result.get('symbol'), fill_price)
+            # Place SL-M order on Zerodha as safety net
+            if fill_price > 0 and trade.get('option_symbol'):
+                sl_trigger = round(fill_price * 0.35, 1)
+                sl_result = self.live_trader.place_sl_order(
+                    symbol=trade['option_symbol'],
+                    quantity=trade['lots'] * CAPITAL['lot_size'],
+                    trigger_price=sl_trigger)
+                if sl_result.get('status') == 'placed':
+                    trade['sl_order_id'] = sl_result['order_id']
+                    logger.info('SL order placed: %s trigger=%.1f', sl_result['order_id'], sl_trigger)
+                else:
+                    logger.warning('SL order failed: %s', sl_result.get('error'))
+            # Place SL-M order on Zerodha as safety net
+            # This protects capital even if bot crashes
+            if fill_price > 0 and trade.get('option_symbol'):
+                sl_result = self.live_trader.place_sl_order(
+                    symbol=trade['option_symbol'],
+                    quantity=trade['lots'] * CAPITAL['lot_size'],
+                    trigger_price=trade['entry_premium'] * 0.35
+                )
+                if sl_result.get('status') == 'placed':
+                    trade['sl_order_id'] = sl_result['order_id']
+                    logger.info('SL order placed on Zerodha: %s', sl_result['order_id'])
+                else:
+                    logger.warning('SL order failed: %s', sl_result.get('error'))
 
         prem_sl = trade.get('premium_sl', 0)
         prem_sl_data = trade.get('premium_sl_data', {})
@@ -514,8 +562,13 @@ class TradingBot:
 
             # ── PREMIUM SL HIT ──────────────────────────────────
             premium_key = str(trade['strike']) + ('CE' if d == 'BUY' else 'PE')
-            current_premium = self.fetcher.get_option_premium(
-                trade['strike'], 'CE' if d == 'BUY' else 'PE')
+            # Use Kite LTP (Connect plan) for real premium
+            option_symbol = trade.get('option_symbol', '')
+            if option_symbol and self.live_trader:
+                current_premium = self.live_trader.get_live_option_price(option_symbol)
+            else:
+                current_premium = self.fetcher.get_option_premium(
+                    trade['strike'], 'CE' if d == 'BUY' else 'PE')
             if current_premium > 0:
                 self.fetcher._update_premium_cache(premium_key, current_premium)
             premium_sl_hit = (current_premium > 0 and current_premium <= premium_sl)
@@ -636,6 +689,12 @@ class TradingBot:
         # Place real exit order in live mode
         if self.mode == 'live' and self.live_trader:
             try:
+                # Cancel the SL order first to avoid double exit
+                sl_order_id = trade.get('sl_order_id')
+                if sl_order_id:
+                    self.live_trader.cancel_order(sl_order_id)
+                    logger.info('SL order cancelled: %s', sl_order_id)
+
                 exit_result = self.live_trader.place_exit_order(
                     symbol=trade.get('option_symbol', ''),
                     quantity=trade.get('lots', 1) * CAPITAL['lot_size']
