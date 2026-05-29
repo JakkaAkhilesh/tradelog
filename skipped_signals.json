@@ -370,5 +370,15 @@
     "conditions": {
       "adx": 14.2
     }
+  },
+  {
+    "datetime": "2026-05-29T09:44:10.920844",
+    "date": "2026-05-29",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "reason": "ADX 21.1 < 22",
+    "conditions": {
+      "adx": 21.1
+    }
   }
 ]
