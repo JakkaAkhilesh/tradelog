@@ -390,5 +390,16 @@
     "conditions": {
       "adx": 17.6
     }
+  },
+  {
+    "datetime": "2026-06-01T10:21:42.982907",
+    "date": "2026-06-01",
+    "strategy": "TRAP",
+    "direction": "BUY",
+    "reason": "SL compressed 57% from original. Strategy needs 54.2 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 54.2,
+      "risk_inr": 3522
+    }
   }
 ]
