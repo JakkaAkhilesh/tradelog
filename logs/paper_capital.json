@@ -3,7 +3,7 @@
   "starting_capital": 51373.1,
   "total_pnl": 1469.0,
   "last_saved_date": "2026-06-01",
-  "last_saved_time": "14:39:48",
+  "last_saved_time": "15:25:10",
   "history": [
     {
       "date": "2026-06-01",
@@ -28,6 +28,14 @@
       "today_change": 0.0,
       "total_pnl": 1469.0,
       "reason": "extended_trail"
+    },
+    {
+      "date": "2026-06-01",
+      "time": "15:25:10",
+      "capital": 52842.1,
+      "today_change": 0.0,
+      "total_pnl": 1469.0,
+      "reason": "end_of_day"
     }
   ]
 }
