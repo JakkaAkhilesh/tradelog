@@ -671,15 +671,16 @@
     "entry_time": "2026-06-01T09:24:24.413587",
     "order_id": "260601220193891",
     "sl_order_id": "260601220193910",
-    "exit_trigger": "spot_sl",
+    "exit_trigger": "manual",
     "current_premium_at_exit": 84.45,
     "exit": 23618.19921875,
-    "result": "sl",
+    "result": "manual_exit",
     "points": -23.8,
-    "pnl": -923.0,
+    "pnl": 377.0,
     "exit_premium": 84.45,
     "exit_time": "2026-06-01T09:33:22.123679",
-    "capital_after": 50450.1
+    "capital_after": 50450.1,
+    "notes": "Manual exit +377. SL order blocked margin, bot could not place exit. Zerodha live_trader.py price param bug."
   },
   {
     "id": "GAP_SELL_2026-06-01",
@@ -722,14 +723,15 @@
     "mode": "live",
     "order_id": "260601221379375",
     "entry_time": "2026-06-01T13:46:58.094631",
-    "exit_trigger": "ema9_trail",
+    "exit_trigger": "zerodha_autosquareoff",
     "current_premium_at_exit": 117.85,
     "exit": 23419.69921875,
-    "result": "extended_trail",
+    "result": "zerodha_autosquareoff",
     "points": 56.6,
-    "pnl": 1469.0,
-    "exit_premium": 117.85,
-    "exit_time": "2026-06-01T14:39:48.404114",
-    "capital_after": 52842.1
+    "pnl": 2362.75,
+    "exit_premium": 131.7,
+    "exit_time": "2026-06-01T15:26:17",
+    "capital_after": 52842.1,
+    "notes": "Zerodha auto square-off at 15:26. SL order not placed due to live_trader.py price param bug. Real profit Rs.2362.75."
   }
 ]
