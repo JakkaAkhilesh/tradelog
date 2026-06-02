@@ -380,6 +380,12 @@ function toggleFilter() {
   }
   renderDashboard();
   renderTrades();
+  renderSkipped();
+  // Re-render analytics if currently visible
+  const analyticsPage = document.getElementById('page-analytics');
+  if (analyticsPage && analyticsPage.classList.contains('active')) {
+    renderAnalytics();
+  }
 }
 
 function filterByMode(list) {
