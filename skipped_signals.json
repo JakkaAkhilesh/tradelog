@@ -401,5 +401,27 @@
       "sl_pts": 54.2,
       "risk_inr": 3522
     }
+  },
+  {
+    "datetime": "2026-06-02T09:26:16.769247",
+    "date": "2026-06-02",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "reason": "SL compressed 64% from original. Strategy needs 64.3 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 64.3,
+      "risk_inr": 4178
+    }
+  },
+  {
+    "datetime": "2026-06-02T09:47:24.972767",
+    "date": "2026-06-02",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "reason": "SL compressed 77% from original. Strategy needs 100.6 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 100.6,
+      "risk_inr": 6542
+    }
   }
 ]
