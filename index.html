@@ -136,7 +136,7 @@
       <div style="font-family:var(--font-head);font-size:22px;font-weight:700;">Overview</div>
       <div style="font-size:12px;color:var(--text3);margin-top:2px;" id="dash-date"></div>
     </div>
-    <div style="font-size:12px;color:var(--text2);">Capital: <span id="dash-capital" style="color:var(--accent);font-weight:600;">Rs.50,000</span></div>
+    <span id="dash-capital" style="color:var(--accent);font-weight:600;">Loading...</span>
   </div>
 
   <div class="stats-grid">
@@ -410,6 +410,20 @@ async function loadData() {
       skipped = Array.isArray(raw) ? raw : Object.values(raw).flat();
     }
   } catch(e) { skipped = []; }
+// Load capital from paper_capital.json
+  try {
+    const cap = await fetch('logs/paper_capital.json?t=' + Date.now());
+    if (cap.ok) {
+      const capData = await cap.json();
+      const current = capData.current_capital || 50000;
+      const starting = capData.starting_capital || 50000;
+      const pnl = current - starting;
+      const sign = pnl >= 0 ? '+' : '';
+      document.getElementById('dash-capital').textContent =
+        'Rs.' + current.toLocaleString('en-IN') +
+        ' (' + sign + 'Rs.' + Math.round(Math.abs(pnl)).toLocaleString('en-IN') + ')';
+    }
+  } catch(e) {}
 
   renderDashboard();
 }
@@ -433,11 +447,12 @@ function renderDashboard() {
   document.getElementById('dash-date').textContent =
     now.toLocaleDateString('en-IN', {weekday:'long',year:'numeric',month:'long',day:'numeric'});
 
-  const filtered_trades = filterByMode(trades);
-  const closed = filtered_trades.filter(t => t.result && t.result !== 'open');
+  const closed = filtered_trades.filter(t => t.result && !['open','skipped','failed'].includes(t.result));
   const wins = closed.filter(t => t.result === 'target');
   const losses = closed.filter(t => t.result === 'sl');
   const bes = closed.filter(t => t.result === 'be');
+  const skippedCount = filtered_trades.filter(t => t.result === 'skipped').length;
+  const failedCount = filtered_trades.filter(t => t.result === 'failed').length;
 
   const totalPnl = filtered_trades.reduce((s,t) => s + (t.pnl||0), 0);
   const wr = closed.length ? ((wins.length/closed.length)*100).toFixed(1) : 0;
@@ -476,7 +491,7 @@ function renderDashboard() {
   // Recent trades
   const tbody = document.getElementById('recent-tbody');
   const empty = document.getElementById('recent-empty');
-  const recent = trades.slice(0, 8);
+  const recent = [...filtered_trades].reverse().slice(0, 8);
   if (!recent.length) { tbody.innerHTML=''; empty.style.display='block'; return; }
   empty.style.display = 'none';
   tbody.innerHTML = recent.map(t => `<tr>
@@ -489,7 +504,11 @@ function renderDashboard() {
     <td>${t.exit_price||t.exit||'—'}</td>
     <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
     <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
-    <td><span class="result-badge ${(t.result||'open').toLowerCase()}">${t.result||'open'}</span></td>
+    <td>
+      <span class="result-badge ${(t.result||'open').toLowerCase()}" 
+        title="${t.reason||t.notes||''}">${t.result||'open'}</span>
+      ${t.reason ? `<div style="font-size:9px;color:var(--text3);margin-top:2px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${t.reason}">${t.reason}</div>` : ''}
+    </td>
     <td><span style="padding:2px 7px;border-radius:4px;font-size:10px;background:${(t.mode||'paper')==='live'?'rgba(79,255,176,0.1)':'rgba(255,184,48,0.1)'};color:${(t.mode||'paper')==='live'?'var(--accent)':'var(--amber)'};">${(t.mode||'paper').toUpperCase()}</span></td>
   </tr>`).join('');
 }
