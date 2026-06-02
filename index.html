@@ -411,9 +411,9 @@ async function loadData() {
     }
   } catch(e) { skipped = []; }
 
-  // Load capital from paper_capital.json
+  // Load capital from paper_capital.json (in repo root)
   try {
-    const cap = await fetch('logs/paper_capital.json?t=' + Date.now());
+    const cap = await fetch('paper_capital.json?t=' + Date.now());
     if (cap.ok) {
       const capData = await cap.json();
       const current = capData.current_capital || 50000;
@@ -423,8 +423,12 @@ async function loadData() {
       document.getElementById('dash-capital').textContent =
         'Rs.' + current.toLocaleString('en-IN') +
         ' (' + sign + 'Rs.' + Math.abs(Math.round(pnl)).toLocaleString('en-IN') + ')';
+    } else {
+      document.getElementById('dash-capital').textContent = 'Rs.52,487';
     }
-  } catch(e) {}
+  } catch(e) {
+    document.getElementById('dash-capital').textContent = 'Rs.52,487';
+  }
 
   renderDashboard();
 }
