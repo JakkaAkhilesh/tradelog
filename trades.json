@@ -22,7 +22,11 @@
     "points": 78.8,
     "pnl": 5910.03,
     "exit_time": "2026-04-21T10:58:58.921350",
-    "date": "2026-04-21"
+    "date": "2026-04-21",
+    "time": "09:36",
+    "entry_price": 24475.35,
+    "exit_price": 24554.150390625,
+    "vix_ratio": ""
   },
   {
     "id": "NTS_SELL_2026-04-23",
@@ -47,7 +51,11 @@
     "points": -82.75,
     "pnl": -6206.19,
     "exit_time": "2026-04-23T09:43:10.323742",
-    "date": "2026-04-23"
+    "date": "2026-04-23",
+    "time": "09:16",
+    "entry_price": 24153.95,
+    "exit_price": 24236.69921875,
+    "vix_ratio": ""
   },
   {
     "id": "GAP_BUY_2026-04-30",
@@ -69,11 +77,16 @@
     "mode": "paper",
     "entry_time": "2026-04-30T13:00:09.574232",
     "exit": 23969.400390625,
-    "result": "squareoff",
+    "result": "target",
     "points": 32.55,
     "pnl": 2441.28,
     "exit_time": "2026-04-30T15:10:17.290066",
-    "date": "2026-04-30"
+    "date": "2026-04-30",
+    "time": "13:00",
+    "entry_price": 23936.85,
+    "exit_price": 23969.400390625,
+    "vix_ratio": "",
+    "result_raw": "squareoff"
   },
   {
     "id": "15MIN_BUY_2026-05-01",
@@ -95,11 +108,16 @@
     "mode": "paper",
     "entry_time": "2026-05-01T09:15:09.303124",
     "exit": 24043.69921875,
-    "result": "squareoff",
+    "result": "target",
     "points": -0.0,
     "pnl": -0.06,
     "exit_time": "2026-05-01T10:22:52.230119",
-    "date": "2026-05-05"
+    "date": "2026-05-05",
+    "time": "09:15",
+    "entry_price": 24043.7,
+    "exit_price": 24043.69921875,
+    "vix_ratio": "",
+    "result_raw": "squareoff"
   },
   {
     "id": "15MIN_BUY_2026-05-04",
@@ -128,7 +146,11 @@
     "exit_premium": 53.0,
     "exit_time": "2026-05-04T09:17:00.315174",
     "capital_after": 30803.75,
-    "date": "2026-05-05"
+    "date": "2026-05-05",
+    "time": "09:15",
+    "entry_price": 24043.7,
+    "exit_price": 24187.75,
+    "vix_ratio": ""
   },
   {
     "id": "DBY_BUY_2026-05-04",
@@ -157,7 +179,11 @@
     "exit_premium": 15.0,
     "exit_time": "2026-05-04T09:33:16.183397",
     "capital_after": 30740.03,
-    "date": "2026-05-05"
+    "date": "2026-05-05",
+    "time": "09:17",
+    "entry_price": 24187.75,
+    "exit_price": 24186.900390625,
+    "vix_ratio": ""
   },
   {
     "id": "GAP_BUY_2026-05-08",
@@ -191,7 +217,11 @@
     "exit_premium": 15.0,
     "exit_time": "2026-05-08T09:24:44.133148",
     "capital_after": 26783.78,
-    "date": "2026-05-08"
+    "date": "2026-05-08",
+    "time": "09:23",
+    "entry_price": 24238.25,
+    "exit_price": 24218.650390625,
+    "vix_ratio": ""
   },
   {
     "id": "NTS_SELL_2026-05-11",
@@ -242,7 +272,11 @@
     "exit_premium": 120,
     "exit_time": "2026-05-11T09:24:42.732358",
     "capital_after": 24867.47,
-    "date": "2026-05-11"
+    "date": "2026-05-11",
+    "time": "09:18",
+    "entry_price": 23914.0,
+    "exit_price": 23939.55078125,
+    "vix_ratio": 1.0
   },
   {
     "id": "DBY_SELL_2026-05-11",
@@ -293,7 +327,11 @@
     "exit_premium": 120,
     "exit_time": "2026-05-11T09:24:44.138456",
     "capital_after": 22951.16,
-    "date": "2026-05-11"
+    "date": "2026-05-11",
+    "time": "09:18",
+    "entry_price": 23914.0,
+    "exit_price": 23939.55078125,
+    "vix_ratio": 1.0
   },
   {
     "id": "DBY_SELL_2026-05-13",
@@ -344,7 +382,11 @@
     "exit_premium": 120,
     "exit_time": "2026-05-13T09:23:44.614980",
     "capital_after": 19864.94,
-    "date": "2026-05-13"
+    "date": "2026-05-13",
+    "time": "09:21",
+    "entry_price": 23386.45,
+    "exit_price": 23427.599609375,
+    "vix_ratio": 1.0
   },
   {
     "id": "DBY_BUY_2026-05-15",
@@ -389,13 +431,18 @@
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 120,
     "exit": 23737.80078125,
-    "result": "extended_trail",
+    "result": "target",
     "points": -1.95,
     "pnl": -146.19,
     "exit_premium": 120,
     "exit_time": "2026-05-15T09:37:01.731971",
     "capital_after": 19718.75,
-    "date": "2026-05-15"
+    "date": "2026-05-15",
+    "time": "09:21",
+    "entry_price": 23739.75,
+    "exit_price": 23737.80078125,
+    "vix_ratio": 1.0,
+    "result_raw": "extended_trail"
   },
   {
     "id": "TRAP_SELL_2026-05-15",
@@ -446,7 +493,11 @@
     "exit_premium": 120,
     "exit_time": "2026-05-15T10:16:19.716843",
     "capital_after": 19343.72,
-    "date": "2026-05-15"
+    "date": "2026-05-15",
+    "time": "10:01",
+    "entry_price": 23805.15,
+    "exit_price": 23810.150390625,
+    "vix_ratio": 1.0
   },
   {
     "date": "2026-05-18",
@@ -460,7 +511,8 @@
     "skip_reason": "SL compressed 82%",
     "entry_price": 23390,
     "adx": 38.0,
-    "vix_ratio": 1.0
+    "vix_ratio": 1.0,
+    "exit_price": ""
   },
   {
     "date": "2026-05-18",
@@ -474,7 +526,8 @@
     "skip_reason": "SL compressed 87%",
     "entry_price": 23390,
     "adx": 38.0,
-    "vix_ratio": 1.0
+    "vix_ratio": 1.0,
+    "exit_price": ""
   },
   {
     "date": "2026-05-18",
@@ -488,7 +541,8 @@
     "skip_reason": "ADX exhaustion 56.1",
     "entry_price": 23349,
     "adx": 56.1,
-    "vix_ratio": 1.0
+    "vix_ratio": 1.0,
+    "exit_price": ""
   },
   {
     "date": "2026-05-19",
@@ -502,7 +556,8 @@
     "skip_reason": "SL compressed 60%",
     "entry_price": 23712,
     "adx": 26.4,
-    "vix_ratio": 1.0
+    "vix_ratio": 1.0,
+    "exit_price": ""
   },
   {
     "date": "2026-05-19",
@@ -517,7 +572,8 @@
     "option_symbol": "NIFTY2619MAY23750CE",
     "adx": 26.6,
     "vix_ratio": 1.0,
-    "notes": "Wrong symbol format - fixed after"
+    "notes": "Wrong symbol format - fixed after",
+    "exit_price": ""
   },
   {
     "date": "2026-05-22",
@@ -532,7 +588,8 @@
     "option_symbol": "NIFTY26MAY23750PE",
     "adx": 23.0,
     "vix_ratio": 1.0,
-    "notes": "Limit order placed at Rs.1 instead of Rs.125 - no LTP available (Personal API). Cancelled manually."
+    "notes": "Limit order placed at Rs.1 instead of Rs.125 - no LTP available (Personal API). Cancelled manually.",
+    "exit_price": ""
   },
   {
     "date": "2026-05-25",
@@ -674,13 +731,19 @@
     "exit_trigger": "manual",
     "current_premium_at_exit": 84.45,
     "exit": 23618.19921875,
-    "result": "manual_exit",
+    "result": "target",
     "points": -23.8,
     "pnl": 377.0,
     "exit_premium": 84.45,
     "exit_time": "2026-06-01T09:33:22.123679",
     "capital_after": 50450.1,
-    "notes": "Manual exit +377. SL order blocked margin, bot could not place exit. Zerodha live_trader.py price param bug."
+    "notes": "Manual exit +377. SL order blocked margin, bot could not place exit. Zerodha live_trader.py price param bug.",
+    "date": "2026-06-01",
+    "time": "09:24",
+    "entry_price": 23594.4,
+    "exit_price": 23618.19921875,
+    "vix_ratio": 1.02,
+    "result_raw": "manual_exit"
   },
   {
     "id": "GAP_SELL_2026-06-01",
@@ -726,13 +789,19 @@
     "exit_trigger": "zerodha_autosquareoff",
     "current_premium_at_exit": 117.85,
     "exit": 23419.69921875,
-    "result": "zerodha_autosquareoff",
+    "result": "target",
     "points": 56.6,
     "pnl": 2362.75,
     "exit_premium": 131.7,
     "exit_time": "2026-06-01T15:26:17",
     "capital_after": 52842.1,
-    "notes": "Zerodha auto square-off at 15:26. SL order not placed due to live_trader.py price param bug. Real profit Rs.2362.75."
+    "notes": "Zerodha auto square-off at 15:26. SL order not placed due to live_trader.py price param bug. Real profit Rs.2362.75.",
+    "date": "2026-06-01",
+    "time": "13:46",
+    "entry_price": 23476.3,
+    "exit_price": 23419.69921875,
+    "vix_ratio": 1.0,
+    "result_raw": "zerodha_autosquareoff"
   },
   {
     "id": "TRAP_BUY_2026-06-02",
@@ -786,6 +855,11 @@
     "exit_premium": 33.4,
     "exit_time": "2026-06-02T10:16:08",
     "capital_after": 52826.2,
-    "notes": "Manual exit at Rs.33.40. Exit MARKET order failed - Zerodha API market protection error. Fixed in live_trader.py."
+    "notes": "Manual exit at Rs.33.40. Exit MARKET order failed - Zerodha API market protection error. Fixed in live_trader.py.",
+    "date": "2026-06-02",
+    "time": "10:01",
+    "entry_price": 23309.3,
+    "exit_price": 23285.650390625,
+    "vix_ratio": 1.0
   }
 ]
