@@ -782,9 +782,10 @@
     "exit": 23285.650390625,
     "result": "sl",
     "points": -23.65,
-    "pnl": -1098.5,
-    "exit_premium": 41.5,
-    "exit_time": "2026-06-02T10:12:14.432777",
-    "capital_after": 52826.2
+    "pnl": -1625.0,
+    "exit_premium": 33.4,
+    "exit_time": "2026-06-02T10:16:08",
+    "capital_after": 52826.2,
+    "notes": "Manual exit at Rs.33.40. Exit MARKET order failed - Zerodha API market protection error. Fixed in live_trader.py."
   }
 ]
