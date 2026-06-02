@@ -512,7 +512,9 @@
     "entry_price": 23390,
     "adx": 38.0,
     "vix_ratio": 1.0,
-    "exit_price": ""
+    "exit_price": "",
+    "reason": "Manual skip - pre-live testing phase. Orders not placed intentionally.",
+    "notes": "Bot was in testing mode on 18 May before going live."
   },
   {
     "date": "2026-05-18",
@@ -527,7 +529,9 @@
     "entry_price": 23390,
     "adx": 38.0,
     "vix_ratio": 1.0,
-    "exit_price": ""
+    "exit_price": "",
+    "reason": "Manual skip - pre-live testing phase. Orders not placed intentionally.",
+    "notes": "Bot was in testing mode on 18 May before going live."
   },
   {
     "date": "2026-05-18",
@@ -542,7 +546,9 @@
     "entry_price": 23349,
     "adx": 56.1,
     "vix_ratio": 1.0,
-    "exit_price": ""
+    "exit_price": "",
+    "reason": "Manual skip - pre-live testing phase. Orders not placed intentionally.",
+    "notes": "Bot was in testing mode on 18 May before going live."
   },
   {
     "date": "2026-05-19",
@@ -557,7 +563,9 @@
     "entry_price": 23712,
     "adx": 26.4,
     "vix_ratio": 1.0,
-    "exit_price": ""
+    "exit_price": "",
+    "reason": "Manual skip - pre-live testing phase.",
+    "notes": "Bot was in testing mode on 19 May before going live."
   },
   {
     "date": "2026-05-19",
@@ -573,7 +581,8 @@
     "adx": 26.6,
     "vix_ratio": 1.0,
     "notes": "Wrong symbol format - fixed after",
-    "exit_price": ""
+    "exit_price": "",
+    "reason": "Wrong symbol format - Zerodha symbol lookup failed."
   },
   {
     "date": "2026-05-22",
@@ -589,7 +598,8 @@
     "adx": 23.0,
     "vix_ratio": 1.0,
     "notes": "Limit order placed at Rs.1 instead of Rs.125 - no LTP available (Personal API). Cancelled manually.",
-    "exit_price": ""
+    "exit_price": "",
+    "reason": "Limit order placed at Rs.1 instead of Rs.125 - LTP fetch failed (Personal API plan)."
   },
   {
     "date": "2026-05-25",
