@@ -136,7 +136,7 @@
       <div style="font-family:var(--font-head);font-size:22px;font-weight:700;">Overview</div>
       <div style="font-size:12px;color:var(--text3);margin-top:2px;" id="dash-date"></div>
     </div>
-    <span id="dash-capital" style="color:var(--accent);font-weight:600;">Loading...</span>
+    <div style="font-size:12px;color:var(--text2);">Capital: <span id="dash-capital" style="color:var(--accent);font-weight:600;">Loading...</span></div>
   </div>
 
   <div class="stats-grid">
@@ -410,7 +410,8 @@ async function loadData() {
       skipped = Array.isArray(raw) ? raw : Object.values(raw).flat();
     }
   } catch(e) { skipped = []; }
-// Load capital from paper_capital.json
+
+  // Load capital from paper_capital.json
   try {
     const cap = await fetch('logs/paper_capital.json?t=' + Date.now());
     if (cap.ok) {
@@ -418,10 +419,10 @@ async function loadData() {
       const current = capData.current_capital || 50000;
       const starting = capData.starting_capital || 50000;
       const pnl = current - starting;
-      const sign = pnl >= 0 ? '+' : '';
+      const sign = pnl >= 0 ? '+' : '-';
       document.getElementById('dash-capital').textContent =
         'Rs.' + current.toLocaleString('en-IN') +
-        ' (' + sign + 'Rs.' + Math.round(Math.abs(pnl)).toLocaleString('en-IN') + ')';
+        ' (' + sign + 'Rs.' + Math.abs(Math.round(pnl)).toLocaleString('en-IN') + ')';
     }
   } catch(e) {}
 
@@ -447,12 +448,11 @@ function renderDashboard() {
   document.getElementById('dash-date').textContent =
     now.toLocaleDateString('en-IN', {weekday:'long',year:'numeric',month:'long',day:'numeric'});
 
+  const filtered_trades = filterByMode(trades);
   const closed = filtered_trades.filter(t => t.result && !['open','skipped','failed'].includes(t.result));
   const wins = closed.filter(t => t.result === 'target');
   const losses = closed.filter(t => t.result === 'sl');
   const bes = closed.filter(t => t.result === 'be');
-  const skippedCount = filtered_trades.filter(t => t.result === 'skipped').length;
-  const failedCount = filtered_trades.filter(t => t.result === 'failed').length;
 
   const totalPnl = filtered_trades.reduce((s,t) => s + (t.pnl||0), 0);
   const wr = closed.length ? ((wins.length/closed.length)*100).toFixed(1) : 0;
@@ -504,11 +504,7 @@ function renderDashboard() {
     <td>${t.exit_price||t.exit||'—'}</td>
     <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
     <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
-    <td>
-      <span class="result-badge ${(t.result||'open').toLowerCase()}" 
-        title="${t.reason||t.notes||''}">${t.result||'open'}</span>
-      ${t.reason ? `<div style="font-size:9px;color:var(--text3);margin-top:2px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${t.reason}">${t.reason}</div>` : ''}
-    </td>
+    <td><span class="result-badge ${(t.result||'open').toLowerCase()}">${t.result||'open'}</span></td>
     <td><span style="padding:2px 7px;border-radius:4px;font-size:10px;background:${(t.mode||'paper')==='live'?'rgba(79,255,176,0.1)':'rgba(255,184,48,0.1)'};color:${(t.mode||'paper')==='live'?'var(--accent)':'var(--amber)'};">${(t.mode||'paper').toUpperCase()}</span></td>
   </tr>`).join('');
 }
@@ -643,8 +639,9 @@ function renderSkipped() {
 
 // ══════════════════════ ANALYTICS ══════════════════════
 function renderAnalytics() {
-  drawEquityCurve();
-  const closed = trades.filter(t => t.result && t.result!=='open');
+  const ft = filterByMode(trades);
+  drawEquityCurve(ft);
+  const closed = ft.filter(t => t.result && !['open','skipped','failed'].includes(t.result));
   const wins = closed.filter(t => t.result==='target');
   const losses = closed.filter(t => t.result==='sl');
   const bes = closed.filter(t => t.result==='be');
@@ -711,11 +708,11 @@ function renderAnalytics() {
   </div>`).join('');
 
   // Performance summary
-  const totalPnl = trades.reduce((s,t)=>s+(t.pnl||0),0);
+  const totalPnl = ft.reduce((s,t)=>s+(t.pnl||0),0);
   const avgWin = wins.length ? (wins.reduce((s,t)=>s+Math.abs(t.pnl||0),0)/wins.length).toFixed(0) : 0;
   const avgLoss = losses.length ? (losses.reduce((s,t)=>s+Math.abs(t.pnl||0),0)/losses.length).toFixed(0) : 0;
-  const bestTrade = trades.reduce((best,t) => (t.pnl||0)>(best.pnl||0)?t:best, {pnl:0});
-  const worstTrade = trades.reduce((worst,t) => (t.pnl||0)<(worst.pnl||0)?t:worst, {pnl:0});
+  const bestTrade = ft.reduce((best,t) => (t.pnl||0)>(best.pnl||0)?t:best, {pnl:0});
+  const worstTrade = ft.reduce((worst,t) => (t.pnl||0)<(worst.pnl||0)?t:worst, {pnl:0});
   const ps = document.getElementById('perf-summary');
   ps.innerHTML = [
     {label:'Total P&L', val:(totalPnl>=0?'Rs.':'-Rs.')+Math.abs(Math.round(totalPnl)), color:totalPnl>=0?'var(--green)':'var(--red)'},
@@ -729,14 +726,15 @@ function renderAnalytics() {
   </div>`).join('');
 }
 
-function drawEquityCurve() {
+function drawEquityCurve(ft) {
+  ft = ft || filterByMode(trades);
   const canvas = document.getElementById('equityCanvas');
   const wrap = canvas.parentElement;
   canvas.width = wrap.offsetWidth || 400;
   canvas.height = 160;
   const ctx = canvas.getContext('2d');
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  const sorted = [...trades].sort((a,b) => new Date(a.date)-new Date(b.date));
+  const sorted = [...ft].filter(t=>!['skipped','failed'].includes(t.result)).sort((a,b) => new Date(a.date)-new Date(b.date));
   if (sorted.length < 2) {
     ctx.fillStyle = 'rgba(139,144,160,0.3)';
     ctx.font = '12px monospace';
