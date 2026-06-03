@@ -434,5 +434,16 @@
       "sl_pts": 129.2,
       "risk_inr": 8397
     }
+  },
+  {
+    "datetime": "2026-06-03T10:16:58.624314",
+    "date": "2026-06-03",
+    "strategy": "TRAP",
+    "direction": "SELL",
+    "reason": "SL compressed 58% from original. Strategy needs 55.0 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 55.0,
+      "risk_inr": 3572
+    }
   }
 ]
