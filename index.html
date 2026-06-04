@@ -604,22 +604,25 @@ function renderSkipped() {
   const fr = document.getElementById('skip-filter-reason').value;
   const fd = document.getElementById('skip-filter-dir').value;
 
-  let filtered = skipped.filter(s =>
+  // Filter by mode first (Paper/Live toggle)
+  const modeFiltered = filterByMode(skipped);
+
+  let filtered = modeFiltered.filter(s =>
     (!fs || s.strategy === fs) &&
     (!fr || (s.skip_reason||s.reason_code||'').includes(fr)) &&
     (!fd || s.direction === fd)
   );
 
-  // Update summary counts
-  document.getElementById('skipped-count').textContent = skipped.length + ' signals skipped';
+  // Update summary counts using mode-filtered data
+  document.getElementById('skipped-count').textContent = modeFiltered.length + ' signals skipped';
   document.getElementById('skip-compress-count').textContent =
-    skipped.filter(s => (s.skip_reason||'').includes('compression')).length;
+    modeFiltered.filter(s => (s.skip_reason||'').includes('compression')).length;
   document.getElementById('skip-adx-count').textContent =
-    skipped.filter(s => (s.reason||'').toLowerCase().includes('exhaustion')).length;
+    modeFiltered.filter(s => (s.reason||'').toLowerCase().includes('exhaustion')).length;
   document.getElementById('skip-adxlow-count').textContent =
-    skipped.filter(s => (s.reason||'').toLowerCase().includes('adx') && !(s.reason||'').toLowerCase().includes('exhaustion')).length;
+    modeFiltered.filter(s => (s.reason||'').toLowerCase().includes('adx') && !(s.reason||'').toLowerCase().includes('exhaustion')).length;
   document.getElementById('skip-other-count').textContent =
-    skipped.filter(s => (s.reason||'').toLowerCase().includes('vix')).length;
+    modeFiltered.filter(s => (s.reason||'').toLowerCase().includes('vix')).length;
 
   const tbody = document.getElementById('skip-tbody');
   const empty = document.getElementById('skip-empty');
