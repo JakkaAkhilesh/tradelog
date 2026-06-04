@@ -511,7 +511,7 @@ function renderDashboard() {
     <td>${t.entry_price||t.entry||'—'}</td>
     <td style="color:var(--red)">${t.sl||'—'}</td>
     <td style="color:var(--green)">${t.target||'—'}</td>
-        <td style="color:var(--text2)">${t.rr ? \'1:\'+t.rr : \'—\'}</td>
+        <td style="color:var(--text2)">${t.rr ? '1:'+t.rr : '—'}</td>
     <td>${t.exit_price||t.exit||'—'}</td>
     <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
     <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
@@ -587,7 +587,7 @@ function renderTrades() {
     <td>${t.entry_price||t.entry||'—'}</td>
     <td style="color:var(--red)">${t.sl||'—'}</td>
     <td style="color:var(--green)">${t.target||'—'}</td>
-        <td style="color:var(--text2)">${t.rr ? \'1:\'+t.rr : \'—\'}</td>
+        <td style="color:var(--text2)">${t.rr ? '1:'+t.rr : '—'}</td>
     <td>${t.exit_price||t.exit||'—'}</td>
     <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'};font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
     <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'};font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
