@@ -1039,16 +1039,17 @@
     "exit": 23418.099609375,
     "result": "sl",
     "result_raw": "sl",
-    "points": -24.15,
-    "pnl": -1095.25,
+    "points": -24.2,
+    "pnl": -1043.25,
     "exit_premium": 180.3,
     "exit_time": "2026-06-04T09:58:43.370623",
-    "capital_after": 51496.25,
+    "capital_after": 51548.25,
     "date": "2026-06-04",
     "time": "09:58",
     "entry_price": 23442.25,
     "exit_price": 23418.099609375,
-    "vix_ratio": 1.01
+    "vix_ratio": 1.01,
+    "notes": "Corrected from journal: points -24.1\u2192-24.2, pnl -1095\u2192-1043.25"
   },
   {
     "id": "TRAP_BUY_2026-06-04",
@@ -1096,17 +1097,18 @@
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 200.75,
     "exit": 23405.44921875,
-    "result": "sl",
+    "result": "be",
     "result_raw": "sl",
-    "points": -3.05,
-    "pnl": -87.75,
+    "points": -3.1,
+    "pnl": -136.5,
     "exit_premium": 200.75,
     "exit_time": "2026-06-04T10:31:54.650705",
-    "capital_after": 51460.5,
+    "capital_after": 51411.75,
     "date": "2026-06-04",
     "time": "10:31",
     "entry_price": 23408.5,
     "exit_price": 23405.44921875,
-    "vix_ratio": 1.0
+    "vix_ratio": 1.0,
+    "notes": "Breakeven exit. Points -3.0\u2192-3.1, pnl -88\u2192-136.5. Result changed sl\u2192be"
   }
 ]
