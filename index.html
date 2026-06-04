@@ -200,7 +200,7 @@
     <table class="trades-table">
       <thead><tr>
         <th>Date</th><th>Strategy</th><th>Direction</th><th>Entry</th>
-        <th>SL</th><th>Target</th><th>Exit</th><th>Points</th><th>P&L</th><th>Result</th>
+        <th>SL</th><th>Target</th><th>R:R</th><th>Exit</th><th>Points</th><th>P&L</th><th>Result</th>
       </tr></thead>
       <tbody id="recent-tbody"></tbody>
     </table>
@@ -241,7 +241,7 @@
       <table class="trades-table" style="min-width:900px;">
         <thead><tr>
           <th>#</th><th>Date</th><th>Time</th><th>Strategy</th><th>Dir</th>
-          <th>Strike</th><th>Entry</th><th>SL</th><th>Target</th><th>Exit</th>
+          <th>Strike</th><th>Entry</th><th>SL</th><th>Target</th><th>R:R</th><th>Exit</th>
           <th>Points</th><th>P&L</th><th>ADX</th><th>VIX</th><th>Result</th><th>Mode</th>
         </tr></thead>
         <tbody id="all-tbody"></tbody>
@@ -511,6 +511,7 @@ function renderDashboard() {
     <td>${t.entry_price||t.entry||'—'}</td>
     <td style="color:var(--red)">${t.sl||'—'}</td>
     <td style="color:var(--green)">${t.target||'—'}</td>
+        <td style="color:var(--text2)">${t.rr ? \'1:\'+t.rr : \'—\'}</td>
     <td>${t.exit_price||t.exit||'—'}</td>
     <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
     <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
@@ -586,6 +587,7 @@ function renderTrades() {
     <td>${t.entry_price||t.entry||'—'}</td>
     <td style="color:var(--red)">${t.sl||'—'}</td>
     <td style="color:var(--green)">${t.target||'—'}</td>
+        <td style="color:var(--text2)">${t.rr ? \'1:\'+t.rr : \'—\'}</td>
     <td>${t.exit_price||t.exit||'—'}</td>
     <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'};font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
     <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'};font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
@@ -783,8 +785,8 @@ function drawEquityCurve(ft) {
 
 function exportCSV() {
   if (!trades.length) { showNotif('No trades to export'); return; }
-  const headers = ['Date','Time','Strategy','Direction','Symbol','Entry','SL','Target','Exit','Points','PnL','ADX','VIX','Result'];
-  const rows = trades.map(t => [t.date,t.time||'',t.strategy,t.direction,t.option_symbol||'',t.entry_price||'',t.sl||'',t.target||'',t.exit_price||'',(t.points||0),(t.pnl||0),t.adx||'',t.vix_ratio||'',t.result||'']);
+  const headers = ['Date','Time','Strategy','Direction','Symbol','Entry','SL','Target','RR','Exit','Points','PnL','ADX','VIX','Result'];
+  const rows = trades.map(t => [t.date,t.time||'',t.strategy,t.direction,t.option_symbol||'',t.entry_price||'',t.sl||'',t.target||'',t.rr||'',t.exit_price||'',(t.points||0),(t.pnl||0),t.adx||'',t.vix_ratio||'',t.result||'']);
   const csv = [headers,...rows].map(r=>r.join(',')).join('\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([csv],{type:'text/csv'}));
