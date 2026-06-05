@@ -486,5 +486,17 @@
       "risk_inr": 3572
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-06-05T09:31:16.259083",
+    "date": "2026-06-05",
+    "time": "09:31",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "reason": "ADX 21.0 < 22",
+    "conditions": {
+      "adx": 21.0
+    },
+    "mode": "live"
   }
 ]
