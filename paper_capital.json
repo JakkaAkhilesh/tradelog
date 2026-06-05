@@ -1,9 +1,9 @@
 {
-  "current_capital": 48654.75,
+  "current_capital": 48710.0,
   "starting_capital": 50000,
-  "total_pnl": -1345.25,
+  "total_pnl": -1290.0,
   "last_saved_date": "2026-06-05",
-  "last_saved_time": "14:00:06",
+  "last_saved_time": "15:25:17",
   "history": [
     {
       "date": "2026-06-04",
@@ -52,6 +52,22 @@
       "today_change": 0.0,
       "total_pnl": -1345.25,
       "reason": "sl"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "14:00:11",
+      "capital": 48710.0,
+      "today_change": 0.0,
+      "total_pnl": -1290.0,
+      "reason": "sl_corrected"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "15:25:17",
+      "capital": 48710.0,
+      "today_change": 0.0,
+      "total_pnl": -1290.0,
+      "reason": "end_of_day"
     }
   ]
 }
