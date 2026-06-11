@@ -510,5 +510,18 @@
       "adx": 19.7
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-06-11T09:58:08.663134",
+    "date": "2026-06-11",
+    "time": "09:58",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "reason": "SL compressed 77% from original. Strategy needs 101.6 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 101.6,
+      "risk_inr": 6605
+    },
+    "mode": "live"
   }
 ]
