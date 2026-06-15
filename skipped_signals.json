@@ -523,5 +523,41 @@
       "risk_inr": 6605
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-06-15T09:41:19.108241",
+    "date": "2026-06-15",
+    "time": "09:41",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "reason": "ADX 70.0 >= 50 (exhaustion)",
+    "conditions": {
+      "adx": 70.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-06-15T09:46:20.888487",
+    "date": "2026-06-15",
+    "time": "09:46",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "reason": "ADX 71.2 >= 50 (exhaustion)",
+    "conditions": {
+      "adx": 71.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-06-15T10:04:28.173232",
+    "date": "2026-06-15",
+    "time": "10:04",
+    "strategy": "TRAP",
+    "direction": "BUY",
+    "reason": "ADX 72.3 >= 50 (exhaustion)",
+    "conditions": {
+      "adx": 72.3
+    },
+    "mode": "live"
   }
 ]
