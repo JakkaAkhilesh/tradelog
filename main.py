@@ -26,6 +26,7 @@ from strategies.fifteen_min_strategy import FifteenMinStrategy
 from strategies.trap_trading import TrapTrading
 from strategies.gap_fill_strategy import GapFillStrategy
 from strategies.dby_strategy import DbyStrategy
+from strategies.cb90_strategy import CB90Strategy
 
 os.makedirs('logs', exist_ok=True)
 logging.basicConfig(
@@ -36,6 +37,8 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+SL_LIMIT_BUFFER = 4.0  # 4-pt buffer between trigger and limit price
 
 
 class TradingBot:
@@ -77,11 +80,13 @@ class TradingBot:
         if STRATEGIES.get('fifteen_min'):
             self.strategies['15MIN'] = FifteenMinStrategy(sp.get('fifteen_min', {}))
         if STRATEGIES.get('trap_trading'):
-            self.strategies['TRAP'] = TrapTrading(sp.get('rap_trading', {}))
+            self.strategies['TRAP'] = TrapTrading(sp.get('trap_trading', {}))
         if STRATEGIES.get('gap_fill'):
             self.strategies['GAP'] = GapFillStrategy(sp.get('gap_fill', {}))
         if STRATEGIES.get('dby_strategy'):
             self.strategies['DBY'] = DbyStrategy(sp.get('dby_strategy', {}))
+        if STRATEGIES.get('cb90'):
+            self.strategies['CB90'] = CB90Strategy(sp.get('cb90', {}))
 
         logger.info("Strategies loaded: %s", ', '.join(self.strategies.keys()))
         logger.info("Square-off: %s", self.squareoff.our_time)
@@ -95,6 +100,19 @@ class TradingBot:
         # Live trader (only active in live mode)
         self.live_trader = None
         self.kite = None
+
+        # Start Telegram command handler (listens for Start/Status/Capital)
+        try:
+            from core.telegram_commands import TelegramCommandHandler
+            self.cmd_handler = TelegramCommandHandler(
+                bot_token=TELEGRAM['bot_token'],
+                chat_id=TELEGRAM['chat_id'],
+                trading_bot=self)
+            self.cmd_handler.start()
+            logger.info("Telegram command handler started")
+        except Exception as e:
+            self.cmd_handler = None
+            logger.warning("Telegram command handler failed: %s", e)
 
     # ── HELPERS ──────────────────────────────────────────────
     def _is_holiday(self):
@@ -114,6 +132,31 @@ class TradingBot:
     def _is_expiry_day(self):
         return date.today().weekday() == MARKET.get('expiry_day', 1)
 
+    def _zerodha_position_qty(self, symbol):
+        try:
+            positions = self.kite.positions()
+            for pos in positions.get("net", []):
+                if pos["tradingsymbol"] == symbol:
+                    return abs(pos["quantity"])
+            return 0
+        except Exception as e:
+            logger.warning("Could not fetch Zerodha positions: %s", e)
+            return -1
+
+    def _zerodha_sl_fill_price(self, sl_order_id):
+        try:
+            orders = self.kite.orders()
+            for o in orders:
+                if str(o.get("order_id")) == str(sl_order_id):
+                    if o.get("status") == "COMPLETE":
+                        price = float(o.get("average_price", 0))
+                        logger.info("SL order %s filled at Rs.%.2f", sl_order_id, price)
+                        return price
+            return 0
+        except Exception as e:
+            logger.warning("Could not fetch order history: %s", e)
+        return 0
+
     def _get_vix(self):
         """Get VIX data, cached for 5 minutes."""
         try:
@@ -132,6 +175,19 @@ class TradingBot:
     def run(self):
         self.running = True
         now = datetime.now()
+
+        # ── WEEKEND CHECK (before login) ─────────────────────
+        if date.today().weekday() >= 5:
+            day_name = date.today().strftime('%A')
+            logger.warning("Today is %s - no trading", day_name)
+            self.alerter.send('Weekend - No Trading Today is ' + day_name + ' See you Monday!')
+            return
+
+        # ── HOLIDAY CHECK (before login) ──────────────────────
+        if self.holiday_checker and self.holiday_checker.is_holiday():
+            logger.warning("Today is a market holiday")
+            self.alerter.send('Market Holiday Today - No Trading! Bot will start tomorrow.')
+            return
 
         # ── LIVE MODE: Daily Zerodha Login ───────────────────
         if self.mode == 'live':
@@ -158,9 +214,18 @@ class TradingBot:
             self.live_trader = LiveTrader(self.kite, lot_size=CAPITAL["lot_size"])
             funds = self.live_trader.get_funds()
             logger.info("Live mode ready. Funds: Rs.%s", funds)
+            # Sync current capital from Zerodha but keep starting_capital fixed at Rs.50,000
+            # starting_capital must never change — it is used for overall P&L calculation
+            if funds > 0:
+                self.current_capital = round(funds, 2)
+                if self.capital_tracker:
+                    self.capital_tracker.current_capital = self.current_capital
+                    # Never overwrite starting_capital — keep original Rs.50,000
+                    self.capital_tracker.save_capital(self.current_capital, reason='morning_zerodha_sync')
+                logger.info("Capital synced from Zerodha: Rs.%s", self.current_capital)
             self.alerter.send('Zerodha Connected! Funds: Rs.' + str(funds) + ' Live trading starts at 9:15 AM')
 
-        # Weekend check
+        # ── WEEKEND CHECK (already handled above) ─────────────
         if date.today().weekday() >= 5:
             day_name = date.today().strftime('%A')
             logger.warning("Today is %s - no trading", day_name)
@@ -169,7 +234,7 @@ class TradingBot:
 
         # Holiday check
         if self.holiday_checker and self.holiday_checker.is_holiday():
-            holiday_name = self.holiday_checker.get_holiday_name()
+            holiday_name = 'Market Holiday'
             logger.warning("Today is holiday: %s", holiday_name)
             self.alerter.send('Holiday - No Trading\n' + str(holiday_name))
             return
@@ -377,6 +442,15 @@ class TradingBot:
         option_info = self.risk.select_option_type(
             entry, direction, adx)
 
+        # ── GET CORRECT SYMBOL FROM ZERODHA INSTRUMENTS ────
+        if self.live_trader:
+            correct_symbol = self.live_trader.get_option_symbol(
+                option_info['strike'],
+                'CE' if direction == 'BUY' else 'PE',
+                'current')
+            if correct_symbol:
+                option_info['option_symbol'] = correct_symbol
+
         # ── REAL PREMIUM FROM KITE (Connect plan) ───────────
         real_premium = 0
         if self.live_trader:
@@ -460,11 +534,7 @@ class TradingBot:
                     existing['strategy'])
                 self.alerter.send(msg)
                 return
-        self.open_trades[trade['id']] = trade
-        self.risk.record_trade_entry(trade)
-        self._log_to_journal(trade)
-
-        # Place real order in live mode
+        # Place real order in live mode FIRST — only register trade after confirmed fill
         if self.mode == 'live' and self.live_trader:
             option_type = 'CE' if trade['direction'] == 'BUY' else 'PE'
             order_result = self.live_trader.place_entry_order(
@@ -475,44 +545,63 @@ class TradingBot:
             )
             if order_result.get('status') == 'failed':
                 logger.error('Order placement failed: %s', order_result.get('error'))
-                self.alerter.send('ORDER FAILED: ' + str(order_result.get('error')))
-                self.open_trades.pop(trade['id'], None)
-                return
+                self.alerter.send(
+                    '<b>ORDER FAILED - Trade NOT executed</b>\n'
+                    'Strategy: ' + trade['strategy'] + '\n'
+                    'Reason: ' + str(order_result.get('error')) + '\n'
+                    'No P&L impact. Bot continues watching.')
+                return  # ← exit without registering trade anywhere
+
             trade['order_id'] = order_result.get('order_id')
             trade['option_symbol'] = order_result.get('symbol', trade['option_symbol'])
             fill_price = order_result.get('fill_price', 0)
-            # Verify order actually filled
+
             if fill_price <= 0:
                 logger.error('Order fill price is 0 - order may not have filled!')
-                self.alerter.send('WARNING: Order may not have filled! Check Zerodha app! Strategy: ' + trade['strategy'])
-            trade['entry_premium'] = fill_price if fill_price > 0 else trade['entry_premium']
-            logger.info('Live order placed: %s at Rs.%s',
-                        order_result.get('symbol'), fill_price)
-            # Place SL-M order on Zerodha as safety net
-            if fill_price > 0 and trade.get('option_symbol'):
-                sl_trigger = round(fill_price * 0.35, 1)
+                self.alerter.send(
+                    '<b>ORDER WARNING - Fill price is 0</b>\n'
+                    'Strategy: ' + trade['strategy'] + '\n'
+                    'Order ID: ' + str(order_result.get('order_id', '?')) + '\n'
+                    'Check Zerodha app immediately!\n'
+                    'Trade NOT counted until confirmed.')
+                return  # ← exit without registering trade
+
+            trade['entry_premium'] = fill_price
+            logger.info('Live order confirmed: %s at Rs.%s',
+                        trade['option_symbol'], fill_price)
+
+        # ── Register trade ONLY after confirmed fill ──────────
+        # Paper mode: always registers
+        # Live mode: only reaches here if fill_price > 0
+        self.open_trades[trade['id']] = trade
+        self.risk.record_trade_entry(trade)
+        # NOTE: Do NOT log to journal at entry — log only at exit
+        # This prevents ghost entries with no exit data in trades.json
+
+        # FIX: Single SL order at premium_sl price with 4-point buffer
+        if self.mode == 'live' and self.live_trader and trade.get('option_symbol') and trade.get('entry_premium', 0) > 0 and not trade.get('sl_order_placed'):
+            fill_price = trade.get('entry_premium', 0)
+            if fill_price > 0:
+                sl_trigger = round(float(trade['premium_sl']), 1)
+                sl_limit   = max(round(sl_trigger - SL_LIMIT_BUFFER, 1), 1.0)
                 sl_result = self.live_trader.place_sl_order(
                     symbol=trade['option_symbol'],
                     quantity=trade['lots'] * CAPITAL['lot_size'],
-                    trigger_price=sl_trigger)
+                    trigger_price=sl_trigger,
+                    price=sl_limit)
                 if sl_result.get('status') == 'placed':
-                    trade['sl_order_id'] = sl_result['order_id']
-                    logger.info('SL order placed: %s trigger=%.1f', sl_result['order_id'], sl_trigger)
+                    trade['sl_order_id']     = sl_result['order_id']
+                    trade['sl_order_placed'] = True
+                    logger.info('SL order placed: id=%s trigger=%.1f limit=%.1f',
+                                sl_result['order_id'], sl_trigger, sl_limit)
+                    self.alerter.send(
+                        '<b>SL Order Placed</b>\n'
+                        'Trigger: Rs.' + str(sl_trigger) + ' (Premium SL)\n'
+                        'Limit: Rs.'   + str(sl_limit)   + ' (4-pt buffer)')
                 else:
                     logger.warning('SL order failed: %s', sl_result.get('error'))
-            # Place SL-M order on Zerodha as safety net
-            # This protects capital even if bot crashes
-            if fill_price > 0 and trade.get('option_symbol'):
-                sl_result = self.live_trader.place_sl_order(
-                    symbol=trade['option_symbol'],
-                    quantity=trade['lots'] * CAPITAL['lot_size'],
-                    trigger_price=trade['entry_premium'] * 0.35
-                )
-                if sl_result.get('status') == 'placed':
-                    trade['sl_order_id'] = sl_result['order_id']
-                    logger.info('SL order placed on Zerodha: %s', sl_result['order_id'])
-                else:
-                    logger.warning('SL order failed: %s', sl_result.get('error'))
+                    self.alerter.send('WARNING: SL order failed! Monitor manually.\nError: ' + str(sl_result.get('error', '')))
+
 
         prem_sl = trade.get('premium_sl', 0)
         prem_sl_data = trade.get('premium_sl_data', {})
@@ -582,41 +671,66 @@ class TradingBot:
                 self._close_trade(trade_id, current_price, 'sl')
                 continue
 
-            # ── TARGET HIT → EXIT FULL POSITION (1 lot) ────────
-            # For 1 lot: exit 100% at target — profit locked
-            # No extended trail for 1 lot (cannot split 75 units)
-            # When 2+ lots: implement 50/50 split
+            # ── TARGET HIT → START TRAILING 9 EMA ─────────────
             target_hit = ((d == 'BUY' and current_price >= target) or
                           (d == 'SELL' and current_price <= target))
-            if target_hit:
-                logger.info("[%s] TARGET hit at %s - exiting full position",
+            if target_hit and not trade.get('beyond_target'):
+                trade['beyond_target'] = True
+                trade['sl'] = trade['entry']  # move SL to entry first
+                logger.info("[%s] TARGET hit at %s - now trailing 9 EMA",
                             trade['strategy'], round(current_price))
-                trade['exit_trigger'] = 'target'
-                trade['current_premium_at_exit'] = current_premium
-                self._close_trade(trade_id, current_price, 'target')
-                continue
+                self.alerter.send(
+                    '<b>Target Hit! Trailing 9 EMA</b>\n'
+                    'Strategy: ' + trade['strategy'] + '\n'
+                    'Target reached: ' + str(round(current_price)) + '\n'
+                    'SL moved to entry: ' + str(trade['entry']) + '\n'
+                    'Will exit when price crosses 9 EMA. Watching every 5 sec...'
+                )
+                # Don't continue — fall through to trailing logic below
 
-            # ── TRAILING SL (50% and 80% phases only) ──────────
+            # ── TRAILING SL ──────────────────────────────────────
+            # Phase 1 (before target): 50% → BE, 80% → trail 9 EMA
+            # Phase 2 (beyond target): trail 9 EMA indefinitely
+            # Exit immediately when price crosses 9 EMA in Phase 2
             try:
-                df = self.fetcher.get_candles('NIFTY50', '5minute', 20)
-                if not df.empty:
-                    ema9 = self.ind.ema_value(df, 9)
+                df_trail = self.fetcher.get_candles('NIFTY50', '5minute', 20)
+                if not df_trail.empty:
+                    ema9 = self.ind.ema_value(df_trail, 9)
+                    beyond = trade.get('beyond_target', False)
                     t = self.risk.calculate_trailing_sl(
-                        trade['entry'], current_price, sl,
-                        target, d, ema9, beyond_target=False)
-                    if (t['action'] in ['MOVE_TO_BE', 'TRAIL_9EMA']
-                            and trade['sl'] != t['new_sl']):
-                        trade['sl'] = t['new_sl']
-                        logger.info("SL updated: %s (%s)", t['new_sl'], t['action'])
-                        if t['action'] == 'MOVE_TO_BE' and not trade.get('be_alerted'):
-                            self.alerter.send(
-                                '<b>SL Moved to Breakeven</b>\n'
-                                'Strategy: ' + trade['strategy'] + '\n'
-                                'SL = Entry: ' + str(trade['entry']) + '\n'
-                                'Cannot lose on this trade now!\n'
-                                'Nifty: ' + str(round(current_price))
-                            )
-                            trade['be_alerted'] = True
+                        trade['entry'], current_price, trade['sl'],
+                        target, d, ema9, beyond_target=beyond)
+
+                    if beyond:
+                        # Check if price has crossed 9 EMA — exit immediately
+                        ema_crossed = ((d == 'BUY' and current_price < ema9) or
+                                       (d == 'SELL' and current_price > ema9))
+                        if ema_crossed:
+                            logger.info("[%s] 9 EMA crossed after target — exiting",
+                                        trade['strategy'])
+                            trade['exit_trigger'] = 'ema9_trail'
+                            trade['current_premium_at_exit'] = current_premium
+                            self._close_trade(trade_id, current_price, 'extended_trail')
+                            continue
+                        # Update trailing SL
+                        if trade['sl'] != t['new_sl']:
+                            trade['sl'] = t['new_sl']
+                            logger.info("Trail SL updated: %s (beyond target)",
+                                        t['new_sl'])
+                    else:
+                        if (t['action'] in ['MOVE_TO_BE', 'TRAIL_9EMA']
+                                and trade['sl'] != t['new_sl']):
+                            trade['sl'] = t['new_sl']
+                            logger.info("SL updated: %s (%s)", t['new_sl'], t['action'])
+                            if t['action'] == 'MOVE_TO_BE' and not trade.get('be_alerted'):
+                                self.alerter.send(
+                                    '<b>SL Moved to Breakeven</b>\n'
+                                    'Strategy: ' + trade['strategy'] + '\n'
+                                    'SL = Entry: ' + str(trade['entry']) + '\n'
+                                    'Cannot lose on this trade now!\n'
+                                    'Nifty: ' + str(round(current_price))
+                                )
+                                trade['be_alerted'] = True
             except Exception as e:
                 logger.error("Trail SL error: %s", e)
 
@@ -670,12 +784,26 @@ class TradingBot:
                 exit_prem = round(entry_prem * (1 + points/trade['entry']*8), 0)
         exit_prem = max(5, exit_prem)
 
+        # Map result to website-compatible values
+        result_display = result
+        if result in ['extended_trail', 'squareoff', 'manual_exit', 'zerodha_autosquareoff']:
+            result_display = 'target'
+
         trade.update({
-            'exit': exit_price, 'result': result,
-            'points': round(points, 2), 'pnl': pnl,
+            'exit': exit_price,
+            'result': result_display,
+            'result_raw': result,
+            'points': round(points, 2),
+            'pnl': pnl,
             'exit_premium': exit_prem,
             'exit_time': datetime.now().isoformat(),
             'capital_after': self.current_capital,
+            # Fields required by tradelog website
+            'date': str(date.today()),
+            'time': datetime.now().strftime('%H:%M'),
+            'entry_price': trade.get('entry'),
+            'exit_price': exit_price,
+            'vix_ratio': trade.get('vix_ratio_at_entry', ''),
         })
         self.risk.record_trade_exit(trade_id, result, pnl)
         self._log_to_journal(trade)
@@ -686,25 +814,64 @@ class TradingBot:
             except Exception as e:
                 logger.debug("GitHub sync error: %s", e)
 
-        # Place real exit order in live mode
-        if self.mode == 'live' and self.live_trader:
+        # Live mode: check if Zerodha already closed position before placing exit
+        already_closed = False
+        if self.mode == 'live' and self.live_trader and trade.get('option_symbol'):
+            qty = self._zerodha_position_qty(trade['option_symbol'])
+            if qty == 0 and trade.get('sl_order_placed'):
+                already_closed = True
+                logger.info('[%s] Already closed by Zerodha SL order', trade['strategy'])
+                if trade.get('sl_order_id'):
+                    fill = self._zerodha_sl_fill_price(trade['sl_order_id'])
+                    if fill > 0:
+                        trade['current_premium_at_exit'] = fill
+                        logger.info('Using Zerodha SL fill price: Rs.%.2f', fill)
+                self.alerter.send(
+                    '<b>Position closed by Zerodha SL order</b>\n'
+                    'Strategy: ' + trade['strategy'] + '\n'
+                    'Skipping duplicate exit order.')
+
+        if self.mode == 'live' and self.live_trader and not already_closed:
             try:
-                # Cancel the SL order first to avoid double exit
                 sl_order_id = trade.get('sl_order_id')
-                if sl_order_id:
+                if sl_order_id and trade.get('sl_order_placed'):
                     self.live_trader.cancel_order(sl_order_id)
                     logger.info('SL order cancelled: %s', sl_order_id)
-
                 exit_result = self.live_trader.place_exit_order(
                     symbol=trade.get('option_symbol', ''),
                     quantity=trade.get('lots', 1) * CAPITAL['lot_size']
                 )
                 if exit_result.get('fill_price', 0) > 0:
-                    trade['exit_premium'] = exit_result['fill_price']
-                    logger.info('Live exit placed at Rs.%s', exit_result['fill_price'])
+                    actual_fill = exit_result['fill_price']
+                    trade['exit_premium'] = actual_fill
+                    trade['current_premium_at_exit'] = actual_fill
+                    logger.info('Live exit placed at Rs.%s', actual_fill)
+
+                    # ── RECALCULATE P&L with actual fill price ──────
+                    # Previous P&L used monitoring price — now correct it
+                    entry_prem = trade.get('entry_premium', 0)
+                    lot_size   = CAPITAL.get('lot_size', 65)
+                    if entry_prem > 0:
+                        real_pnl = round((actual_fill - entry_prem) * trade.get('lots', 1) * lot_size, 2)
+                        old_pnl  = pnl
+                        pnl      = real_pnl
+                        # Update capital with corrected P&L
+                        self.current_capital = round(self.current_capital - old_pnl + real_pnl, 2)
+                        if self.capital_tracker:
+                            self.capital_tracker.update(self.current_capital)
+                            self.capital_tracker.save_capital(self.current_capital, reason=result + '_corrected')
+                        trade['pnl']           = real_pnl
+                        trade['capital_after'] = self.current_capital
+                        logger.info('P&L corrected: Rs.%s → Rs.%s (fill=%.2f)',
+                                    old_pnl, real_pnl, actual_fill)
             except Exception as e:
                 logger.error('Live exit order error: %s', e)
-                self.alerter.send('EXIT ORDER ERROR: ' + str(e) + ' Close manually in Zerodha!')
+                self.alerter.send(
+                    '<b>EXIT ORDER FAILED!</b>\n'
+                    'Strategy: ' + trade.get('strategy', '?') + '\n'
+                    'Symbol: ' + trade.get('option_symbol', '?') + '\n'
+                    'Error: ' + str(e) + '\n'
+                    '<b>CLOSE MANUALLY IN ZERODHA NOW!</b>')
 
         pnl_sign = '+' if pnl >= 0 else ''
         cap_s = self._cap_str()
@@ -825,6 +992,15 @@ class TradingBot:
             'Overall: ' + cap_s
         )
         self._send_stopped_alert('End of trading day (3:25 PM)')
+
+        # Auto sync to GitHub journal at end of day
+        try:
+            from github_sync import sync_all
+            sync_all(reason='end_of_day_' + str(date.today()))
+            logger.info("Journal synced to GitHub")
+        except Exception as e:
+            logger.warning("Journal sync failed: %s", e)
+
         for s in self.strategies.values():
             if hasattr(s, 'reset_daily'):
                 s.reset_daily()
