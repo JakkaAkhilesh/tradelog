@@ -208,6 +208,9 @@ class TradingBot:
                     return
             login_handler = ZerodhaLogin(api_key, api_secret, TELEGRAM)
             self.kite = login_handler.get_kite_instance()
+            if self.kite:
+                self.fetcher.kite = self.kite  # enable Zerodha candle feed
+                logger.info("DataFetcher: switched to Zerodha candle feed")
             if not self.kite:
                 self.alerter.send("Kite connection failed! Restart bot.")
                 return
