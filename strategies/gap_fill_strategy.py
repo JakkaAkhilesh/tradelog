@@ -102,7 +102,7 @@ class GapFillStrategy:
 
             # GAP UP → sell when price breaks below first candle
             if gap_up and current_price < fc_low and pdc_dist >= self.min_pdc_distance_pct:
-                sl = round(current_price + (atr_val * 2.0), 2)
+                sl = round(current_price + (atr_val * 1.0), 2)
                 risk = abs(sl - current_price)
                 target = round(current_price - (risk * 3.0), 2)
                 result.update({
@@ -118,7 +118,7 @@ class GapFillStrategy:
 
             # GAP DOWN → buy when price breaks above first candle
             elif not gap_up and current_price > fc_high and pdc_dist >= self.min_pdc_distance_pct:
-                sl = round(current_price - (atr_val * 2.0), 2)
+                sl = round(current_price - (atr_val * 1.0), 2)
                 risk = abs(current_price - sl)
                 target = round(current_price + (risk * 3.0), 2)
                 result.update({
@@ -141,7 +141,7 @@ class GapFillStrategy:
             is_bear = ind.double_candle_confirmation(df, 'bearish')
 
             if gap_up and is_bear and pdc_dist >= self.min_pdc_distance_pct:
-                sl = round(current_price + (atr_val * 2.0), 2)
+                sl = round(current_price + (atr_val * 1.0), 2)
                 risk = abs(sl - current_price)
                 target = round(current_price - (risk * 3.0), 2)
                 result.update({
@@ -155,7 +155,7 @@ class GapFillStrategy:
                 return result
 
             elif not gap_up and is_bull and pdc_dist >= self.min_pdc_distance_pct:
-                sl = round(current_price - (atr_val * 2.0), 2)
+                sl = round(current_price - (atr_val * 1.0), 2)
                 risk = abs(current_price - sl)
                 target = round(current_price + (risk * 3.0), 2)
                 result.update({
