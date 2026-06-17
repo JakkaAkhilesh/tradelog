@@ -66,8 +66,11 @@ class FifteenMinStrategy:
             result['reason'] = f'15MIN: Outside entry window ({current_time})'
             return result
 
-        # Need at least 200 candles for EMA200
-        if len(df) < 210:
+        # Need at least 205 candles for EMA200 on 15-min timeframe.
+        # With Zerodha feed we get 300 candles (~57 trading days).
+        # With yfinance fallback (60d period) we get ~100+ candles.
+        # 205 ensures EMA200 is fully warmed up in both cases.
+        if len(df) < 205:
             result['reason'] = f'15MIN: Not enough candles ({len(df)})'
             return result
 
