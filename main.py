@@ -809,13 +809,18 @@ class TradingBot:
             'vix_ratio': trade.get('vix_ratio_at_entry', ''),
         })
         self.risk.record_trade_exit(trade_id, result, pnl)
-        self._log_to_journal(trade)
-        # Auto-sync to GitHub journal
-        if GITHUB_SYNC:
-            try:
-                sync_after_trade(trade)
-            except Exception as e:
-                logger.debug("GitHub sync error: %s", e)
+
+        # NOTE: _log_to_journal and sync_after_trade are called AFTER
+        # the live fill correction below, so the journal always reflects
+        # the actual Zerodha fill price, not the monitoring-time LTP.
+        # For paper mode, we log here immediately since there is no fill.
+        if self.mode != 'live':
+            self._log_to_journal(trade)
+            if GITHUB_SYNC:
+                try:
+                    sync_after_trade(trade)
+                except Exception as e:
+                    logger.debug("GitHub sync error: %s", e)
 
         # Live mode: check if Zerodha already closed position before placing exit
         already_closed = False
