@@ -200,11 +200,11 @@ class TradingBot:
                 return
             if not ZerodhaLogin.is_token_valid():
                 login_handler = ZerodhaLogin(api_key, api_secret, TELEGRAM)
-                login_handler.send_login_link()
-                self.alerter.send('Daily login required! Check Telegram for the login link. You have 5 minutes.')
+                # Scheduler already sent the login link at 7:55 AM
+                # Just wait silently for the token to be saved
                 success = login_handler.wait_for_login(timeout=300)
                 if not success:
-                    self.alerter.send('Login failed or timed out! Restart bot and try again.')
+                    self.alerter.send('⚠️ Login timed out! Send <b>Login</b> in Telegram to get the link again.')
                     return
             login_handler = ZerodhaLogin(api_key, api_secret, TELEGRAM)
             self.kite = login_handler.get_kite_instance()
@@ -228,19 +228,7 @@ class TradingBot:
                 logger.info("Capital synced from Zerodha: Rs.%s", self.current_capital)
             self.alerter.send('Zerodha Connected! Funds: Rs.' + str(funds) + ' Live trading starts at 9:15 AM')
 
-        # ── WEEKEND CHECK (already handled above) ─────────────
-        if date.today().weekday() >= 5:
-            day_name = date.today().strftime('%A')
-            logger.warning("Today is %s - no trading", day_name)
-            self.alerter.send('Weekend - No Trading\nToday is ' + day_name)
-            return
-
-        # Holiday check
-        if self.holiday_checker and self.holiday_checker.is_holiday():
-            holiday_name = 'Market Holiday'
-            logger.warning("Today is holiday: %s", holiday_name)
-            self.alerter.send('Holiday - No Trading\n' + str(holiday_name))
-            return
+        # (Weekend + holiday already checked above before login)
 
         # Startup message
         overall_pnl = self.current_capital - self.starting_capital
