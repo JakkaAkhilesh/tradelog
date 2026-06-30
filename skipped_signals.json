@@ -633,5 +633,17 @@
       "adx": 21.8
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-06-30T10:00:58.853040",
+    "date": "2026-06-30",
+    "time": "10:00",
+    "strategy": "TRAP",
+    "direction": "BUY",
+    "reason": "ADX 13.7 < 22",
+    "conditions": {
+      "adx": 13.7
+    },
+    "mode": "live"
   }
 ]
