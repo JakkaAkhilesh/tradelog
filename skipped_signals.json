@@ -657,5 +657,17 @@
       "adx": 14.6
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-07-02T09:20:19.874964",
+    "date": "2026-07-02",
+    "time": "09:20",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "reason": "ADX 17.0 < 22",
+    "conditions": {
+      "adx": 17.0
+    },
+    "mode": "live"
   }
 ]
