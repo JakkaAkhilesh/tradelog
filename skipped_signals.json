@@ -669,5 +669,30 @@
       "adx": 17.0
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-07-03T09:21:32.854320",
+    "date": "2026-07-03",
+    "time": "09:21",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "reason": "SL compressed 86% from original. Strategy needs 167.6 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 167.6,
+      "risk_inr": 10893
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-07-03T10:02:41.176437",
+    "date": "2026-07-03",
+    "time": "10:02",
+    "strategy": "TRAP",
+    "direction": "SELL",
+    "reason": "ADX 50.4 >= 50 (exhaustion)",
+    "conditions": {
+      "adx": 50.4
+    },
+    "mode": "live"
   }
 ]
