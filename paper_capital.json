@@ -1,42 +1,10 @@
 {
-  "current_capital": 49520.95,
+  "current_capital": 50396.75,
   "starting_capital": 50000,
-  "total_pnl": -479.05,
-  "last_saved_date": "2026-07-02",
-  "last_saved_time": "15:25:41",
+  "total_pnl": 396.75,
+  "last_saved_date": "2026-07-03",
+  "last_saved_time": "15:25:19",
   "history": [
-    {
-      "date": "2026-06-04",
-      "time": "15:39:45",
-      "capital": 51411.75,
-      "today_change": 0.0,
-      "total_pnl": 1411.75,
-      "reason": "morning_zerodha_sync"
-    },
-    {
-      "date": "2026-06-04",
-      "time": "15:39:47",
-      "capital": 51411.75,
-      "today_change": 0.0,
-      "total_pnl": 1411.75,
-      "reason": "end_of_day"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "08:24:04",
-      "capital": 51258.0,
-      "today_change": 0.0,
-      "total_pnl": 1258.0,
-      "reason": "morning_zerodha_sync"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "10:05:25",
-      "capital": 50166.0,
-      "today_change": 0.0,
-      "total_pnl": 166.0,
-      "reason": "sl"
-    },
     {
       "date": "2026-06-05",
       "time": "10:05:29",
@@ -723,6 +691,38 @@
       "capital": 49520.95,
       "today_change": 0.0,
       "total_pnl": -479.05,
+      "reason": "end_of_day"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "09:20:30",
+      "capital": 49392.5,
+      "today_change": 0.0,
+      "total_pnl": -607.5,
+      "reason": "morning_zerodha_sync"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "14:50:10",
+      "capital": 50396.75,
+      "today_change": 0.0,
+      "total_pnl": 396.75,
+      "reason": "extended_trail"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "14:50:10",
+      "capital": 50396.75,
+      "today_change": 0.0,
+      "total_pnl": 396.75,
+      "reason": "extended_trail_corrected"
+    },
+    {
+      "date": "2026-07-03",
+      "time": "15:25:19",
+      "capital": 50396.75,
+      "today_change": 0.0,
+      "total_pnl": 396.75,
       "reason": "end_of_day"
     }
   ]
