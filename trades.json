@@ -514,7 +514,9 @@
     "vix_ratio": 1.0,
     "exit_price": "",
     "reason": "Manual skip - pre-live testing phase. Orders not placed intentionally.",
-    "notes": "Bot was in testing mode on 18 May before going live."
+    "notes": "Bot was in testing mode on 18 May before going live.",
+    "id": "NTS_SELL_2026-05-18",
+    "status": "closed"
   },
   {
     "date": "2026-05-18",
@@ -531,7 +533,9 @@
     "vix_ratio": 1.0,
     "exit_price": "",
     "reason": "Manual skip - pre-live testing phase. Orders not placed intentionally.",
-    "notes": "Bot was in testing mode on 18 May before going live."
+    "notes": "Bot was in testing mode on 18 May before going live.",
+    "id": "DBY_SELL_2026-05-18",
+    "status": "closed"
   },
   {
     "date": "2026-05-18",
@@ -548,7 +552,9 @@
     "vix_ratio": 1.0,
     "exit_price": "",
     "reason": "Manual skip - pre-live testing phase. Orders not placed intentionally.",
-    "notes": "Bot was in testing mode on 18 May before going live."
+    "notes": "Bot was in testing mode on 18 May before going live.",
+    "id": "TRAP_BUY_2026-05-18",
+    "status": "closed"
   },
   {
     "date": "2026-05-19",
@@ -565,7 +571,9 @@
     "vix_ratio": 1.0,
     "exit_price": "",
     "reason": "Manual skip - pre-live testing phase.",
-    "notes": "Bot was in testing mode on 19 May before going live."
+    "notes": "Bot was in testing mode on 19 May before going live.",
+    "id": "NTS_BUY_2026-05-19",
+    "status": "closed"
   },
   {
     "date": "2026-05-19",
@@ -582,7 +590,9 @@
     "vix_ratio": 1.0,
     "notes": "Wrong symbol format - fixed after",
     "exit_price": "",
-    "reason": "Wrong symbol format - Zerodha symbol lookup failed."
+    "reason": "Wrong symbol format - Zerodha symbol lookup failed.",
+    "id": "DBY_BUY_2026-05-19",
+    "status": "closed"
   },
   {
     "date": "2026-05-22",
@@ -599,7 +609,9 @@
     "vix_ratio": 1.0,
     "notes": "Limit order placed at Rs.1 instead of Rs.125 - no LTP available (Personal API). Cancelled manually.",
     "exit_price": "",
-    "reason": "Limit order placed at Rs.1 instead of Rs.125 - LTP fetch failed (Personal API plan)."
+    "reason": "Limit order placed at Rs.1 instead of Rs.125 - LTP fetch failed (Personal API plan).",
+    "id": "GAP_SELL_2026-05-22",
+    "status": "closed"
   },
   {
     "date": "2026-05-25",
@@ -618,7 +630,9 @@
     "adx": 44.2,
     "vix_ratio": 1.0,
     "lots": 1,
-    "notes": "First successful live trade. Exit order failed (qty=75 bug). Manual exit at 11:05."
+    "notes": "First successful live trade. Exit order failed (qty=75 bug). Manual exit at 11:05.",
+    "id": "TRAP_BUY_2026-05-25",
+    "status": "closed"
   },
   {
     "date": "2026-05-26",
@@ -637,7 +651,9 @@
     "adx": 23.6,
     "vix_ratio": 0.97,
     "lots": 1,
-    "notes": "Duplicate direction bug - NTS and DBY both fired BUY on same strike creating 130 qty. Manual exit at loss. Fixed duplicate check after."
+    "notes": "Duplicate direction bug - NTS and DBY both fired BUY on same strike creating 130 qty. Manual exit at loss. Fixed duplicate check after.",
+    "id": "NTS_BUY_2026-05-26",
+    "status": "closed"
   },
   {
     "date": "2026-05-26",
@@ -656,7 +672,9 @@
     "adx": 23.6,
     "vix_ratio": 0.97,
     "lots": 1,
-    "notes": "Duplicate direction bug - same as NTS above. Both combined to 130 qty in Zerodha."
+    "notes": "Duplicate direction bug - same as NTS above. Both combined to 130 qty in Zerodha.",
+    "id": "DBY_BUY_2026-05-26",
+    "status": "closed"
   },
   {
     "date": "2026-05-27",
@@ -675,7 +693,9 @@
     "adx": 36.9,
     "vix_ratio": 1.04,
     "lots": 1,
-    "notes": "Clean trade. Bot exit worked correctly."
+    "notes": "Clean trade. Bot exit worked correctly.",
+    "id": "DBY_SELL_2026-05-27",
+    "status": "closed"
   },
   {
     "date": "2026-05-27",
@@ -694,7 +714,9 @@
     "adx": 23.6,
     "vix_ratio": 1.04,
     "lots": 1,
-    "notes": "Bot restarted while trade was open. Manual exit at Rs.174.80."
+    "notes": "Bot restarted while trade was open. Manual exit at Rs.174.80.",
+    "id": "NTS_BUY_2026-05-27",
+    "status": "closed"
   },
   {
     "id": "DBY_SELL_2026-06-01",
