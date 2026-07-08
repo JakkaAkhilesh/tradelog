@@ -1825,7 +1825,18 @@
     "exit_time": "2026-07-08T10:17:16",
     "reason": "DBY BUY: manual exit at 136.20",
     "notes": "Manual exit. Bot restart issue caused logging gap.",
-    "capital_after": 41901.4
+    "capital_after": 41901.4,
+    "entry": 24200.0,
+    "sl": 24185.0,
+    "target": 24236.0,
+    "rr": 1.8,
+    "exit": 24220.0,
+    "entry_price": 24200.0,
+    "exit_price": 24220.0,
+    "points": 9.2,
+    "was_adjusted": true,
+    "risk_inr": 1500,
+    "reward_inr": 2700
   },
   {
     "id": "TRAP_BUY_2026-07-08",
@@ -1847,7 +1858,18 @@
     "exit_time": "2026-07-08T10:17:21",
     "reason": "TRAP BUY: Break above CDH",
     "notes": "Bot restart at 10:13 caused duplicate entry. This is the first TRAP lot.",
-    "capital_after": 41511.4
+    "capital_after": 41511.4,
+    "entry": 24258.0,
+    "sl": 24234.92,
+    "target": 24304.16,
+    "rr": 2.0,
+    "exit": 24240.0,
+    "entry_price": 24258.0,
+    "exit_price": 24240.0,
+    "points": -6.0,
+    "was_adjusted": true,
+    "risk_inr": 1500,
+    "reward_inr": 3000
   },
   {
     "id": "TRAP_BUY_2026-07-08_DUP",
@@ -1869,6 +1891,17 @@
     "exit_time": "2026-07-08T10:17:21",
     "reason": "TRAP BUY: Duplicate entry caused by bot restart",
     "notes": "BUG: Bot restarted mid-session, signal_fired_today reset, TRAP fired again. Fix pending.",
-    "capital_after": 41241.65
+    "capital_after": 41241.65,
+    "entry": 24258.0,
+    "sl": 24234.92,
+    "target": 24304.16,
+    "rr": 2.0,
+    "exit": 24240.0,
+    "entry_price": 24258.0,
+    "exit_price": 24240.0,
+    "points": -4.15,
+    "was_adjusted": true,
+    "risk_inr": 1500,
+    "reward_inr": 3000
   }
 ]
