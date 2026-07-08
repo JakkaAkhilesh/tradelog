@@ -230,6 +230,67 @@ class TradingBot:
 
         # (Weekend + holiday already checked above before login)
 
+        # ── REBUILD OPEN TRADES FROM JOURNAL ON RESTART ────
+        # If bot restarted mid-session, reload any open trades from
+        # trades.json so the bot can resume monitoring and strategies
+        # won't fire duplicate entries.
+        try:
+            import json as _json
+            from datetime import date as _date
+            _today = str(_date.today())
+            with open('logs/trades.json') as _f:
+                _all_trades = _json.load(_f)
+            _open_today = [t for t in _all_trades
+                           if t.get('status') == 'open'
+                           and t.get('mode') == 'live'
+                           and _today in str(t.get('date', t.get('entry_time', '')))]
+            if _open_today:
+                logger.warning("Reloading %d open trade(s) from journal after restart",
+                               len(_open_today))
+                for t in _open_today:
+                    self.open_trades[t['id']] = t
+                    # Mark that strategy as fired today so it won't enter again
+                    strat_name = t.get('strategy', '')
+                    strat_key_map = {
+                        'NTS': 'NTS', 'DBY': 'DBY', 'TRAP': 'TRAP',
+                        'GAP': 'GAP', '15MIN': '15MIN', 'CB90': 'CB90'
+                    }
+                    strat_obj = self.strategies.get(strat_key_map.get(strat_name, ''))
+                    if strat_obj:
+                        if hasattr(strat_obj, 'signal_fired_today'):
+                            strat_obj.signal_fired_today = True
+                        if hasattr(strat_obj, 'last_signal_date'):
+                            strat_obj.last_signal_date = _date.today()
+                    logger.info("Resumed monitoring: %s (strategy=%s)", t['id'], strat_name)
+                if self.mode == 'live':
+                    self.alerter.send(
+                        f'♻️ <b>Bot Restarted — Resuming {len(_open_today)} open trade(s)</b>\n'
+                        + '\n'.join([f"• {t['strategy']} {t['direction']} | Entry: Rs.{t.get('entry_premium','?')}"
+                                      for t in _open_today]))
+            else:
+                # No open trades — but still mark strategies as fired if
+                # they already traded today (prevents re-entry after restart)
+                _closed_today = [t for t in _all_trades
+                                 if t.get('mode') == 'live'
+                                 and _today in str(t.get('date', t.get('entry_time', '')))]
+                fired_strategies = set(t.get('strategy') for t in _closed_today)
+                strat_key_map = {
+                    'NTS': 'NTS', 'DBY': 'DBY', 'TRAP': 'TRAP',
+                    'GAP': 'GAP', '15MIN': '15MIN', 'CB90': 'CB90'
+                }
+                for strat_name in fired_strategies:
+                    strat_obj = self.strategies.get(strat_key_map.get(strat_name, ''))
+                    if strat_obj:
+                        if hasattr(strat_obj, 'signal_fired_today'):
+                            strat_obj.signal_fired_today = True
+                        if hasattr(strat_obj, 'last_signal_date'):
+                            strat_obj.last_signal_date = _date.today()
+                if fired_strategies:
+                    logger.info("Marked as fired today after restart: %s",
+                                ', '.join(fired_strategies))
+        except Exception as _e:
+            logger.warning("Could not reload open trades from journal: %s", _e)
+
         # Startup message
         overall_pnl = self.current_capital - self.starting_capital
         overall = ('+Rs.' if overall_pnl >= 0 else '-Rs.') + str(abs(round(overall_pnl, 2)))
