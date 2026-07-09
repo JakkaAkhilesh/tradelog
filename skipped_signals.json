@@ -742,5 +742,17 @@
       "adx": 13.2
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-07-09T13:51:27.537490",
+    "date": "2026-07-09",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "reason": "ADX 13.0 < 22",
+    "conditions": {
+      "adx": 13.0
+    },
+    "mode": "live"
   }
 ]
