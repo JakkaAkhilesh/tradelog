@@ -3,16 +3,8 @@
   "starting_capital": 50000,
   "total_pnl": -614.6,
   "last_saved_date": "2026-07-10",
-  "last_saved_time": "11:46:58",
+  "last_saved_time": "15:25:11",
   "history": [
-    {
-      "date": "2026-06-17",
-      "time": "11:01:26",
-      "capital": 47851.2,
-      "today_change": 0.0,
-      "total_pnl": -2148.8,
-      "reason": "extended_trail_corrected"
-    },
     {
       "date": "2026-06-17",
       "time": "11:47:30",
@@ -724,6 +716,14 @@
       "today_change": 0.0,
       "total_pnl": -614.6,
       "reason": "extended_trail_corrected"
+    },
+    {
+      "date": "2026-07-10",
+      "time": "15:25:11",
+      "capital": 49385.4,
+      "today_change": 0.0,
+      "total_pnl": -614.6,
+      "reason": "end_of_day"
     }
   ]
 }
