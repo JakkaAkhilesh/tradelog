@@ -651,8 +651,13 @@ class TradingBot:
         # Live mode: only reaches here if fill_price > 0
         self.open_trades[trade['id']] = trade
         self.risk.record_trade_entry(trade)
-        # NOTE: Do NOT log to journal at entry — log only at exit
-        # This prevents ghost entries with no exit data in trades.json
+        # Log to journal at ENTRY with status=open so bot can reload
+        # after restart. On exit, _log_to_journal updates same record.
+        try:
+            self._log_to_journal(trade)
+            logger.info("Trade entry logged to journal: %s", trade['id'])
+        except Exception as _je:
+            logger.warning("Could not log entry to journal: %s", _je)
 
         # FIX: Single SL order at premium_sl price with 4-point buffer
         if self.mode == 'live' and self.live_trader and trade.get('option_symbol') and trade.get('entry_premium', 0) > 0 and not trade.get('sl_order_placed'):
@@ -1037,7 +1042,16 @@ class TradingBot:
             if os.path.exists(log_file):
                 with open(log_file, 'r') as f:
                     trades = json.load(f)
-            trades.append(trade)
+            # Update existing record if same id exists, else append
+            trade_id = trade.get('id')
+            updated = False
+            for i, t in enumerate(trades):
+                if t.get('id') == trade_id:
+                    trades[i] = trade
+                    updated = True
+                    break
+            if not updated:
+                trades.append(trade)
             with open(log_file, 'w') as f:
                 json.dump(trades, f, indent=2, default=str)
         except Exception as e:
