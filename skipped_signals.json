@@ -1054,5 +1054,17 @@
       "adx": 13.5
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-07-13T10:29:33.076091",
+    "date": "2026-07-13",
+    "time": "10:29",
+    "strategy": "15MIN",
+    "direction": "BUY",
+    "reason": "ADX 21.8 < 22",
+    "conditions": {
+      "adx": 21.8
+    },
+    "mode": "live"
   }
 ]
