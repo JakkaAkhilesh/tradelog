@@ -27,6 +27,9 @@ from strategies.trap_trading import TrapTrading
 from strategies.gap_fill_strategy import GapFillStrategy
 from strategies.dby_strategy import DbyStrategy
 from strategies.cb90_strategy import CB90Strategy
+from core.trade_analyst import generate_trade_commentary
+from core.pattern_learner import increment_trade_count, run_10_trade_review, apply_recommendations, reset_learned_filters
+from core.learned_filters import should_skip_signal, get_active_filters_summary
 
 os.makedirs('logs', exist_ok=True)
 logging.basicConfig(
@@ -94,6 +97,7 @@ class TradingBot:
         self.open_trades = {}
         self.pending_approvals = {}
         self.running = False
+        self._pending_recommendations = []  # from 10-trade review
         self._vix_data = None
         self._vix_last_fetch = None
 
@@ -402,8 +406,28 @@ class TradingBot:
                     continue
                 result = strategy.check_signal(df)
                 if result['signal']:
-                    logger.info("SIGNAL [%s]: %s", name, result['reason'])
-                    self._handle_signal(name, result, df_5m, vix_data)
+                    # ── LEARNED FILTER CHECK ─────────────────────
+                    from datetime import datetime as _dt
+                    _day = _dt.now().strftime('%A')
+                    _time = _dt.now().strftime('%H:%M')
+                    _skip, _skip_reason = should_skip_signal(
+                        name, result, _time, _day)
+                    if _skip:
+                        logger.info("[%s] SKIPPED by learned filter: %s",
+                                    name, _skip_reason)
+                        self.risk.log_skipped_signal(
+                            name, result.get('direction','?'),
+                            _skip_reason, result)
+                        try:
+                            sync_after_skip({'strategy': name,
+                                'direction': result.get('direction'),
+                                'skip_reason': 'learned_filter',
+                                'reason': _skip_reason})
+                        except Exception:
+                            pass
+                    else:
+                        logger.info("SIGNAL [%s]: %s", name, result['reason'])
+                        self._handle_signal(name, result, df_5m, vix_data)
                 else:
                     if 'already fired' in result['reason']:
                         logger.info("%s: Day complete", name)
@@ -858,6 +882,24 @@ class TradingBot:
             'vix_ratio': trade.get('vix_ratio_at_entry', ''),
         })
         self.risk.record_trade_exit(trade_id, result, pnl)
+
+        # TRADE INTELLIGENCE: per-trade commentary
+        try:
+            commentary = generate_trade_commentary(trade)
+            self.alerter.send(commentary)
+        except Exception as _e:
+            logger.debug("Trade commentary error: %s", _e)
+
+        # TRADE INTELLIGENCE: 10-trade pattern review
+        try:
+            should_review = increment_trade_count()
+            if should_review:
+                review_msg, self._pending_recommendations = run_10_trade_review()
+                if review_msg:
+                    self.alerter.send(review_msg)
+                    logger.info("10-trade review sent via Telegram")
+        except Exception as _e:
+            logger.debug("Pattern review error: %s", _e)
 
         # NOTE: _log_to_journal and sync_after_trade are called AFTER
         # the live fill correction below, so the journal always reflects
