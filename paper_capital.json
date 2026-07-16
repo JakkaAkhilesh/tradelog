@@ -1,5 +1,5 @@
 {
-  "current_capital": 43865.35,
+  "current_capital": 41460.35,
   "starting_capital": 50000,
   "total_pnl": -6134.65,
   "last_saved_date": "2026-07-16",
@@ -725,5 +725,6 @@
       "total_pnl": -6134.65,
       "reason": "end_of_day"
     }
-  ]
+  ],
+  "last_updated": "2026-07-16"
 }
