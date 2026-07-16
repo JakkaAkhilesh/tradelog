@@ -455,7 +455,8 @@ class TradingBot:
             reason = 'ADX ' + str(round(adx,1)) + ' < ' + str(ADX_STRIKE_RULES['no_trade_below'])
             logger.info("[%s] SKIPPED: %s", strategy_name, reason)
             self.risk.log_skipped_signal(strategy_name, direction, reason,
-                                          {'adx': round(adx,1)})
+                                          {'adx': round(adx,1)},
+                                          skip_reason='adx_too_low')
             if GITHUB_SYNC:
                 try: sync_after_skip({'strategy': strategy_name, 'direction': direction, 'skip_reason': 'adx_too_low', 'reason': reason})
                 except Exception: pass
@@ -465,7 +466,8 @@ class TradingBot:
             reason = 'ADX ' + str(round(adx,1)) + ' >= 50 (exhaustion)'
             logger.info("[%s] SKIPPED: %s", strategy_name, reason)
             self.risk.log_skipped_signal(strategy_name, direction, reason,
-                                          {'adx': round(adx,1)})
+                                          {'adx': round(adx,1)},
+                                          skip_reason='adx_exhaustion')
             return
 
         # ── VIX REGIME CHECK ─────────────────────────────────
@@ -478,20 +480,38 @@ class TradingBot:
             logger.info("[%s] SKIPPED: VIX - %s", strategy_name, vix_reason)
             self.risk.log_skipped_signal(strategy_name, direction,
                 'VIX: ' + vix_reason,
-                {'vix': vix_data.get('current'), 'ratio': vix_ratio})
+                {'vix': vix_data.get('current'), 'ratio': vix_ratio},
+                skip_reason='vix_filter')
             return
 
         # ── SMART RISK ADJUSTER ──────────────────────────────
+        # Pass strategy name for per-strategy exceptions (e.g. DBY compression)
+        # Also pass per-strategy risk override if configured in settings
+        _strat_params = STRATEGY_PARAMS.get(
+            {'NTS':'nifty_triple_sync','DBY':'dby_strategy',
+             'GAP':'gap_fill','TRAP':'trap_trading',
+             'CB90':'cb90','15MIN':'fifteen_min'}.get(strategy_name, ''), {})
+        _risk_override = _strat_params.get('risk_per_trade', None)
+        if _risk_override:
+            self.risk.risk_per_trade = _risk_override
         adjusted = self.risk.adjust_trade_to_risk(
             entry=entry, sl=signal['sl'],
-            target=signal['target'], direction=direction)
+            target=signal['target'], direction=direction,
+            strategy=strategy_name)
+        if _risk_override:
+            self.risk.risk_per_trade = CAPITAL.get('risk_per_trade', 1500)
 
         if adjusted.get('skip'):
             logger.warning("[%s] SKIPPED: %s", strategy_name, adjusted['reason'])
+            _skip_reason = adjusted.get('skip_reason', 'sl_compression')
+            _comp_ratio  = adjusted.get('compression_ratio', None)
+            _comp_pct    = round((1 - _comp_ratio) * 100) if _comp_ratio else None
             self.risk.log_skipped_signal(strategy_name, direction,
                 adjusted['reason'],
                 {'sl_pts': adjusted.get('original_sl_pts'),
-                 'risk_inr': adjusted.get('original_risk_inr')})
+                 'risk_inr': adjusted.get('original_risk_inr')},
+                skip_reason=_skip_reason,
+                compression_pct=_comp_pct)
             self.alerter.send(
                 '<b>Signal Skipped - SL Too Tight</b>\n'
                 'Strategy: ' + strategy_name + '\n'
