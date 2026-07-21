@@ -1078,5 +1078,86 @@
       "adx": 11.4
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-07-21T09:35:43.387927",
+    "date": "2026-07-21",
+    "time": "09:35",
+    "strategy": "15MIN",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 24218.9,
+      "sl": 24229.48,
+      "target": 24197.27,
+      "rr": 2.04,
+      "reason": "15MIN SELL: Price(24219) < EMA50(24220), Target=EMA200(24197), RR=1:2.04",
+      "conditions": {
+        "price": 24218.9,
+        "ema13": 24231.86,
+        "ema50": 24219.93,
+        "ema200": 24197.27,
+        "is_definitive": "True"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-07-21T09:53:47.608744",
+    "date": "2026-07-21",
+    "time": "09:53",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "BUY",
+      "entry_price": 24238.95,
+      "sl": 24208.6,
+      "target": 24311.78,
+      "rr": 2.4,
+      "reason": "NTS BUY: Price(24239) > EMA200(24214), ST=Green, ADX=24.6, RR=1:2.40",
+      "conditions": {
+        "price": 24238.95,
+        "ema200": 24214.31,
+        "price_above_ema": true,
+        "adx": 24.56,
+        "adx_strong": true,
+        "supertrend_bullish": true,
+        "is_definitive_candle": "True",
+        "is_bullish_candle": "True",
+        "time": "09:53"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-07-21T10:01:49.057106",
+    "date": "2026-07-21",
+    "time": "10:01",
+    "strategy": "TRAP",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 24225.5,
+      "sl": 24253.62,
+      "target": 24169.26,
+      "rr": 2.0,
+      "reason": "TRAP SELL: Break below CDL(24225) + retrace + DCC",
+      "conditions": {
+        "price": 24225.5,
+        "cdh": 24233.6,
+        "cdl": 24225.2,
+        "time": "10:01"
+      }
+    },
+    "mode": "live"
   }
 ]
