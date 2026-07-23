@@ -1172,5 +1172,31 @@
       "adx": 18.7
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-07-23T09:20:53.085379",
+    "date": "2026-07-23",
+    "time": "09:20",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 19.3 < 22",
+    "conditions": {
+      "adx": 19.3
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-07-23T09:25:54.004226",
+    "date": "2026-07-23",
+    "time": "09:25",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 19.5 < 22",
+    "conditions": {
+      "adx": 19.5
+    },
+    "mode": "live"
   }
 ]
