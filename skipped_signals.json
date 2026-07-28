@@ -1198,5 +1198,85 @@
       "adx": 19.5
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-07-28T09:17:00.925810",
+    "date": "2026-07-28",
+    "time": "09:17",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "BUY",
+      "entry_price": 24005.05,
+      "sl": 23995.73,
+      "target": 24021.83,
+      "rr": 1.8,
+      "reason": "DBY BUY: Price(24005) broke 2-day high(24004), RR=1:1.8",
+      "conditions": {
+        "price": 24005.05,
+        "prev2_high": 24003.65,
+        "prev2_low": 23666.35,
+        "is_definitive": "True"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-07-28T09:19:01.437726",
+    "date": "2026-07-28",
+    "time": "09:19",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "BUY",
+      "entry_price": 24030.95,
+      "sl": 23963.9,
+      "target": 24191.86,
+      "rr": 2.4,
+      "reason": "NTS BUY: Price(24031) > EMA200(23907), ST=Green, ADX=23.8, RR=1:2.40",
+      "conditions": {
+        "price": 24030.95,
+        "ema200": 23906.82,
+        "price_above_ema": true,
+        "adx": 23.81,
+        "adx_strong": true,
+        "supertrend_bullish": true,
+        "is_definitive_candle": "True",
+        "is_bullish_candle": "True",
+        "time": "09:19"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-07-28T10:15:12.945609",
+    "date": "2026-07-28",
+    "time": "10:15",
+    "strategy": "TRAP",
+    "direction": "BUY",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "BUY",
+      "entry_price": 23988.55,
+      "sl": 23959.7,
+      "target": 24046.26,
+      "rr": 2.0,
+      "reason": "TRAP BUY: Break above CDH(24014) + retrace + DCC",
+      "conditions": {
+        "price": 23988.55,
+        "cdh": 24013.55,
+        "cdl": 23961.95,
+        "time": "10:15"
+      }
+    },
+    "mode": "live"
   }
 ]
