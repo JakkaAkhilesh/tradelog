@@ -1818,12 +1818,18 @@
     "status": "closed",
     "mode": "live",
     "order_id": "260729220164015",
-    "entry_time": "2026-07-29T09:27:48.409113",
+    "entry_time": "2026-07-29T09:27:48",
     "sl_order_id": "260729220164026",
     "sl_order_placed": true,
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 140.75,
-    "result": "sl"
+    "result": "target",
+    "exit_premium": 140.25,
+    "pnl": 146.25,
+    "date": "2026-07-29",
+    "exit_time": "2026-07-29T09:58:40",
+    "result_raw": "target",
+    "time": "09:27"
   },
   {
     "id": "TRAP_BUY_2026-07-29",
@@ -1865,12 +1871,18 @@
     "status": "closed",
     "mode": "live",
     "order_id": "260729220355873",
-    "entry_time": "2026-07-29T10:05:43.441101",
+    "entry_time": "2026-07-29T10:05:43",
     "sl_order_id": "260729220355877",
     "sl_order_placed": true,
     "exit_trigger": "premium_sl",
     "current_premium_at_exit": 144.25,
-    "result": "sl"
+    "result": "sl",
+    "exit_premium": 145.3,
+    "pnl": -100.75,
+    "date": "2026-07-29",
+    "exit_time": "2026-07-29T10:11:33",
+    "result_raw": "sl",
+    "time": "10:05"
   },
   {
     "id": "GAP_SELL_2026-07-29",
@@ -1912,12 +1924,18 @@
     "status": "closed",
     "mode": "live",
     "order_id": "260729220857335",
-    "entry_time": "2026-07-29T13:40:40.042387",
+    "entry_time": "2026-07-29T13:40:40",
     "sl_order_id": "260729220857340",
     "sl_order_placed": true,
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 135.0,
-    "result": "sl"
+    "result": "sl",
+    "exit_premium": 135.05,
+    "pnl": -273.0,
+    "date": "2026-07-29",
+    "exit_time": "2026-07-29T13:48:26",
+    "result_raw": "sl",
+    "time": "13:40"
   },
   {
     "id": "CB90_BUY_2026-07-29",
@@ -1959,10 +1977,16 @@
     "status": "closed",
     "mode": "live",
     "order_id": "260729220978462",
-    "entry_time": "2026-07-29T14:32:36.539656",
+    "entry_time": "2026-07-29T14:32:36",
     "sl_order_id": "260729220978467",
     "sl_order_placed": true,
-    "result": "squareoff"
+    "result": "sl",
+    "exit_premium": 127.5,
+    "pnl": -575.25,
+    "date": "2026-07-29",
+    "exit_time": "2026-07-29T15:10:08",
+    "result_raw": "sl",
+    "time": "14:32"
   },
   {
     "id": "DBY_BUY_2026-07-30",
@@ -2004,12 +2028,18 @@
     "status": "closed",
     "mode": "live",
     "order_id": "260730220221031",
-    "entry_time": "2026-07-30T09:32:39.307936",
+    "entry_time": "2026-07-30T09:32:38",
     "sl_order_id": "260730220221149",
     "sl_order_placed": true,
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 89.2,
-    "result": "sl"
+    "result": "sl",
+    "exit_premium": 88.5,
+    "pnl": -939.25,
+    "date": "2026-07-30",
+    "exit_time": "2026-07-30T09:37:04",
+    "result_raw": "sl",
+    "time": "09:32"
   },
   {
     "id": "TRAP_SELL_2026-07-30",
@@ -2051,12 +2081,18 @@
     "status": "closed",
     "mode": "live",
     "order_id": "260730220418441",
-    "entry_time": "2026-07-30T10:06:12.120957",
+    "entry_time": "2026-07-30T10:06:12",
     "sl_order_id": "260730220418444",
     "sl_order_placed": true,
     "exit_trigger": "target",
     "current_premium_at_exit": 140.15,
-    "result": "target"
+    "result": "target",
+    "exit_premium": 138.0,
+    "pnl": 1543.75,
+    "date": "2026-07-30",
+    "exit_time": "2026-07-30T10:30:49",
+    "result_raw": "target",
+    "time": "10:06"
   },
   {
     "id": "DBY_BUY_2026-07-31",
@@ -2098,12 +2134,18 @@
     "status": "closed",
     "mode": "live",
     "order_id": "260731220255257",
-    "entry_time": "2026-07-31T09:41:30.742287",
+    "entry_time": "2026-07-31T09:41:30",
     "sl_order_id": "260731220255266",
     "sl_order_placed": true,
     "exit_trigger": "target",
     "current_premium_at_exit": 131.1,
-    "result": "target"
+    "result": "target",
+    "exit_premium": 131.25,
+    "pnl": 874.25,
+    "date": "2026-07-31",
+    "exit_time": "2026-07-31T11:20:34",
+    "result_raw": "target",
+    "time": "09:41"
   },
   {
     "id": "CB90_BUY_2026-07-31",
@@ -2145,11 +2187,17 @@
     "status": "closed",
     "mode": "live",
     "order_id": "260731220760074",
-    "entry_time": "2026-07-31T12:46:53.831856",
+    "entry_time": "2026-07-31T12:46:53",
     "sl_order_id": "260731220760077",
     "sl_order_placed": true,
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 92.0,
-    "result": "sl"
+    "result": "sl",
+    "exit_premium": 91.65,
+    "pnl": -87.75,
+    "date": "2026-07-31",
+    "exit_time": "2026-07-31T13:33:43",
+    "result_raw": "sl",
+    "time": "12:46"
   }
 ]
