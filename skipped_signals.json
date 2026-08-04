@@ -1278,5 +1278,60 @@
       }
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-08-04T09:37:03.778646",
+    "date": "2026-08-04",
+    "time": "09:37",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "BUY",
+      "entry_price": 24597.75,
+      "sl": 24549.48,
+      "target": 24713.59,
+      "rr": 2.4,
+      "reason": "NTS BUY: Price(24598) > EMA200(24468), ST=Green, ADX=37.3, RR=1:2.40",
+      "conditions": {
+        "price": 24597.75,
+        "ema200": 24467.83,
+        "price_above_ema": true,
+        "adx": 37.26,
+        "adx_strong": true,
+        "supertrend_bullish": true,
+        "is_definitive_candle": "True",
+        "is_bullish_candle": "True",
+        "time": "09:37"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-08-04T10:00:08.130578",
+    "date": "2026-08-04",
+    "time": "10:00",
+    "strategy": "TRAP",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 24633.5,
+      "sl": 24673.34,
+      "target": 24553.82,
+      "rr": 2.0,
+      "reason": "TRAP SELL: Break below CDL(24632) + retrace + DCC",
+      "conditions": {
+        "price": 24633.5,
+        "cdh": 24633.8,
+        "cdl": 24632.2,
+        "time": "10:00"
+      }
+    },
+    "mode": "live"
   }
 ]
