@@ -1359,5 +1359,18 @@
       "adx": 13.1
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-08-12T09:15:42.291854",
+    "date": "2026-08-12",
+    "time": "09:15",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 17.9 < 22",
+    "conditions": {
+      "adx": 17.9
+    },
+    "mode": "live"
   }
 ]
