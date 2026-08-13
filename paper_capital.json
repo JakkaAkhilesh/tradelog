@@ -2,25 +2,9 @@
   "current_capital": 40436.3,
   "starting_capital": 50000,
   "total_pnl": -9563.7,
-  "last_saved_date": "2026-08-12",
-  "last_saved_time": "15:25:57",
+  "last_saved_date": "2026-08-13",
+  "last_saved_time": "15:25:59",
   "history": [
-    {
-      "date": "2026-07-17",
-      "time": "15:25:22",
-      "capital": 50201.1,
-      "today_change": 0.0,
-      "total_pnl": 201.1,
-      "reason": "end_of_day"
-    },
-    {
-      "date": "2026-07-20",
-      "time": "08:45:32",
-      "capital": 50074.0,
-      "today_change": 0.0,
-      "total_pnl": 74.0,
-      "reason": "morning_zerodha_sync"
-    },
     {
       "date": "2026-07-20",
       "time": "10:40:15",
@@ -720,6 +704,22 @@
     {
       "date": "2026-08-12",
       "time": "15:25:57",
+      "capital": 40436.3,
+      "today_change": 0.0,
+      "total_pnl": -9563.7,
+      "reason": "end_of_day"
+    },
+    {
+      "date": "2026-08-13",
+      "time": "13:25:33",
+      "capital": 40436.3,
+      "today_change": 0.0,
+      "total_pnl": -9563.7,
+      "reason": "morning_zerodha_sync"
+    },
+    {
+      "date": "2026-08-13",
+      "time": "15:25:59",
       "capital": 40436.3,
       "today_change": 0.0,
       "total_pnl": -9563.7,
