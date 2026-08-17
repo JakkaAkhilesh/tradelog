@@ -1,42 +1,10 @@
 {
-  "current_capital": 40436.3,
+  "current_capital": 41709.55,
   "starting_capital": 50000,
-  "total_pnl": -9563.7,
-  "last_saved_date": "2026-08-14",
-  "last_saved_time": "15:25:52",
+  "total_pnl": -8290.45,
+  "last_saved_date": "2026-08-17",
+  "last_saved_time": "15:25:09",
   "history": [
-    {
-      "date": "2026-07-20",
-      "time": "11:35:44",
-      "capital": 49258.25,
-      "today_change": 0.0,
-      "total_pnl": -741.75,
-      "reason": "sl"
-    },
-    {
-      "date": "2026-07-20",
-      "time": "11:35:45",
-      "capital": 49255.0,
-      "today_change": 0.0,
-      "total_pnl": -745.0,
-      "reason": "sl_corrected"
-    },
-    {
-      "date": "2026-07-20",
-      "time": "15:25:57",
-      "capital": 49255.0,
-      "today_change": 0.0,
-      "total_pnl": -745.0,
-      "reason": "end_of_day"
-    },
-    {
-      "date": "2026-07-21",
-      "time": "08:18:34",
-      "capital": 49139.9,
-      "today_change": 0.0,
-      "total_pnl": -860.1,
-      "reason": "morning_zerodha_sync"
-    },
     {
       "date": "2026-07-21",
       "time": "15:25:12",
@@ -723,6 +691,38 @@
       "capital": 40436.3,
       "today_change": 0.0,
       "total_pnl": -9563.7,
+      "reason": "end_of_day"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "09:36:13",
+      "capital": 40347.8,
+      "today_change": 0.0,
+      "total_pnl": -9652.2,
+      "reason": "morning_zerodha_sync"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:25:04",
+      "capital": 41729.05,
+      "today_change": 0.0,
+      "total_pnl": -8270.95,
+      "reason": "target"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "10:25:06",
+      "capital": 41709.55,
+      "today_change": 0.0,
+      "total_pnl": -8290.45,
+      "reason": "target_corrected"
+    },
+    {
+      "date": "2026-08-17",
+      "time": "15:25:09",
+      "capital": 41709.55,
+      "today_change": 0.0,
+      "total_pnl": -8290.45,
       "reason": "end_of_day"
     }
   ]
