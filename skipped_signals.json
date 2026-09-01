@@ -1435,5 +1435,30 @@
       }
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-09-01T09:16:06.488859",
+    "date": "2026-09-01",
+    "time": "09:16",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 24035.2,
+      "sl": 24090.55,
+      "target": 23935.57,
+      "rr": 1.8,
+      "reason": "DBY SELL: Price(24035) broke 2-day low(24080), RR=1:1.8",
+      "conditions": {
+        "price": 24035.2,
+        "prev2_high": 24175.65,
+        "prev2_low": 24080.4,
+        "is_definitive": "True"
+      }
+    },
+    "mode": "live"
   }
 ]
