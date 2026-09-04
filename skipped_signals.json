@@ -1473,5 +1473,122 @@
       "adx": 12.0
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T13:30:29.036212",
+    "date": "2026-09-04",
+    "time": "13:30",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 20.5 < 22",
+    "conditions": {
+      "adx": 20.5
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T13:31:29.252199",
+    "date": "2026-09-04",
+    "time": "13:31",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 20.5 < 22",
+    "conditions": {
+      "adx": 20.5
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T13:32:29.436390",
+    "date": "2026-09-04",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 20.7 < 22",
+    "conditions": {
+      "adx": 20.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T13:33:29.650888",
+    "date": "2026-09-04",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 20.8 < 22",
+    "conditions": {
+      "adx": 20.8
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T13:34:29.856058",
+    "date": "2026-09-04",
+    "time": "13:34",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 20.8 < 22",
+    "conditions": {
+      "adx": 20.8
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T13:55:33.901856",
+    "date": "2026-09-04",
+    "time": "13:55",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 17.7 < 22",
+    "conditions": {
+      "adx": 17.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T13:59:34.787043",
+    "date": "2026-09-04",
+    "time": "13:59",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 17.7 < 22",
+    "conditions": {
+      "adx": 17.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T14:01:35.125962",
+    "date": "2026-09-04",
+    "time": "14:01",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 17.4 < 22",
+    "conditions": {
+      "adx": 17.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-04T14:23:39.285272",
+    "date": "2026-09-04",
+    "time": "14:23",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
   }
 ]
