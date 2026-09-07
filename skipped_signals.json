@@ -1590,5 +1590,18 @@
       "adx": 14.0
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-09-07T12:31:56.586171",
+    "date": "2026-09-07",
+    "time": "12:31",
+    "strategy": "CB90",
+    "direction": "SELL",
+    "skip_reason": "adx_exhaustion",
+    "reason": "ADX 54.3 >= 50 (exhaustion)",
+    "conditions": {
+      "adx": 54.3
+    },
+    "mode": "live"
   }
 ]
