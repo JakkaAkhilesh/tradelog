@@ -1603,5 +1603,55 @@
       "adx": 54.3
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-09-08T09:24:20.978785",
+    "date": "2026-09-08",
+    "time": "09:24",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 23681.05,
+      "sl": 23787.75,
+      "target": 23488.99,
+      "rr": 1.8,
+      "reason": "DBY SELL: Price(23681) broke 2-day low(23779), RR=1:1.8",
+      "conditions": {
+        "price": 23681.05,
+        "prev2_high": 23910.9,
+        "prev2_low": 23779.15,
+        "is_definitive": "True"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-08T09:59:28.503796",
+    "date": "2026-09-08",
+    "time": "09:59",
+    "strategy": "ORB",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 23665.45,
+      "sl": 23758.95,
+      "target": 23291.45,
+      "rr": 4.0,
+      "reason": "ORB SELL: Break below opening range low(23670), SL at range high",
+      "conditions": {
+        "price": 23665.45,
+        "range_high": 23758.95,
+        "range_low": 23669.65,
+        "time": "09:59"
+      }
+    },
+    "mode": "live"
   }
 ]
