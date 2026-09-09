@@ -1,50 +1,10 @@
 {
-  "current_capital": 44613.0,
+  "current_capital": 43261.0,
   "starting_capital": 50000,
-  "total_pnl": -5387.0,
-  "last_saved_date": "2026-09-08",
-  "last_saved_time": "15:25:54",
+  "total_pnl": -6739.0,
+  "last_saved_date": "2026-09-09",
+  "last_saved_time": "15:25:23",
   "history": [
-    {
-      "date": "2026-08-05",
-      "time": "10:30:30",
-      "capital": 42843.45,
-      "today_change": 0.0,
-      "total_pnl": -7156.55,
-      "reason": "sl_corrected"
-    },
-    {
-      "date": "2026-08-05",
-      "time": "15:07:12",
-      "capital": 40890.2,
-      "today_change": 0.0,
-      "total_pnl": -9109.8,
-      "reason": "sl"
-    },
-    {
-      "date": "2026-08-05",
-      "time": "15:07:15",
-      "capital": 40776.45,
-      "today_change": 0.0,
-      "total_pnl": -9223.55,
-      "reason": "sl_corrected"
-    },
-    {
-      "date": "2026-08-05",
-      "time": "15:25:18",
-      "capital": 40776.45,
-      "today_change": 0.0,
-      "total_pnl": -9223.55,
-      "reason": "end_of_day"
-    },
-    {
-      "date": "2026-08-06",
-      "time": "09:55:27",
-      "capital": 40640.8,
-      "today_change": 0.0,
-      "total_pnl": -9359.2,
-      "reason": "morning_zerodha_sync"
-    },
     {
       "date": "2026-08-06",
       "time": "10:12:52",
@@ -723,6 +683,46 @@
       "capital": 44613.0,
       "today_change": 0.0,
       "total_pnl": -5387.0,
+      "reason": "end_of_day"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "08:45:40",
+      "capital": 44613.0,
+      "today_change": 0.0,
+      "total_pnl": -5387.0,
+      "reason": "morning_zerodha_sync"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "10:16:56",
+      "capital": 44086.5,
+      "today_change": 0.0,
+      "total_pnl": -5913.5,
+      "reason": "sl"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "13:56:14",
+      "capital": 43274.0,
+      "today_change": 0.0,
+      "total_pnl": -6726.0,
+      "reason": "sl"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "13:56:17",
+      "capital": 43261.0,
+      "today_change": 0.0,
+      "total_pnl": -6739.0,
+      "reason": "sl_corrected"
+    },
+    {
+      "date": "2026-09-09",
+      "time": "15:25:23",
+      "capital": 43261.0,
+      "today_change": 0.0,
+      "total_pnl": -6739.0,
       "reason": "end_of_day"
     }
   ]
