@@ -1666,5 +1666,20 @@
       "adx": 16.9
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-09-10T10:10:41.558636",
+    "date": "2026-09-10",
+    "time": "10:10",
+    "strategy": "ORB",
+    "direction": "SELL",
+    "skip_reason": "extreme_compression",
+    "reason": "SL compressed 72% from original. Strategy needs 82.9 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 82.9,
+      "risk_inr": 5385
+    },
+    "mode": "live",
+    "compression_pct": 72
   }
 ]
