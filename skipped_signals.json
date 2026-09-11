@@ -1,151 +1,5 @@
 [
   {
-    "datetime": "2026-05-12T09:21:32.631731",
-    "date": "2026-05-12",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "reason": "SL compressed 82% from original. Strategy needs 113.7 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 113.7,
-      "risk_inr": 8525
-    },
-    "skip_reason": "extreme_compression",
-    "compression_pct": 82,
-    "mode": "paper"
-  },
-  {
-    "datetime": "2026-05-12T10:03:01.071716",
-    "date": "2026-05-12",
-    "strategy": "TRAP",
-    "direction": "SELL",
-    "reason": "ADX 56.7 >= 50 (exhaustion)",
-    "conditions": {
-      "adx": 56.7
-    },
-    "skip_reason": "adx_exhaustion",
-    "mode": "paper"
-  },
-  {
-    "datetime": "2026-05-14T09:41:19.177712",
-    "date": "2026-05-14",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "SL compressed 71% from original. Strategy needs 67.9 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 67.9,
-      "risk_inr": 5091
-    },
-    "skip_reason": "extreme_compression",
-    "compression_pct": 71,
-    "mode": "paper"
-  },
-  {
-    "datetime": "2026-05-14T10:09:21.985979",
-    "date": "2026-05-14",
-    "strategy": "TRAP",
-    "direction": "BUY",
-    "reason": "ADX 20.2 < 22",
-    "conditions": {
-      "adx": 20.2
-    },
-    "skip_reason": "adx_too_low",
-    "mode": "paper"
-  },
-  {
-    "datetime": "2026-05-18T09:16:14.120733",
-    "date": "2026-05-18",
-    "strategy": "NTS",
-    "direction": "SELL",
-    "reason": "SL compressed 82% from original. Strategy needs 109.7 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 109.7,
-      "risk_inr": 8227
-    },
-    "skip_reason": "extreme_compression",
-    "compression_pct": 82,
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-18T09:16:14.932166",
-    "date": "2026-05-18",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "reason": "SL compressed 87% from original. Strategy needs 148.6 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 148.6,
-      "risk_inr": 11148
-    },
-    "skip_reason": "extreme_compression",
-    "compression_pct": 87,
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-18T10:01:42.171680",
-    "date": "2026-05-18",
-    "strategy": "TRAP",
-    "direction": "BUY",
-    "reason": "ADX 56.1 >= 50 (exhaustion)",
-    "conditions": {
-      "adx": 56.1
-    },
-    "skip_reason": "adx_exhaustion",
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-19T09:17:06.868688",
-    "date": "2026-05-19",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "reason": "SL compressed 60% from original. Strategy needs 49.5 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 49.5,
-      "risk_inr": 3714
-    },
-    "skip_reason": "extreme_compression",
-    "compression_pct": 60,
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-19T10:01:42.174187",
-    "date": "2026-05-19",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "reason": "SL compressed 64% from original. Strategy needs 56.0 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 56.0,
-      "risk_inr": 4196
-    },
-    "skip_reason": "extreme_compression",
-    "compression_pct": 64,
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-19T10:06:55.542740",
-    "date": "2026-05-19",
-    "strategy": "TRAP",
-    "direction": "BUY",
-    "reason": "SL compressed 65% from original. Strategy needs 57.3 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 57.3,
-      "risk_inr": 4297
-    },
-    "skip_reason": "extreme_compression",
-    "compression_pct": 65,
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-20T09:27:56.015922",
-    "date": "2026-05-20",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "reason": "SL compressed 71% from original. Strategy needs 68.7 pts but budget allows only 20.0 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 68.7,
-      "risk_inr": 5150
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-05-20T10:06:03.745768",
     "date": "2026-05-20",
     "strategy": "TRAP",
@@ -1681,5 +1535,1149 @@
     },
     "mode": "live",
     "compression_pct": 72
+  },
+  {
+    "datetime": "2026-09-11T13:30:01.058665",
+    "date": "2026-09-11",
+    "time": "13:30",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.8 < 22",
+    "conditions": {
+      "adx": 13.8
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:30:17.151262",
+    "date": "2026-09-11",
+    "time": "13:30",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.4 < 22",
+    "conditions": {
+      "adx": 13.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:16.740833",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.4 < 22",
+    "conditions": {
+      "adx": 13.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:22.058098",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.4 < 22",
+    "conditions": {
+      "adx": 13.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:27.447588",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.4 < 22",
+    "conditions": {
+      "adx": 13.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:32.768329",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.4 < 22",
+    "conditions": {
+      "adx": 13.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:38.086780",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.4 < 22",
+    "conditions": {
+      "adx": 13.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:43.473574",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:48.796682",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:54.090933",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:32:59.455952",
+    "date": "2026-09-11",
+    "time": "13:32",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:04.785348",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:10.127083",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:15.475815",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:20.801533",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:26.137462",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:31.526524",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:36.822537",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:42.178324",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:33:58.148808",
+    "date": "2026-09-11",
+    "time": "13:33",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:34:03.624875",
+    "date": "2026-09-11",
+    "time": "13:34",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:34:08.939938",
+    "date": "2026-09-11",
+    "time": "13:34",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:50:15.728260",
+    "date": "2026-09-11",
+    "time": "13:50",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.2 < 22",
+    "conditions": {
+      "adx": 14.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:50:21.145788",
+    "date": "2026-09-11",
+    "time": "13:50",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.2 < 22",
+    "conditions": {
+      "adx": 14.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:50:31.803651",
+    "date": "2026-09-11",
+    "time": "13:50",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.2 < 22",
+    "conditions": {
+      "adx": 14.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:50:37.090796",
+    "date": "2026-09-11",
+    "time": "13:50",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.2 < 22",
+    "conditions": {
+      "adx": 14.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:50:42.469214",
+    "date": "2026-09-11",
+    "time": "13:50",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.2 < 22",
+    "conditions": {
+      "adx": 14.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:50:47.774383",
+    "date": "2026-09-11",
+    "time": "13:50",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.2 < 22",
+    "conditions": {
+      "adx": 14.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:50:53.145257",
+    "date": "2026-09-11",
+    "time": "13:50",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:50:58.437374",
+    "date": "2026-09-11",
+    "time": "13:50",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.9 < 22",
+    "conditions": {
+      "adx": 13.9
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:03.833907",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.7 < 22",
+    "conditions": {
+      "adx": 13.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:09.139334",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.7 < 22",
+    "conditions": {
+      "adx": 13.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:14.622103",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.7 < 22",
+    "conditions": {
+      "adx": 13.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:19.909163",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.7 < 22",
+    "conditions": {
+      "adx": 13.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:25.251359",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:30.552929",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.6 < 22",
+    "conditions": {
+      "adx": 13.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:35.937250",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.5 < 22",
+    "conditions": {
+      "adx": 13.5
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:41.257161",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.4 < 22",
+    "conditions": {
+      "adx": 13.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:46.653181",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.2 < 22",
+    "conditions": {
+      "adx": 13.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:51.958728",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.2 < 22",
+    "conditions": {
+      "adx": 13.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:51:57.297410",
+    "date": "2026-09-11",
+    "time": "13:51",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:02.695127",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:08.019801",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:13.415502",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:18.748169",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:24.105609",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:29.496539",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:34.864652",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:40.219672",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:45.530863",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:50.985306",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:52:56.353096",
+    "date": "2026-09-11",
+    "time": "13:52",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:01.761255",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:07.087956",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:12.461643",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:17.822191",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:23.200281",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:28.513239",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:33.909188",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:39.243272",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:44.618622",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:49.943754",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:53:55.244497",
+    "date": "2026-09-11",
+    "time": "13:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:00.637493",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:05.962693",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:11.362091",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:16.672788",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.1 < 22",
+    "conditions": {
+      "adx": 13.1
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:22.047931",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.2 < 22",
+    "conditions": {
+      "adx": 13.2
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:27.339652",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.7 < 22",
+    "conditions": {
+      "adx": 13.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:32.744657",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.9 < 22",
+    "conditions": {
+      "adx": 13.9
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:38.088335",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.9 < 22",
+    "conditions": {
+      "adx": 13.9
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:43.478363",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.9 < 22",
+    "conditions": {
+      "adx": 13.9
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:48.787790",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.9 < 22",
+    "conditions": {
+      "adx": 13.9
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:54.117735",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.9 < 22",
+    "conditions": {
+      "adx": 13.9
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:54:59.544255",
+    "date": "2026-09-11",
+    "time": "13:54",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.9 < 22",
+    "conditions": {
+      "adx": 13.9
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:55:26.301264",
+    "date": "2026-09-11",
+    "time": "13:55",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:55:31.694589",
+    "date": "2026-09-11",
+    "time": "13:55",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:55:37.003610",
+    "date": "2026-09-11",
+    "time": "13:55",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:55:42.363867",
+    "date": "2026-09-11",
+    "time": "13:55",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:55:47.692798",
+    "date": "2026-09-11",
+    "time": "13:55",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:55:53.024998",
+    "date": "2026-09-11",
+    "time": "13:55",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:56:01.542347",
+    "date": "2026-09-11",
+    "time": "13:56",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:57:01.761941",
+    "date": "2026-09-11",
+    "time": "13:57",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.0 < 22",
+    "conditions": {
+      "adx": 14.0
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:58:02.096822",
+    "date": "2026-09-11",
+    "time": "13:58",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.4 < 22",
+    "conditions": {
+      "adx": 14.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T13:59:02.564958",
+    "date": "2026-09-11",
+    "time": "13:59",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.4 < 22",
+    "conditions": {
+      "adx": 14.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T14:00:02.855278",
+    "date": "2026-09-11",
+    "time": "14:00",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.4 < 22",
+    "conditions": {
+      "adx": 14.4
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T14:01:03.078134",
+    "date": "2026-09-11",
+    "time": "14:01",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 15.3 < 22",
+    "conditions": {
+      "adx": 15.3
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-11T14:02:03.283829",
+    "date": "2026-09-11",
+    "time": "14:02",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 15.3 < 22",
+    "conditions": {
+      "adx": 15.3
+    },
+    "mode": "live"
   }
 ]
