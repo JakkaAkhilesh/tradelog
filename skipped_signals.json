@@ -1,49 +1,5 @@
 [
   {
-    "datetime": "2026-05-22T14:01:08.847630",
-    "date": "2026-05-22",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 20.7 < 22",
-    "conditions": {
-      "adx": 20.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-22T14:02:12.140827",
-    "date": "2026-05-22",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 20.7 < 22",
-    "conditions": {
-      "adx": 20.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-22T14:03:15.860860",
-    "date": "2026-05-22",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 21.1 < 22",
-    "conditions": {
-      "adx": 21.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-22T14:04:19.210132",
-    "date": "2026-05-22",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 21.3 < 22",
-    "conditions": {
-      "adx": 21.3
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-05-25T09:16:16.646409",
     "date": "2026-05-25",
     "strategy": "NTS",
@@ -2727,6 +2683,58 @@
     "reason": "ADX 16.5 < 22",
     "conditions": {
       "adx": 16.5
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-18T09:15:09.561321",
+    "date": "2026-09-18",
+    "time": "09:15",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.7 < 22",
+    "conditions": {
+      "adx": 14.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-18T09:35:13.670407",
+    "date": "2026-09-18",
+    "time": "09:35",
+    "strategy": "ORB",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 13.9 < 22",
+    "conditions": {
+      "adx": 13.9
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-18T13:41:05.757758",
+    "date": "2026-09-18",
+    "time": "13:41",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 17.7 < 22",
+    "conditions": {
+      "adx": 17.7
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-18T13:42:05.994627",
+    "date": "2026-09-18",
+    "time": "13:42",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 17.6 < 22",
+    "conditions": {
+      "adx": 17.6
     },
     "mode": "live"
   }
