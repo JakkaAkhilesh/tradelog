@@ -1,17 +1,5 @@
 [
   {
-    "datetime": "2026-05-25T09:16:16.646409",
-    "date": "2026-05-25",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "reason": "SL compressed 55% from original. Strategy needs 51.6 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 51.6,
-      "risk_inr": 3356
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-05-25T09:16:17.463476",
     "date": "2026-05-25",
     "strategy": "DBY",
@@ -2735,6 +2723,31 @@
     "reason": "ADX 17.6 < 22",
     "conditions": {
       "adx": 17.6
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-22T10:33:06.849620",
+    "date": "2026-09-22",
+    "time": "10:33",
+    "strategy": "ORB",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 23419.4,
+      "sl": 23489.0,
+      "target": 23141.0,
+      "rr": 4.0,
+      "reason": "ORB SELL: Break below opening range low(23426), SL at range high",
+      "conditions": {
+        "price": 23419.4,
+        "range_high": 23489.0,
+        "range_low": 23425.7,
+        "time": "10:33"
+      }
     },
     "mode": "live"
   }
