@@ -1,17 +1,5 @@
 [
   {
-    "datetime": "2026-05-25T09:16:17.463476",
-    "date": "2026-05-25",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "reason": "SL compressed 84% from original. Strategy needs 144.3 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 144.3,
-      "risk_inr": 9380
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-05-25T13:41:04.255599",
     "date": "2026-05-25",
     "strategy": "GAP",
@@ -2750,5 +2738,20 @@
       }
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-09-24T10:23:02.822065",
+    "date": "2026-09-24",
+    "time": "10:23",
+    "strategy": "ORB",
+    "direction": "SELL",
+    "skip_reason": "extreme_compression",
+    "reason": "SL compressed 73% from original. Strategy needs 84.2 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 84.2,
+      "risk_inr": 5476
+    },
+    "mode": "live",
+    "compression_pct": 73
   }
 ]
