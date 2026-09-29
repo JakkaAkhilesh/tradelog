@@ -1,38 +1,5 @@
 [
   {
-    "datetime": "2026-05-25T13:42:07.898025",
-    "date": "2026-05-25",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 16.2 < 22",
-    "conditions": {
-      "adx": 16.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-25T13:43:11.064334",
-    "date": "2026-05-25",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 15.8 < 22",
-    "conditions": {
-      "adx": 15.8
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-25T13:44:14.359286",
-    "date": "2026-05-25",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 16.0 < 22",
-    "conditions": {
-      "adx": 16.0
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-05-25T13:56:20.783406",
     "date": "2026-05-25",
     "strategy": "GAP",
@@ -2762,5 +2729,85 @@
     },
     "mode": "live",
     "compression_pct": 73
+  },
+  {
+    "datetime": "2026-09-29T09:21:03.154932",
+    "date": "2026-09-29",
+    "time": "09:21",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 22675.15,
+      "sl": 22789.92,
+      "target": 22468.56,
+      "rr": 1.8,
+      "reason": "DBY SELL: Price(22675) broke 2-day low(22780), RR=1:1.8",
+      "conditions": {
+        "price": 22675.15,
+        "prev2_high": 23140.5,
+        "prev2_low": 22780.25,
+        "is_definitive": "True"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-29T09:30:04.981074",
+    "date": "2026-09-29",
+    "time": "09:30",
+    "strategy": "NTS",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 22625.0,
+      "sl": 22674.76,
+      "target": 22535.43,
+      "rr": 1.8,
+      "reason": "NTS SELL: Price(22625) < EMA200(22981), ST=Red, ADX=38.9, RR=1:1.80",
+      "conditions": {
+        "price": 22625.0,
+        "ema200": 22981.13,
+        "price_above_ema": false,
+        "adx": 38.86,
+        "adx_strong": true,
+        "supertrend_bullish": false,
+        "is_definitive_candle": "True",
+        "is_bullish_candle": "False",
+        "time": "09:30"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-09-29T09:30:04.997811",
+    "date": "2026-09-29",
+    "time": "09:30",
+    "strategy": "ORB",
+    "direction": "SELL",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "SELL",
+      "entry_price": 22625.0,
+      "sl": 22753.2,
+      "target": 22112.2,
+      "rr": 4.0,
+      "reason": "ORB SELL: Break below opening range low(22631), SL at range high",
+      "conditions": {
+        "price": 22625.0,
+        "range_high": 22753.2,
+        "range_low": 22631.0,
+        "time": "09:30"
+      }
+    },
+    "mode": "live"
   }
 ]
