@@ -1501,7 +1501,10 @@
     "sl_order_placed": true,
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 162.25,
-    "result": "sl"
+    "result": "sl",
+    "date": "2026-07-22",
+    "exit_premium": 162.25,
+    "pnl": -380.25
   },
   {
     "id": "GAP_BUY_2026-07-22",
@@ -1548,7 +1551,10 @@
     "sl_order_placed": true,
     "exit_trigger": "premium_sl",
     "current_premium_at_exit": 153.65,
-    "result": "sl"
+    "result": "sl",
+    "date": "2026-07-22",
+    "exit_premium": 153.65,
+    "pnl": -133.25
   },
   {
     "id": "TRAP_BUY_2026-07-23",
@@ -1595,7 +1601,10 @@
     "sl_order_placed": true,
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 127.5,
-    "result": "sl"
+    "result": "sl",
+    "date": "2026-07-23",
+    "exit_premium": 127.5,
+    "pnl": -393.25
   },
   {
     "id": "DBY_SELL_2026-07-24",
@@ -1642,7 +1651,10 @@
     "sl_order_placed": true,
     "exit_trigger": "target",
     "current_premium_at_exit": 147.85,
-    "result": "target"
+    "result": "target",
+    "date": "2026-07-24",
+    "exit_premium": 147.85,
+    "pnl": 1459.25
   },
   {
     "id": "GAP_BUY_2026-07-24",
@@ -1689,7 +1701,10 @@
     "sl_order_placed": true,
     "exit_trigger": "spot_sl",
     "current_premium_at_exit": 115.8,
-    "result": "sl"
+    "result": "sl",
+    "date": "2026-07-24",
+    "exit_premium": 115.8,
+    "pnl": -1394.25
   },
   {
     "id": "NTS_BUY_2026-07-27",
