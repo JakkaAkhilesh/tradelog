@@ -1,27 +1,5 @@
 [
   {
-    "datetime": "2026-05-25T14:01:33.277058",
-    "date": "2026-05-25",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 14.7 < 22",
-    "conditions": {
-      "adx": 14.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-05-25T14:14:40.345436",
-    "date": "2026-05-25",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-05-25T14:18:44.141488",
     "date": "2026-05-25",
     "strategy": "GAP",
@@ -2863,6 +2841,42 @@
         "range_low": 22561.6,
         "time": "09:48"
       }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-10-07T09:40:07.576423",
+    "date": "2026-10-07",
+    "time": "09:40",
+    "strategy": "ORB",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 21.5 < 22",
+    "conditions": {
+      "adx": 21.5,
+      "entry_price": 22587.5,
+      "sl": 22692.95,
+      "target": 22165.7,
+      "rr": 4.0,
+      "signal_reason": "ORB SELL: Break below opening range low(22600), SL at range high"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-10-07T10:22:17.227258",
+    "date": "2026-10-07",
+    "time": "10:22",
+    "strategy": "15MIN",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 20.8 < 22",
+    "conditions": {
+      "adx": 20.8,
+      "entry_price": 22683.7,
+      "sl": 22654.8,
+      "target": 22762.69,
+      "rr": 2.73,
+      "signal_reason": "15MIN BUY: Price(22684) > EMA50(22631), Target=EMA200(22763), RR=1:2.73"
     },
     "mode": "live"
   }
