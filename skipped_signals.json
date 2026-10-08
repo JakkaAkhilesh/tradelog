@@ -1,16 +1,5 @@
 [
   {
-    "datetime": "2026-05-25T14:18:44.141488",
-    "date": "2026-05-25",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 14.1 < 22",
-    "conditions": {
-      "adx": 14.1
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-05-25T14:19:47.437762",
     "date": "2026-05-25",
     "strategy": "GAP",
@@ -2879,5 +2868,25 @@
       "signal_reason": "15MIN BUY: Price(22684) > EMA50(22631), Target=EMA200(22763), RR=1:2.73"
     },
     "mode": "live"
+  },
+  {
+    "datetime": "2026-10-08T09:44:25.164399",
+    "date": "2026-10-08",
+    "time": "09:44",
+    "strategy": "ORB",
+    "direction": "SELL",
+    "skip_reason": "extreme_compression",
+    "reason": "SL compressed 82% from original. Strategy needs 130.8 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 130.8,
+      "risk_inr": 8499,
+      "entry_price": 22468.3,
+      "sl": 22599.05,
+      "target": 21945.3,
+      "rr": 4.0,
+      "signal_reason": "ORB SELL: Break below opening range low(22476), SL at range high"
+    },
+    "mode": "live",
+    "compression_pct": 82
   }
 ]
