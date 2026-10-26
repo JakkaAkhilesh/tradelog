@@ -1,29 +1,5 @@
 [
   {
-    "datetime": "2026-06-03T09:16:45.994121",
-    "date": "2026-06-03",
-    "strategy": "NTS",
-    "direction": "SELL",
-    "reason": "SL compressed 82% from original. Strategy needs 129.2 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 129.2,
-      "risk_inr": 8397
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-06-03T10:16:58.624314",
-    "date": "2026-06-03",
-    "strategy": "TRAP",
-    "direction": "SELL",
-    "reason": "SL compressed 58% from original. Strategy needs 55.0 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 55.0,
-      "risk_inr": 3572
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-06-05T09:31:16.259083",
     "date": "2026-06-05",
     "time": "09:31",
@@ -2937,5 +2913,41 @@
     },
     "mode": "live",
     "compression_pct": 74
+  },
+  {
+    "datetime": "2026-10-26T09:18:35.523854",
+    "date": "2026-10-26",
+    "time": "09:18",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 17.7 < 22",
+    "conditions": {
+      "adx": 17.7,
+      "entry_price": 22452.75,
+      "sl": 22621.51,
+      "target": 22148.98,
+      "rr": 1.8,
+      "signal_reason": "DBY SELL: Price(22453) broke 2-day low(22600), RR=1:1.8"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-10-26T09:53:43.037891",
+    "date": "2026-10-26",
+    "time": "09:53",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 14.2 < 22",
+    "conditions": {
+      "adx": 14.2,
+      "entry_price": 22532.55,
+      "sl": 22483.37,
+      "target": 22680.09,
+      "rr": 3.0,
+      "signal_reason": "GAP BUY 1H: Gap-0.33% broke above 1st candle. SL=22483.37 Tgt=22680.09 RR=1:3"
+    },
+    "mode": "live"
   }
 ]
