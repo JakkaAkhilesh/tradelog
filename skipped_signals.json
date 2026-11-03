@@ -1,41 +1,5 @@
 [
   {
-    "datetime": "2026-06-15T09:46:20.888487",
-    "date": "2026-06-15",
-    "time": "09:46",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "reason": "ADX 71.2 >= 50 (exhaustion)",
-    "conditions": {
-      "adx": 71.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-06-15T10:04:28.173232",
-    "date": "2026-06-15",
-    "time": "10:04",
-    "strategy": "TRAP",
-    "direction": "BUY",
-    "reason": "ADX 72.3 >= 50 (exhaustion)",
-    "conditions": {
-      "adx": 72.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-06-16T10:16:38.054079",
-    "date": "2026-06-16",
-    "time": "10:16",
-    "strategy": "TRAP",
-    "direction": "BUY",
-    "reason": "ADX 16.6 < 22",
-    "conditions": {
-      "adx": 16.6
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-06-19T09:22:54.416280",
     "date": "2026-06-19",
     "time": "09:22",
@@ -2972,6 +2936,86 @@
       "target": 22783.64,
       "rr": 1.8,
       "signal_reason": "DBY BUY: Price(22752) broke 2-day high(22750), RR=1:1.8"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-03T09:21:15.422703",
+    "date": "2026-11-03",
+    "time": "09:21",
+    "strategy": "DBY",
+    "direction": "BUY",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "BUY",
+      "entry_price": 23591.35,
+      "sl": 23424.04,
+      "target": 23892.51,
+      "rr": 1.8,
+      "reason": "DBY BUY: Price(23591) broke 2-day high(23441), RR=1:1.8",
+      "conditions": {
+        "price": 23591.35,
+        "prev2_high": 23440.8,
+        "prev2_low": 22964.5,
+        "is_definitive": "True"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-03T09:48:20.673705",
+    "date": "2026-11-03",
+    "time": "09:48",
+    "strategy": "ORB",
+    "direction": "BUY",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "BUY",
+      "entry_price": 23634.7,
+      "sl": 23482.8,
+      "target": 24242.3,
+      "rr": 4.0,
+      "reason": "ORB BUY: Break above opening range high(23628), SL at range low",
+      "conditions": {
+        "price": 23634.7,
+        "range_high": 23628.3,
+        "range_low": 23482.8,
+        "time": "09:48"
+      }
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-03T09:50:21.077851",
+    "date": "2026-11-03",
+    "time": "09:50",
+    "strategy": "NTS",
+    "direction": "BUY",
+    "skip_reason": "learned_filter",
+    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
+    "conditions": {
+      "signal": true,
+      "direction": "BUY",
+      "entry_price": 23635.85,
+      "sl": 23590.78,
+      "target": 23716.98,
+      "rr": 1.8,
+      "reason": "NTS BUY: Price(23636) > EMA200(23149), ST=Green, ADX=52.0, RR=1:1.80",
+      "conditions": {
+        "price": 23635.85,
+        "ema200": 23149.33,
+        "price_above_ema": true,
+        "adx": 52.01,
+        "adx_strong": true,
+        "supertrend_bullish": true,
+        "is_definitive_candle": "True",
+        "is_bullish_candle": "True",
+        "time": "09:50"
+      }
     },
     "mode": "live"
   }
