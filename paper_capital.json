@@ -1,42 +1,10 @@
 {
-  "current_capital": 36765.15,
+  "current_capital": 36566.8,
   "starting_capital": 50000,
-  "total_pnl": -13234.85,
-  "last_saved_date": "2026-11-05",
-  "last_saved_time": "15:25:43",
+  "total_pnl": -13433.2,
+  "last_saved_date": "2026-11-06",
+  "last_saved_time": "15:25:55",
   "history": [
-    {
-      "date": "2026-09-25",
-      "time": "15:25:00",
-      "capital": 39333.7,
-      "today_change": 0.0,
-      "total_pnl": -10666.3,
-      "reason": "end_of_day"
-    },
-    {
-      "date": "2026-09-28",
-      "time": "10:10:27",
-      "capital": 38712.3,
-      "today_change": 0.0,
-      "total_pnl": -11287.7,
-      "reason": "morning_zerodha_sync"
-    },
-    {
-      "date": "2026-09-28",
-      "time": "15:25:30",
-      "capital": 38712.3,
-      "today_change": 0.0,
-      "total_pnl": -11287.7,
-      "reason": "end_of_day"
-    },
-    {
-      "date": "2026-09-29",
-      "time": "09:21:01",
-      "capital": 38712.3,
-      "today_change": 0.0,
-      "total_pnl": -11287.7,
-      "reason": "morning_zerodha_sync"
-    },
     {
       "date": "2026-09-29",
       "time": "15:25:33",
@@ -723,6 +691,38 @@
       "capital": 36765.15,
       "today_change": 0.0,
       "total_pnl": -13234.85,
+      "reason": "end_of_day"
+    },
+    {
+      "date": "2026-11-06",
+      "time": "09:03:38",
+      "capital": 35266.8,
+      "today_change": 0.0,
+      "total_pnl": -14733.2,
+      "reason": "morning_zerodha_sync"
+    },
+    {
+      "date": "2026-11-06",
+      "time": "09:36:35",
+      "capital": 36625.3,
+      "today_change": 0.0,
+      "total_pnl": -13374.7,
+      "reason": "target"
+    },
+    {
+      "date": "2026-11-06",
+      "time": "09:36:37",
+      "capital": 36566.8,
+      "today_change": 0.0,
+      "total_pnl": -13433.2,
+      "reason": "target_corrected"
+    },
+    {
+      "date": "2026-11-06",
+      "time": "15:25:55",
+      "capital": 36566.8,
+      "today_change": 0.0,
+      "total_pnl": -13433.2,
       "reason": "end_of_day"
     }
   ]
