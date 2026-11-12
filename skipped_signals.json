@@ -1,17 +1,5 @@
 [
   {
-    "datetime": "2026-06-30T09:20:38.148855",
-    "date": "2026-06-30",
-    "time": "09:20",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 21.8 < 22",
-    "conditions": {
-      "adx": 21.8
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-06-30T10:00:58.853040",
     "date": "2026-06-30",
     "time": "10:00",
@@ -3048,5 +3036,25 @@
     },
     "mode": "live",
     "compression_pct": 83
+  },
+  {
+    "datetime": "2026-11-12T09:37:02.930871",
+    "date": "2026-11-12",
+    "time": "09:37",
+    "strategy": "ORB",
+    "direction": "BUY",
+    "skip_reason": "extreme_compression",
+    "reason": "SL compressed 89% from original. Strategy needs 200.8 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
+    "conditions": {
+      "sl_pts": 200.8,
+      "risk_inr": 13055,
+      "entry_price": 25343.8,
+      "sl": 25142.95,
+      "target": 26147.2,
+      "rr": 4.0,
+      "signal_reason": "ORB BUY: Break above opening range high(25342), SL at range low"
+    },
+    "mode": "live",
+    "compression_pct": 89
   }
 ]
