@@ -1,50 +1,10 @@
 {
-  "current_capital": 34723.75,
+  "current_capital": 33926.2,
   "starting_capital": 50000,
-  "total_pnl": -15276.25,
-  "last_saved_date": "2026-11-11",
-  "last_saved_time": "15:25:26",
+  "total_pnl": -16073.8,
+  "last_saved_date": "2026-11-12",
+  "last_saved_time": "15:25:44",
   "history": [
-    {
-      "date": "2026-10-01",
-      "time": "14:16:13",
-      "capital": 39015.05,
-      "today_change": 0.0,
-      "total_pnl": -10984.95,
-      "reason": "sl_corrected"
-    },
-    {
-      "date": "2026-10-01",
-      "time": "15:25:23",
-      "capital": 39015.05,
-      "today_change": 0.0,
-      "total_pnl": -10984.95,
-      "reason": "end_of_day"
-    },
-    {
-      "date": "2026-10-05",
-      "time": "09:19:08",
-      "capital": 38880.3,
-      "today_change": 0.0,
-      "total_pnl": -11119.7,
-      "reason": "morning_zerodha_sync"
-    },
-    {
-      "date": "2026-10-05",
-      "time": "15:25:22",
-      "capital": 38880.3,
-      "today_change": 0.0,
-      "total_pnl": -11119.7,
-      "reason": "end_of_day"
-    },
-    {
-      "date": "2026-10-06",
-      "time": "08:36:16",
-      "capital": 38880.3,
-      "today_change": 0.0,
-      "total_pnl": -11119.7,
-      "reason": "morning_zerodha_sync"
-    },
     {
       "date": "2026-10-06",
       "time": "15:25:52",
@@ -723,6 +683,46 @@
       "capital": 34723.75,
       "today_change": 0.0,
       "total_pnl": -15276.25,
+      "reason": "end_of_day"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "08:33:12",
+      "capital": 35577.2,
+      "today_change": 0.0,
+      "total_pnl": -14422.8,
+      "reason": "morning_zerodha_sync"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "09:22:34",
+      "capital": 34572.95,
+      "today_change": 0.0,
+      "total_pnl": -15427.05,
+      "reason": "sl"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "09:47:33",
+      "capital": 33961.95,
+      "today_change": 0.0,
+      "total_pnl": -16038.05,
+      "reason": "sl"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "09:47:35",
+      "capital": 33926.2,
+      "today_change": 0.0,
+      "total_pnl": -16073.8,
+      "reason": "sl_corrected"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "15:25:44",
+      "capital": 33926.2,
+      "today_change": 0.0,
+      "total_pnl": -16073.8,
       "reason": "end_of_day"
     }
   ]
