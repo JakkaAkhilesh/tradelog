@@ -1,41 +1,5 @@
 [
   {
-    "datetime": "2026-06-30T10:00:58.853040",
-    "date": "2026-06-30",
-    "time": "10:00",
-    "strategy": "TRAP",
-    "direction": "BUY",
-    "reason": "ADX 13.7 < 22",
-    "conditions": {
-      "adx": 13.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-01T09:55:04.623795",
-    "date": "2026-07-01",
-    "time": "09:55",
-    "strategy": "15MIN",
-    "direction": "BUY",
-    "reason": "ADX 14.6 < 22",
-    "conditions": {
-      "adx": 14.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-02T09:20:19.874964",
-    "date": "2026-07-02",
-    "time": "09:20",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "reason": "ADX 17.0 < 22",
-    "conditions": {
-      "adx": 17.0
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-07-03T09:21:32.854320",
     "date": "2026-07-03",
     "time": "09:21",
@@ -3056,5 +3020,59 @@
     },
     "mode": "live",
     "compression_pct": 89
+  },
+  {
+    "datetime": "2026-11-13T09:16:01.232112",
+    "date": "2026-11-13",
+    "time": "09:16",
+    "strategy": "DBY",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 18.9 < 22",
+    "conditions": {
+      "adx": 18.9,
+      "entry_price": 25138.95,
+      "sl": 25227.64,
+      "target": 24979.31,
+      "rr": 1.8,
+      "signal_reason": "DBY SELL: Price(25139) broke 2-day low(25214), RR=1:1.8"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-13T09:48:18.649927",
+    "date": "2026-11-13",
+    "time": "09:48",
+    "strategy": "GAP",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 21.7 < 22",
+    "conditions": {
+      "adx": 21.7,
+      "entry_price": 25213.6,
+      "sl": 25182.14,
+      "target": 25307.98,
+      "rr": 3.0,
+      "signal_reason": "GAP BUY 1H: Gap-0.35% broke above 1st candle. SL=25182.14 Tgt=25307.98 RR=1:3"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-13T09:48:18.892182",
+    "date": "2026-11-13",
+    "time": "09:48",
+    "strategy": "ORB",
+    "direction": "BUY",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 21.7 < 22",
+    "conditions": {
+      "adx": 21.7,
+      "entry_price": 25213.6,
+      "sl": 25077.55,
+      "target": 25757.8,
+      "rr": 4.0,
+      "signal_reason": "ORB BUY: Break above opening range high(25210), SL at range low"
+    },
+    "mode": "live"
   }
 ]
