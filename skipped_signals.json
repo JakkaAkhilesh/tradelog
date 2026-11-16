@@ -1,18 +1,5 @@
 [
   {
-    "datetime": "2026-07-03T09:21:32.854320",
-    "date": "2026-07-03",
-    "time": "09:21",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "reason": "SL compressed 86% from original. Strategy needs 167.6 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 167.6,
-      "risk_inr": 10893
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-07-03T10:02:41.176437",
     "date": "2026-07-03",
     "time": "10:02",
@@ -3072,6 +3059,24 @@
       "target": 25757.8,
       "rr": 4.0,
       "signal_reason": "ORB BUY: Break above opening range high(25210), SL at range low"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-16T13:55:40.985909",
+    "date": "2026-11-16",
+    "time": "13:55",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "adx_too_low",
+    "reason": "ADX 17.5 < 22",
+    "conditions": {
+      "adx": 17.5,
+      "entry_price": 25203.3,
+      "sl": 25222.81,
+      "target": 25144.77,
+      "rr": 3.0,
+      "signal_reason": "GAP SELL 2H: Gap+0.25% DCC bear. SL=25222.81 Tgt=25144.77 RR=1:3"
     },
     "mode": "live"
   }
