@@ -1,3083 +1,1078 @@
-[
-  {
-    "datetime": "2026-07-03T10:02:41.176437",
-    "date": "2026-07-03",
-    "time": "10:02",
-    "strategy": "TRAP",
-    "direction": "SELL",
-    "reason": "ADX 50.4 >= 50 (exhaustion)",
-    "conditions": {
-      "adx": 50.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-07T09:35:06.577033",
-    "date": "2026-07-07",
-    "time": "09:35",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "reason": "ADX 19.8 < 22",
-    "conditions": {
-      "adx": 19.8
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:46:43.524687",
-    "date": "2026-07-09",
-    "time": "13:46",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:48:57.931255",
-    "date": "2026-07-09",
-    "time": "13:48",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:50:12.306094",
-    "date": "2026-07-09",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.2 < 22",
-    "conditions": {
-      "adx": 13.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:51:27.537490",
-    "date": "2026-07-09",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.0 < 22",
-    "conditions": {
-      "adx": 13.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:52:42.279199",
-    "date": "2026-07-09",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.0 < 22",
-    "conditions": {
-      "adx": 13.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:53:56.752887",
-    "date": "2026-07-09",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.0 < 22",
-    "conditions": {
-      "adx": 13.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:56:12.056706",
-    "date": "2026-07-09",
-    "time": "13:56",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 12.3 < 22",
-    "conditions": {
-      "adx": 12.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:57:27.326915",
-    "date": "2026-07-09",
-    "time": "13:57",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 12.3 < 22",
-    "conditions": {
-      "adx": 12.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:58:41.331402",
-    "date": "2026-07-09",
-    "time": "13:58",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 12.3 < 22",
-    "conditions": {
-      "adx": 12.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:59:56.201205",
-    "date": "2026-07-09",
-    "time": "13:59",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 12.3 < 22",
-    "conditions": {
-      "adx": 12.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:02:11.520890",
-    "date": "2026-07-09",
-    "time": "14:02",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.5 < 22",
-    "conditions": {
-      "adx": 11.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:03:26.104858",
-    "date": "2026-07-09",
-    "time": "14:03",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.5 < 22",
-    "conditions": {
-      "adx": 11.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:04:39.922687",
-    "date": "2026-07-09",
-    "time": "14:04",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.6 < 22",
-    "conditions": {
-      "adx": 11.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:05:53.781662",
-    "date": "2026-07-09",
-    "time": "14:05",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.0 < 22",
-    "conditions": {
-      "adx": 11.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:07:07.584167",
-    "date": "2026-07-09",
-    "time": "14:07",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.0 < 22",
-    "conditions": {
-      "adx": 11.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:08:22.064306",
-    "date": "2026-07-09",
-    "time": "14:08",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.0 < 22",
-    "conditions": {
-      "adx": 11.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:09:36.242313",
-    "date": "2026-07-09",
-    "time": "14:09",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.0 < 22",
-    "conditions": {
-      "adx": 11.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:10:50.131015",
-    "date": "2026-07-09",
-    "time": "14:10",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.5 < 22",
-    "conditions": {
-      "adx": 11.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:22:06.175637",
-    "date": "2026-07-09",
-    "time": "14:22",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.1 < 22",
-    "conditions": {
-      "adx": 11.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T14:23:20.643924",
-    "date": "2026-07-09",
-    "time": "14:23",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 11.1 < 22",
-    "conditions": {
-      "adx": 11.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T13:49:24.122167",
-    "date": "2026-07-10",
-    "time": "13:49",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 15.7 < 22",
-    "conditions": {
-      "adx": 15.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T13:51:42.962052",
-    "date": "2026-07-10",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 15.6 < 22",
-    "conditions": {
-      "adx": 15.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T14:02:06.094399",
-    "date": "2026-07-10",
-    "time": "14:02",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 14.9 < 22",
-    "conditions": {
-      "adx": 14.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T14:03:30.632581",
-    "date": "2026-07-10",
-    "time": "14:03",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 14.6 < 22",
-    "conditions": {
-      "adx": 14.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T14:04:52.123043",
-    "date": "2026-07-10",
-    "time": "14:04",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 14.6 < 22",
-    "conditions": {
-      "adx": 14.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T14:06:07.501538",
-    "date": "2026-07-10",
-    "time": "14:06",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.8 < 22",
-    "conditions": {
-      "adx": 13.8
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T14:07:38.751405",
-    "date": "2026-07-10",
-    "time": "14:07",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.8 < 22",
-    "conditions": {
-      "adx": 13.8
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T14:09:01.615965",
-    "date": "2026-07-10",
-    "time": "14:09",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-10T14:10:25.051152",
-    "date": "2026-07-10",
-    "time": "14:10",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 13.5 < 22",
-    "conditions": {
-      "adx": 13.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-13T10:29:33.076091",
-    "date": "2026-07-13",
-    "time": "10:29",
-    "strategy": "15MIN",
-    "direction": "BUY",
-    "reason": "ADX 21.8 < 22",
-    "conditions": {
-      "adx": 21.8
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-13T11:35:10.576850",
-    "date": "2026-07-13",
-    "time": "11:35",
-    "strategy": "15MIN",
-    "direction": "BUY",
-    "reason": "ADX 11.4 < 22",
-    "conditions": {
-      "adx": 11.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-21T09:35:43.387927",
-    "date": "2026-07-21",
-    "time": "09:35",
-    "strategy": "15MIN",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 24218.9,
-      "sl": 24229.48,
-      "target": 24197.27,
-      "rr": 2.04,
-      "reason": "15MIN SELL: Price(24219) < EMA50(24220), Target=EMA200(24197), RR=1:2.04",
-      "conditions": {
-        "price": 24218.9,
-        "ema13": 24231.86,
-        "ema50": 24219.93,
-        "ema200": 24197.27,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-21T09:53:47.608744",
-    "date": "2026-07-21",
-    "time": "09:53",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 24238.95,
-      "sl": 24208.6,
-      "target": 24311.78,
-      "rr": 2.4,
-      "reason": "NTS BUY: Price(24239) > EMA200(24214), ST=Green, ADX=24.6, RR=1:2.40",
-      "conditions": {
-        "price": 24238.95,
-        "ema200": 24214.31,
-        "price_above_ema": true,
-        "adx": 24.56,
-        "adx_strong": true,
-        "supertrend_bullish": true,
-        "is_definitive_candle": "True",
-        "is_bullish_candle": "True",
-        "time": "09:53"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-21T10:01:49.057106",
-    "date": "2026-07-21",
-    "time": "10:01",
-    "strategy": "TRAP",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 24225.5,
-      "sl": 24253.62,
-      "target": 24169.26,
-      "rr": 2.0,
-      "reason": "TRAP SELL: Break below CDL(24225) + retrace + DCC",
-      "conditions": {
-        "price": 24225.5,
-        "cdh": 24233.6,
-        "cdl": 24225.2,
-        "time": "10:01"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-22T09:15:35.253824",
-    "date": "2026-07-22",
-    "time": "09:15",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 18.7 < 22",
-    "conditions": {
-      "adx": 18.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-23T09:20:53.085379",
-    "date": "2026-07-23",
-    "time": "09:20",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 19.3 < 22",
-    "conditions": {
-      "adx": 19.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-23T09:25:54.004226",
-    "date": "2026-07-23",
-    "time": "09:25",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 19.5 < 22",
-    "conditions": {
-      "adx": 19.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-28T09:17:00.925810",
-    "date": "2026-07-28",
-    "time": "09:17",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 24005.05,
-      "sl": 23995.73,
-      "target": 24021.83,
-      "rr": 1.8,
-      "reason": "DBY BUY: Price(24005) broke 2-day high(24004), RR=1:1.8",
-      "conditions": {
-        "price": 24005.05,
-        "prev2_high": 24003.65,
-        "prev2_low": 23666.35,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-28T09:19:01.437726",
-    "date": "2026-07-28",
-    "time": "09:19",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 24030.95,
-      "sl": 23963.9,
-      "target": 24191.86,
-      "rr": 2.4,
-      "reason": "NTS BUY: Price(24031) > EMA200(23907), ST=Green, ADX=23.8, RR=1:2.40",
-      "conditions": {
-        "price": 24030.95,
-        "ema200": 23906.82,
-        "price_above_ema": true,
-        "adx": 23.81,
-        "adx_strong": true,
-        "supertrend_bullish": true,
-        "is_definitive_candle": "True",
-        "is_bullish_candle": "True",
-        "time": "09:19"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-28T10:15:12.945609",
-    "date": "2026-07-28",
-    "time": "10:15",
-    "strategy": "TRAP",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 23988.55,
-      "sl": 23959.7,
-      "target": 24046.26,
-      "rr": 2.0,
-      "reason": "TRAP BUY: Break above CDH(24014) + retrace + DCC",
-      "conditions": {
-        "price": 23988.55,
-        "cdh": 24013.55,
-        "cdl": 23961.95,
-        "time": "10:15"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-08-04T09:37:03.778646",
-    "date": "2026-08-04",
-    "time": "09:37",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 24597.75,
-      "sl": 24549.48,
-      "target": 24713.59,
-      "rr": 2.4,
-      "reason": "NTS BUY: Price(24598) > EMA200(24468), ST=Green, ADX=37.3, RR=1:2.40",
-      "conditions": {
-        "price": 24597.75,
-        "ema200": 24467.83,
-        "price_above_ema": true,
-        "adx": 37.26,
-        "adx_strong": true,
-        "supertrend_bullish": true,
-        "is_definitive_candle": "True",
-        "is_bullish_candle": "True",
-        "time": "09:37"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-08-04T10:00:08.130578",
-    "date": "2026-08-04",
-    "time": "10:00",
-    "strategy": "TRAP",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 24633.5,
-      "sl": 24673.34,
-      "target": 24553.82,
-      "rr": 2.0,
-      "reason": "TRAP SELL: Break below CDL(24632) + retrace + DCC",
-      "conditions": {
-        "price": 24633.5,
-        "cdh": 24633.8,
-        "cdl": 24632.2,
-        "time": "10:00"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-08-10T09:34:02.322975",
-    "date": "2026-08-10",
-    "time": "09:34",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 18.2 < 22",
-    "conditions": {
-      "adx": 18.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-08-10T10:02:08.922500",
-    "date": "2026-08-10",
-    "time": "10:02",
-    "strategy": "TRAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-08-12T09:15:42.291854",
-    "date": "2026-08-12",
-    "time": "09:15",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.9 < 22",
-    "conditions": {
-      "adx": 17.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-08-14T09:15:39.583660",
-    "date": "2026-08-14",
-    "time": "09:15",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 15.1 < 22",
-    "conditions": {
-      "adx": 15.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-08-18T09:21:51.061179",
-    "date": "2026-08-18",
-    "time": "09:21",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 24232.9,
-      "sl": 24296.96,
-      "target": 24117.59,
-      "rr": 1.8,
-      "reason": "DBY SELL: Price(24233) broke 2-day low(24288), RR=1:1.8",
-      "conditions": {
-        "price": 24232.9,
-        "prev2_high": 24366.0,
-        "prev2_low": 24287.65,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-08-25T09:15:41.969024",
-    "date": "2026-08-25",
-    "time": "09:15",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 24136.9,
-      "sl": 24228.0,
-      "target": 23972.92,
-      "rr": 1.8,
-      "reason": "DBY SELL: Price(24137) broke 2-day low(24219), RR=1:1.8",
-      "conditions": {
-        "price": 24136.9,
-        "prev2_high": 24285.05,
-        "prev2_low": 24219.05,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-01T09:16:06.488859",
-    "date": "2026-09-01",
-    "time": "09:16",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 24035.2,
-      "sl": 24090.55,
-      "target": 23935.57,
-      "rr": 1.8,
-      "reason": "DBY SELL: Price(24035) broke 2-day low(24080), RR=1:1.8",
-      "conditions": {
-        "price": 24035.2,
-        "prev2_high": 24175.65,
-        "prev2_low": 24080.4,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T09:55:33.906052",
-    "date": "2026-09-04",
-    "time": "09:55",
-    "strategy": "15MIN",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 12.0 < 22",
-    "conditions": {
-      "adx": 12.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T13:30:29.036212",
-    "date": "2026-09-04",
-    "time": "13:30",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 20.5 < 22",
-    "conditions": {
-      "adx": 20.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T13:31:29.252199",
-    "date": "2026-09-04",
-    "time": "13:31",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 20.5 < 22",
-    "conditions": {
-      "adx": 20.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T13:32:29.436390",
-    "date": "2026-09-04",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 20.7 < 22",
-    "conditions": {
-      "adx": 20.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T13:33:29.650888",
-    "date": "2026-09-04",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 20.8 < 22",
-    "conditions": {
-      "adx": 20.8
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T13:34:29.856058",
-    "date": "2026-09-04",
-    "time": "13:34",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 20.8 < 22",
-    "conditions": {
-      "adx": 20.8
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T13:55:33.901856",
-    "date": "2026-09-04",
-    "time": "13:55",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.7 < 22",
-    "conditions": {
-      "adx": 17.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T13:59:34.787043",
-    "date": "2026-09-04",
-    "time": "13:59",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.7 < 22",
-    "conditions": {
-      "adx": 17.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T14:01:35.125962",
-    "date": "2026-09-04",
-    "time": "14:01",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.4 < 22",
-    "conditions": {
-      "adx": 17.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-04T14:23:39.285272",
-    "date": "2026-09-04",
-    "time": "14:23",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-07T12:31:56.586171",
-    "date": "2026-09-07",
-    "time": "12:31",
-    "strategy": "CB90",
-    "direction": "SELL",
-    "skip_reason": "adx_exhaustion",
-    "reason": "ADX 54.3 >= 50 (exhaustion)",
-    "conditions": {
-      "adx": 54.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-08T09:24:20.978785",
-    "date": "2026-09-08",
-    "time": "09:24",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 23681.05,
-      "sl": 23787.75,
-      "target": 23488.99,
-      "rr": 1.8,
-      "reason": "DBY SELL: Price(23681) broke 2-day low(23779), RR=1:1.8",
-      "conditions": {
-        "price": 23681.05,
-        "prev2_high": 23910.9,
-        "prev2_low": 23779.15,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-08T09:59:28.503796",
-    "date": "2026-09-08",
-    "time": "09:59",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 23665.45,
-      "sl": 23758.95,
-      "target": 23291.45,
-      "rr": 4.0,
-      "reason": "ORB SELL: Break below opening range low(23670), SL at range high",
-      "conditions": {
-        "price": 23665.45,
-        "range_high": 23758.95,
-        "range_low": 23669.65,
-        "time": "09:59"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-09T09:16:44.358797",
-    "date": "2026-09-09",
-    "time": "09:16",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 16.9 < 22",
-    "conditions": {
-      "adx": 16.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-10T10:10:41.558636",
-    "date": "2026-09-10",
-    "time": "10:10",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 72% from original. Strategy needs 82.9 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 82.9,
-      "risk_inr": 5385
-    },
-    "mode": "live",
-    "compression_pct": 72
-  },
-  {
-    "datetime": "2026-09-11T13:30:01.058665",
-    "date": "2026-09-11",
-    "time": "13:30",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.8 < 22",
-    "conditions": {
-      "adx": 13.8
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:30:17.151262",
-    "date": "2026-09-11",
-    "time": "13:30",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.4 < 22",
-    "conditions": {
-      "adx": 13.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:16.740833",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.4 < 22",
-    "conditions": {
-      "adx": 13.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:22.058098",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.4 < 22",
-    "conditions": {
-      "adx": 13.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:27.447588",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.4 < 22",
-    "conditions": {
-      "adx": 13.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:32.768329",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.4 < 22",
-    "conditions": {
-      "adx": 13.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:38.086780",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.4 < 22",
-    "conditions": {
-      "adx": 13.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:43.473574",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:48.796682",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:54.090933",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:32:59.455952",
-    "date": "2026-09-11",
-    "time": "13:32",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:04.785348",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:10.127083",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:15.475815",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:20.801533",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:26.137462",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:31.526524",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:36.822537",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:42.178324",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:33:58.148808",
-    "date": "2026-09-11",
-    "time": "13:33",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:34:03.624875",
-    "date": "2026-09-11",
-    "time": "13:34",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:34:08.939938",
-    "date": "2026-09-11",
-    "time": "13:34",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:50:15.728260",
-    "date": "2026-09-11",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.2 < 22",
-    "conditions": {
-      "adx": 14.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:50:21.145788",
-    "date": "2026-09-11",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.2 < 22",
-    "conditions": {
-      "adx": 14.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:50:31.803651",
-    "date": "2026-09-11",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.2 < 22",
-    "conditions": {
-      "adx": 14.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:50:37.090796",
-    "date": "2026-09-11",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.2 < 22",
-    "conditions": {
-      "adx": 14.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:50:42.469214",
-    "date": "2026-09-11",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.2 < 22",
-    "conditions": {
-      "adx": 14.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:50:47.774383",
-    "date": "2026-09-11",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.2 < 22",
-    "conditions": {
-      "adx": 14.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:50:53.145257",
-    "date": "2026-09-11",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:50:58.437374",
-    "date": "2026-09-11",
-    "time": "13:50",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:03.833907",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.7 < 22",
-    "conditions": {
-      "adx": 13.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:09.139334",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.7 < 22",
-    "conditions": {
-      "adx": 13.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:14.622103",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.7 < 22",
-    "conditions": {
-      "adx": 13.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:19.909163",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.7 < 22",
-    "conditions": {
-      "adx": 13.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:25.251359",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:30.552929",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.6 < 22",
-    "conditions": {
-      "adx": 13.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:35.937250",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.5 < 22",
-    "conditions": {
-      "adx": 13.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:41.257161",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.4 < 22",
-    "conditions": {
-      "adx": 13.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:46.653181",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.2 < 22",
-    "conditions": {
-      "adx": 13.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:51.958728",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.2 < 22",
-    "conditions": {
-      "adx": 13.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:51:57.297410",
-    "date": "2026-09-11",
-    "time": "13:51",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:02.695127",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:08.019801",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:13.415502",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:18.748169",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:24.105609",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:29.496539",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:34.864652",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:40.219672",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:45.530863",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:50.985306",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:52:56.353096",
-    "date": "2026-09-11",
-    "time": "13:52",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:01.761255",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:07.087956",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:12.461643",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:17.822191",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:23.200281",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:28.513239",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:33.909188",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:39.243272",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:44.618622",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:49.943754",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:53:55.244497",
-    "date": "2026-09-11",
-    "time": "13:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:00.637493",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:05.962693",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:11.362091",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:16.672788",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.1 < 22",
-    "conditions": {
-      "adx": 13.1
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:22.047931",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.2 < 22",
-    "conditions": {
-      "adx": 13.2
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:27.339652",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.7 < 22",
-    "conditions": {
-      "adx": 13.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:32.744657",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:38.088335",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:43.478363",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:48.787790",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:54.117735",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:54:59.544255",
-    "date": "2026-09-11",
-    "time": "13:54",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:55:26.301264",
-    "date": "2026-09-11",
-    "time": "13:55",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:55:31.694589",
-    "date": "2026-09-11",
-    "time": "13:55",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:55:37.003610",
-    "date": "2026-09-11",
-    "time": "13:55",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:55:42.363867",
-    "date": "2026-09-11",
-    "time": "13:55",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:55:47.692798",
-    "date": "2026-09-11",
-    "time": "13:55",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:55:53.024998",
-    "date": "2026-09-11",
-    "time": "13:55",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:56:01.542347",
-    "date": "2026-09-11",
-    "time": "13:56",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:57:01.761941",
-    "date": "2026-09-11",
-    "time": "13:57",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.0 < 22",
-    "conditions": {
-      "adx": 14.0
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:58:02.096822",
-    "date": "2026-09-11",
-    "time": "13:58",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.4 < 22",
-    "conditions": {
-      "adx": 14.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T13:59:02.564958",
-    "date": "2026-09-11",
-    "time": "13:59",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.4 < 22",
-    "conditions": {
-      "adx": 14.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T14:00:02.855278",
-    "date": "2026-09-11",
-    "time": "14:00",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.4 < 22",
-    "conditions": {
-      "adx": 14.4
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T14:01:03.078134",
-    "date": "2026-09-11",
-    "time": "14:01",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 15.3 < 22",
-    "conditions": {
-      "adx": 15.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-11T14:02:03.283829",
-    "date": "2026-09-11",
-    "time": "14:02",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 15.3 < 22",
-    "conditions": {
-      "adx": 15.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-15T09:23:12.066018",
-    "date": "2026-09-15",
-    "time": "09:23",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 23481.6,
-      "sl": 23512.91,
-      "target": 23387.67,
-      "rr": 3.0,
-      "reason": "GAP SELL 1H: Gap+0.76% broke below 1st candle. SL=23512.91 Tgt=23387.67 RR=1:3",
-      "conditions": {
-        "pdc": 23398.1,
-        "today_open": 23576.15,
-        "gap_pct": 0.76,
-        "gap_direction": "UP",
-        "current_price": 23481.6,
-        "pdc_dist_pct": 0.36
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-15T09:32:13.948140",
-    "date": "2026-09-15",
-    "time": "09:32",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 23451.1,
-      "sl": 23592.85,
-      "target": 22884.1,
-      "rr": 4.0,
-      "reason": "ORB SELL: Break below opening range low(23453), SL at range high",
-      "conditions": {
-        "price": 23451.1,
-        "range_high": 23592.85,
-        "range_low": 23452.75,
-        "time": "09:32"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-15T09:35:14.484280",
-    "date": "2026-09-15",
-    "time": "09:35",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 23459.15,
-      "sl": 23416.48,
-      "target": 23535.95,
-      "rr": 1.8,
-      "reason": "NTS BUY: Price(23459) > EMA200(23426), ST=Green, ADX=27.3, RR=1:1.80",
-      "conditions": {
-        "price": 23459.15,
-        "ema200": 23426.06,
-        "price_above_ema": true,
-        "adx": 27.26,
-        "adx_strong": true,
-        "supertrend_bullish": true,
-        "is_definitive_candle": "True",
-        "is_bullish_candle": "True",
-        "time": "09:35"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-16T09:32:58.263844",
-    "date": "2026-09-16",
-    "time": "09:32",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 77% from original. Strategy needs 102.5 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 102.5,
-      "risk_inr": 6662
-    },
-    "mode": "live",
-    "compression_pct": 77
-  },
-  {
-    "datetime": "2026-09-17T09:32:01.488886",
-    "date": "2026-09-17",
-    "time": "09:32",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 16.5 < 22",
-    "conditions": {
-      "adx": 16.5
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-18T09:15:09.561321",
-    "date": "2026-09-18",
-    "time": "09:15",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.7 < 22",
-    "conditions": {
-      "adx": 14.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-18T09:35:13.670407",
-    "date": "2026-09-18",
-    "time": "09:35",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 13.9 < 22",
-    "conditions": {
-      "adx": 13.9
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-18T13:41:05.757758",
-    "date": "2026-09-18",
-    "time": "13:41",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.7 < 22",
-    "conditions": {
-      "adx": 17.7
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-18T13:42:05.994627",
-    "date": "2026-09-18",
-    "time": "13:42",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.6 < 22",
-    "conditions": {
-      "adx": 17.6
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-22T10:33:06.849620",
-    "date": "2026-09-22",
-    "time": "10:33",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 23419.4,
-      "sl": 23489.0,
-      "target": 23141.0,
-      "rr": 4.0,
-      "reason": "ORB SELL: Break below opening range low(23426), SL at range high",
-      "conditions": {
-        "price": 23419.4,
-        "range_high": 23489.0,
-        "range_low": 23425.7,
-        "time": "10:33"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-24T10:23:02.822065",
-    "date": "2026-09-24",
-    "time": "10:23",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 73% from original. Strategy needs 84.2 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 84.2,
-      "risk_inr": 5476
-    },
-    "mode": "live",
-    "compression_pct": 73
-  },
-  {
-    "datetime": "2026-09-25T09:30:06.303309",
-    "date": "2026-09-25",
-    "time": "09:30",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 73% from original. Strategy needs 86.0 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 86.0,
-      "risk_inr": 5593,
-      "entry_price": 23116.05,
-      "sl": 23030.0,
-      "target": 23460.25,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(23104), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 73
-  },
-  {
-    "datetime": "2026-09-29T09:21:03.154932",
-    "date": "2026-09-29",
-    "time": "09:21",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 22675.15,
-      "sl": 22789.92,
-      "target": 22468.56,
-      "rr": 1.8,
-      "reason": "DBY SELL: Price(22675) broke 2-day low(22780), RR=1:1.8",
-      "conditions": {
-        "price": 22675.15,
-        "prev2_high": 23140.5,
-        "prev2_low": 22780.25,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-29T09:30:04.981074",
-    "date": "2026-09-29",
-    "time": "09:30",
-    "strategy": "NTS",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 22625.0,
-      "sl": 22674.76,
-      "target": 22535.43,
-      "rr": 1.8,
-      "reason": "NTS SELL: Price(22625) < EMA200(22981), ST=Red, ADX=38.9, RR=1:1.80",
-      "conditions": {
-        "price": 22625.0,
-        "ema200": 22981.13,
-        "price_above_ema": false,
-        "adx": 38.86,
-        "adx_strong": true,
-        "supertrend_bullish": false,
-        "is_definitive_candle": "True",
-        "is_bullish_candle": "False",
-        "time": "09:30"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-09-29T09:30:04.997811",
-    "date": "2026-09-29",
-    "time": "09:30",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "SELL",
-      "entry_price": 22625.0,
-      "sl": 22753.2,
-      "target": 22112.2,
-      "rr": 4.0,
-      "reason": "ORB SELL: Break below opening range low(22631), SL at range high",
-      "conditions": {
-        "price": 22625.0,
-        "range_high": 22753.2,
-        "range_low": 22631.0,
-        "time": "09:30"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-01T10:01:45.066741",
-    "date": "2026-10-01",
-    "time": "10:01",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 73% from original. Strategy needs 84.5 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 84.5,
-      "risk_inr": 5492,
-      "entry_price": 22592.55,
-      "sl": 22508.05,
-      "target": 22930.55,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(22590), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 73
-  },
-  {
-    "datetime": "2026-10-06T09:30:23.631635",
-    "date": "2026-10-06",
-    "time": "09:30",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 22604.7,
-      "sl": 22568.55,
-      "target": 22669.77,
-      "rr": 1.8,
-      "reason": "NTS BUY: Price(22605) > EMA200(22530), ST=Green, ADX=30.1, RR=1:1.80",
-      "conditions": {
-        "price": 22604.7,
-        "ema200": 22529.58,
-        "price_above_ema": true,
-        "adx": 30.09,
-        "adx_strong": true,
-        "supertrend_bullish": true,
-        "is_definitive_candle": "True",
-        "is_bullish_candle": "True",
-        "time": "09:30"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-06T09:30:23.676807",
-    "date": "2026-10-06",
-    "time": "09:30",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 22604.7,
-      "sl": 22543.7,
-      "target": 22714.5,
-      "rr": 1.8,
-      "reason": "DBY BUY: Price(22605) broke 2-day high(22556), RR=1:1.8",
-      "conditions": {
-        "price": 22604.7,
-        "prev2_high": 22555.75,
-        "prev2_low": 22421.95,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-06T09:48:27.337520",
-    "date": "2026-10-06",
-    "time": "09:48",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 22633.95,
-      "sl": 22561.6,
-      "target": 22923.35,
-      "rr": 4.0,
-      "reason": "ORB BUY: Break above opening range high(22628), SL at range low",
-      "conditions": {
-        "price": 22633.95,
-        "range_high": 22628.1,
-        "range_low": 22561.6,
-        "time": "09:48"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-07T09:40:07.576423",
-    "date": "2026-10-07",
-    "time": "09:40",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 21.5 < 22",
-    "conditions": {
-      "adx": 21.5,
-      "entry_price": 22587.5,
-      "sl": 22692.95,
-      "target": 22165.7,
-      "rr": 4.0,
-      "signal_reason": "ORB SELL: Break below opening range low(22600), SL at range high"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-07T10:22:17.227258",
-    "date": "2026-10-07",
-    "time": "10:22",
-    "strategy": "15MIN",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 20.8 < 22",
-    "conditions": {
-      "adx": 20.8,
-      "entry_price": 22683.7,
-      "sl": 22654.8,
-      "target": 22762.69,
-      "rr": 2.73,
-      "signal_reason": "15MIN BUY: Price(22684) > EMA50(22631), Target=EMA200(22763), RR=1:2.73"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-08T09:44:25.164399",
-    "date": "2026-10-08",
-    "time": "09:44",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 82% from original. Strategy needs 130.8 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 130.8,
-      "risk_inr": 8499,
-      "entry_price": 22468.3,
-      "sl": 22599.05,
-      "target": 21945.3,
-      "rr": 4.0,
-      "signal_reason": "ORB SELL: Break below opening range low(22476), SL at range high"
-    },
-    "mode": "live",
-    "compression_pct": 82
-  },
-  {
-    "datetime": "2026-10-09T09:34:41.775577",
-    "date": "2026-10-09",
-    "time": "09:34",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 77% from original. Strategy needs 99.2 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 99.2,
-      "risk_inr": 6445,
-      "entry_price": 22393.9,
-      "sl": 22294.75,
-      "target": 22790.5,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(22383), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 77
-  },
-  {
-    "datetime": "2026-10-14T09:49:09.468634",
-    "date": "2026-10-14",
-    "time": "09:49",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 74% from original. Strategy needs 89.0 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 89.0,
-      "risk_inr": 5788,
-      "entry_price": 22752.85,
-      "sl": 22663.8,
-      "target": 23109.05,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(22752), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 74
-  },
-  {
-    "datetime": "2026-10-16T09:31:40.363654",
-    "date": "2026-10-16",
-    "time": "09:31",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 83% from original. Strategy needs 137.3 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 137.3,
-      "risk_inr": 8928,
-      "entry_price": 22939.2,
-      "sl": 23076.55,
-      "target": 22389.8,
-      "rr": 4.0,
-      "signal_reason": "ORB SELL: Break below opening range low(22942), SL at range high"
-    },
-    "mode": "live",
-    "compression_pct": 83
-  },
-  {
-    "datetime": "2026-10-21T09:32:06.456566",
-    "date": "2026-10-21",
-    "time": "09:32",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 81% from original. Strategy needs 121.7 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 121.7,
-      "risk_inr": 7910,
-      "entry_price": 23097.85,
-      "sl": 22976.15,
-      "target": 23584.65,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(23087), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 81
-  },
-  {
-    "datetime": "2026-10-22T10:23:16.781006",
-    "date": "2026-10-22",
-    "time": "10:23",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.9 < 22",
-    "conditions": {
-      "adx": 17.9,
-      "entry_price": 22729.7,
-      "sl": 22557.95,
-      "target": 23416.7,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(22698), SL at range low"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-23T09:32:20.761559",
-    "date": "2026-10-23",
-    "time": "09:32",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 74% from original. Strategy needs 87.8 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 87.8,
-      "risk_inr": 5707,
-      "entry_price": 22699.45,
-      "sl": 22787.25,
-      "target": 22348.25,
-      "rr": 4.0,
-      "signal_reason": "ORB SELL: Break below opening range low(22700), SL at range high"
-    },
-    "mode": "live",
-    "compression_pct": 74
-  },
-  {
-    "datetime": "2026-10-26T09:18:35.523854",
-    "date": "2026-10-26",
-    "time": "09:18",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.7 < 22",
-    "conditions": {
-      "adx": 17.7,
-      "entry_price": 22452.75,
-      "sl": 22621.51,
-      "target": 22148.98,
-      "rr": 1.8,
-      "signal_reason": "DBY SELL: Price(22453) broke 2-day low(22600), RR=1:1.8"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-26T09:53:43.037891",
-    "date": "2026-10-26",
-    "time": "09:53",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 14.2 < 22",
-    "conditions": {
-      "adx": 14.2,
-      "entry_price": 22532.55,
-      "sl": 22483.37,
-      "target": 22680.09,
-      "rr": 3.0,
-      "signal_reason": "GAP BUY 1H: Gap-0.33% broke above 1st candle. SL=22483.37 Tgt=22680.09 RR=1:3"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-28T09:30:31.170347",
-    "date": "2026-10-28",
-    "time": "09:30",
-    "strategy": "ORB",
-    "direction": "SELL",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 84% from original. Strategy needs 141.2 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 141.2,
-      "risk_inr": 9178,
-      "entry_price": 22550.3,
-      "sl": 22691.5,
-      "target": 21985.5,
-      "rr": 4.0,
-      "signal_reason": "ORB SELL: Break below opening range low(22554), SL at range high"
-    },
-    "mode": "live",
-    "compression_pct": 84
-  },
-  {
-    "datetime": "2026-10-28T12:10:06.641641",
-    "date": "2026-10-28",
-    "time": "12:10",
-    "strategy": "15MIN",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.8 < 22",
-    "conditions": {
-      "adx": 17.8,
-      "entry_price": 22657.7,
-      "sl": 22639.46,
-      "target": 22692.04,
-      "rr": 1.88,
-      "signal_reason": "15MIN BUY: Price(22658) > EMA50(22656), Target=EMA200(22692), RR=1:1.88"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-29T09:39:23.381549",
-    "date": "2026-10-29",
-    "time": "09:39",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.3 < 22",
-    "conditions": {
-      "adx": 17.3,
-      "entry_price": 22758.45,
-      "sl": 22656.75,
-      "target": 23165.25,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(22746), SL at range low"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-10-29T09:52:25.956849",
-    "date": "2026-10-29",
-    "time": "09:52",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 15.5 < 22",
-    "conditions": {
-      "adx": 15.5,
-      "entry_price": 22752.45,
-      "sl": 22735.12,
-      "target": 22783.64,
-      "rr": 1.8,
-      "signal_reason": "DBY BUY: Price(22752) broke 2-day high(22750), RR=1:1.8"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-11-03T09:21:15.422703",
-    "date": "2026-11-03",
-    "time": "09:21",
-    "strategy": "DBY",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 23591.35,
-      "sl": 23424.04,
-      "target": 23892.51,
-      "rr": 1.8,
-      "reason": "DBY BUY: Price(23591) broke 2-day high(23441), RR=1:1.8",
-      "conditions": {
-        "price": 23591.35,
-        "prev2_high": 23440.8,
-        "prev2_low": 22964.5,
-        "is_definitive": "True"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-11-03T09:48:20.673705",
-    "date": "2026-11-03",
-    "time": "09:48",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 23634.7,
-      "sl": 23482.8,
-      "target": 24242.3,
-      "rr": 4.0,
-      "reason": "ORB BUY: Break above opening range high(23628), SL at range low",
-      "conditions": {
-        "price": 23634.7,
-        "range_high": 23628.3,
-        "range_low": 23482.8,
-        "time": "09:48"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-11-03T09:50:21.077851",
-    "date": "2026-11-03",
-    "time": "09:50",
-    "strategy": "NTS",
-    "direction": "BUY",
-    "skip_reason": "learned_filter",
-    "reason": "Learned filter: No trading on Tuesdays (historical WR too low \u2014 added by pattern analysis)",
-    "conditions": {
-      "signal": true,
-      "direction": "BUY",
-      "entry_price": 23635.85,
-      "sl": 23590.78,
-      "target": 23716.98,
-      "rr": 1.8,
-      "reason": "NTS BUY: Price(23636) > EMA200(23149), ST=Green, ADX=52.0, RR=1:1.80",
-      "conditions": {
-        "price": 23635.85,
-        "ema200": 23149.33,
-        "price_above_ema": true,
-        "adx": 52.01,
-        "adx_strong": true,
-        "supertrend_bullish": true,
-        "is_definitive_candle": "True",
-        "is_bullish_candle": "True",
-        "time": "09:50"
-      }
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-11-04T09:30:12.020247",
-    "date": "2026-11-04",
-    "time": "09:30",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 91% from original. Strategy needs 247.1 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 247.1,
-      "risk_inr": 16065,
-      "entry_price": 23943.3,
-      "sl": 23696.15,
-      "target": 24931.9,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(23942), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 91
-  },
-  {
-    "datetime": "2026-11-05T09:45:22.567624",
-    "date": "2026-11-05",
-    "time": "09:45",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 76% from original. Strategy needs 96.2 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 96.2,
-      "risk_inr": 6253,
-      "entry_price": 24392.5,
-      "sl": 24296.3,
-      "target": 24777.3,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(24392), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 76
-  },
-  {
-    "datetime": "2026-11-06T09:34:48.205856",
-    "date": "2026-11-06",
-    "time": "09:34",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 85% from original. Strategy needs 151.4 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 151.4,
-      "risk_inr": 9838,
-      "entry_price": 24539.4,
-      "sl": 24388.05,
-      "target": 25144.8,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(24539), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 85
-  },
-  {
-    "datetime": "2026-11-11T09:39:08.461748",
-    "date": "2026-11-11",
-    "time": "09:39",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 83% from original. Strategy needs 135.4 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 135.4,
-      "risk_inr": 8801,
-      "entry_price": 25399.2,
-      "sl": 25263.8,
-      "target": 25940.8,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(25399), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 83
-  },
-  {
-    "datetime": "2026-11-12T09:37:02.930871",
-    "date": "2026-11-12",
-    "time": "09:37",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "extreme_compression",
-    "reason": "SL compressed 89% from original. Strategy needs 200.8 pts but budget allows only 23.1 pts. Trade logic invalidated \u2014 skipping.",
-    "conditions": {
-      "sl_pts": 200.8,
-      "risk_inr": 13055,
-      "entry_price": 25343.8,
-      "sl": 25142.95,
-      "target": 26147.2,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(25342), SL at range low"
-    },
-    "mode": "live",
-    "compression_pct": 89
-  },
-  {
-    "datetime": "2026-11-13T09:16:01.232112",
-    "date": "2026-11-13",
-    "time": "09:16",
-    "strategy": "DBY",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 18.9 < 22",
-    "conditions": {
-      "adx": 18.9,
-      "entry_price": 25138.95,
-      "sl": 25227.64,
-      "target": 24979.31,
-      "rr": 1.8,
-      "signal_reason": "DBY SELL: Price(25139) broke 2-day low(25214), RR=1:1.8"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-11-13T09:48:18.649927",
-    "date": "2026-11-13",
-    "time": "09:48",
-    "strategy": "GAP",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 21.7 < 22",
-    "conditions": {
-      "adx": 21.7,
-      "entry_price": 25213.6,
-      "sl": 25182.14,
-      "target": 25307.98,
-      "rr": 3.0,
-      "signal_reason": "GAP BUY 1H: Gap-0.35% broke above 1st candle. SL=25182.14 Tgt=25307.98 RR=1:3"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-11-13T09:48:18.892182",
-    "date": "2026-11-13",
-    "time": "09:48",
-    "strategy": "ORB",
-    "direction": "BUY",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 21.7 < 22",
-    "conditions": {
-      "adx": 21.7,
-      "entry_price": 25213.6,
-      "sl": 25077.55,
-      "target": 25757.8,
-      "rr": 4.0,
-      "signal_reason": "ORB BUY: Break above opening range high(25210), SL at range low"
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-11-16T13:55:40.985909",
-    "date": "2026-11-16",
-    "time": "13:55",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "skip_reason": "adx_too_low",
-    "reason": "ADX 17.5 < 22",
-    "conditions": {
-      "adx": 17.5,
-      "entry_price": 25203.3,
-      "sl": 25222.81,
-      "target": 25144.77,
-      "rr": 3.0,
-      "signal_reason": "GAP SELL 2H: Gap+0.25% DCC bear. SL=25222.81 Tgt=25144.77 RR=1:3"
-    },
-    "mode": "live"
+<title>TradeLog — Trading Journal</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#0a0c0f; --bg2:#111318; --bg3:#181c22; --bg4:#1e2330;
+  --border:rgba(255,255,255,0.07); --border2:rgba(255,255,255,0.12);
+  --text:#e8eaf0; --text2:#8b90a0; --text3:#555a6a;
+  --accent:#4fffb0; --accent2:#00d4ff; --red:#ff4f6a;
+  --amber:#ffb830; --green:#4fffb0; --purple:#a78bfa;
+  --font-head:'Syne',sans-serif; --font-mono:'DM Mono',monospace;
+}
+:root[data-theme="light"] {
+  --bg:#f4f6fa; --bg2:#ffffff; --bg3:#e8ecf4; --bg4:#dde2ee;
+  --border:rgba(0,0,0,0.08); --border2:rgba(0,0,0,0.14);
+  --text:#1a1d26; --text2:#4a5068; --text3:#8a90a4;
+  --accent:#00a86b; --accent2:#0088cc; --red:#d93025;
+  --amber:#c97a00; --green:#00a86b; --purple:#6b4fc8;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:var(--font-mono);min-height:100vh;overflow-x:hidden;transition:background 0.3s,color 0.3s;}
+
+/* ── TOP BAR ── */
+.topbar{position:sticky;top:0;z-index:100;background:rgba(10,12,15,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px;}
+.logo{font-family:var(--font-head);font-size:17px;font-weight:800;letter-spacing:-0.5px;flex-shrink:0;}
+.logo span{color:var(--accent);}
+
+/* ── MARKET SWITCHER (INDIA / FOREX) ── */
+.market-switcher{display:flex;gap:2px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:3px;}
+.market-btn{padding:5px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--text2);font-family:var(--font-mono);transition:all 0.2s;letter-spacing:0.5px;}
+.market-btn.active{background:var(--bg4);color:var(--text);}
+.market-btn.active.india{color:#ff9f43;}
+.market-btn.active.forex{color:var(--accent2);}
+
+/* ── SECTION NAV TABS ── */
+.nav-tabs{display:flex;gap:4px;}
+.nav-tab{padding:5px 14px;border-radius:6px;font-size:11px;font-weight:500;cursor:pointer;border:none;background:transparent;color:var(--text2);font-family:var(--font-mono);transition:all 0.2s;letter-spacing:0.5px;}
+.nav-tab:hover{color:var(--text);background:var(--bg3);}
+.nav-tab.active{background:var(--bg4);color:var(--accent);}
+
+/* ── RIGHT CONTROLS ── */
+.topbar-right{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.mode-toggle{display:flex;gap:2px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:3px;}
+.mode-btn{padding:4px 12px;border-radius:4px;font-size:10px;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--text3);font-family:var(--font-mono);letter-spacing:1px;text-transform:uppercase;transition:all 0.2s;}
+.mode-btn.active.live{background:rgba(79,255,176,0.12);color:var(--accent);}
+.mode-btn.active.paper{background:rgba(255,184,48,0.12);color:var(--amber);}
+.mode-btn.active.all{background:var(--bg4);color:var(--text2);}
+.refresh-btn{padding:5px 12px;border-radius:6px;font-size:11px;cursor:pointer;border:1px solid var(--border2);background:transparent;color:var(--text2);font-family:var(--font-mono);transition:all 0.2s;}
+.refresh-btn:hover{color:var(--text);border-color:var(--accent);}
+
+/* ── MARKET SECTIONS ── */
+.market-section{display:none;}
+.market-section.active{display:block;}
+
+/* ── PAGES ── */
+.page{display:none;padding:28px 24px;max-width:1400px;margin:0 auto;}
+.page.active{display:block;}
+
+/* ── STAT CARDS ── */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px;}
+.stat-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px 22px;position:relative;overflow:hidden;}
+.stat-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent-color,var(--accent)),transparent);opacity:0.6;}
+.stat-card.red{--accent-color:var(--red);}
+.stat-card.amber{--accent-color:var(--amber);}
+.stat-card.purple{--accent-color:var(--purple);}
+.stat-card.blue{--accent-color:var(--accent2);}
+.stat-label{font-size:10px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;}
+.stat-value{font-family:var(--font-head);font-size:26px;font-weight:700;line-height:1;}
+.stat-value.green{color:var(--green);}
+.stat-value.red{color:var(--red);}
+.stat-value.amber{color:var(--amber);}
+.stat-value.neutral{color:var(--text);}
+.stat-sub{font-size:10px;color:var(--text3);margin-top:6px;}
+
+.section-title{font-family:var(--font-head);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--text3);margin-bottom:14px;}
+.charts-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:28px;}
+.chart-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px;}
+.chart-title{font-size:11px;color:var(--text2);margin-bottom:14px;letter-spacing:0.5px;}
+.wr-container{display:flex;align-items:center;justify-content:center;padding:8px 0;}
+.wr-circle{position:relative;width:100px;height:100px;}
+.wr-circle svg{transform:rotate(-90deg);}
+.wr-circle .wr-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.wr-pct{font-family:var(--font-head);font-size:22px;font-weight:700;color:var(--accent);}
+.wr-label2{font-size:9px;color:var(--text3);letter-spacing:1px;}
+.strat-bar-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.strat-name-label{font-size:11px;color:var(--text2);width:90px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.strat-bar-bg{flex:1;height:6px;background:var(--bg4);border-radius:3px;overflow:hidden;}
+.strat-bar-fill{height:100%;border-radius:3px;transition:width 0.8s ease;}
+.strat-pct-label{font-size:11px;color:var(--text3);width:32px;text-align:right;}
+.pnl-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.pnl-day-label{font-size:10px;color:var(--text3);width:28px;}
+.pnl-bar-wrap{flex:1;display:flex;align-items:center;height:16px;}
+.pnl-bar-pos{height:10px;border-radius:2px;background:var(--green);opacity:0.7;}
+.pnl-bar-neg{height:10px;border-radius:2px;background:var(--red);opacity:0.7;}
+.pnl-val{font-size:10px;color:var(--text2);width:60px;text-align:right;}
+
+/* ── TABLES ── */
+.trades-table{width:100%;border-collapse:collapse;}
+.trades-table th{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);padding:8px 10px;text-align:left;border-bottom:1px solid var(--border);font-weight:500;}
+.trades-table td{padding:9px 10px;font-size:12px;border-bottom:1px solid var(--border);}
+.trades-table tr:last-child td{border-bottom:none;}
+.trades-table tr:hover td{background:rgba(255,255,255,0.02);}
+.result-badge{padding:3px 10px;border-radius:20px;font-size:10px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;}
+.result-badge.target{background:rgba(79,255,176,0.12);color:var(--green);border:1px solid rgba(79,255,176,0.2);}
+.result-badge.sl{background:rgba(255,79,106,0.12);color:var(--red);border:1px solid rgba(255,79,106,0.2);}
+.result-badge.be{background:rgba(139,144,160,0.1);color:var(--text2);border:1px solid rgba(139,144,160,0.15);}
+.result-badge.open,.result-badge.pending{background:rgba(0,212,255,0.08);color:var(--accent2);border:1px solid rgba(0,212,255,0.15);}
+.result-badge.skipped{background:rgba(255,184,48,0.1);color:var(--amber);border:1px solid rgba(255,184,48,0.2);}
+.result-badge.failed{background:rgba(167,139,250,0.1);color:var(--purple);border:1px solid rgba(167,139,250,0.2);}
+.result-badge.entered{background:rgba(79,255,176,0.08);color:var(--green);border:1px solid rgba(79,255,176,0.15);}
+.trades-container{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.empty-state{text-align:center;padding:60px 20px;color:var(--text3);}
+.empty-icon{font-size:40px;margin-bottom:12px;opacity:0.4;}
+.empty-text{font-size:13px;}
+.filters-row{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;align-items:center;}
+.filter-select{background:var(--bg2);border:1px solid var(--border2);border-radius:7px;color:var(--text);font-family:var(--font-mono);font-size:11px;padding:7px 12px;outline:none;cursor:pointer;}
+.trades-count{font-size:11px;color:var(--text3);margin-left:auto;}
+
+/* ── ANALYTICS ── */
+.analytics-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;}
+.analytics-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:20px;}
+.analytics-card.full{grid-column:1/-1;}
+.equity-canvas-wrap{position:relative;height:160px;}
+.perf-summary-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
+
+/* ── FOREX SIGNAL BADGES ── */
+.dir-badge{padding:3px 9px;border-radius:4px;font-size:10px;font-weight:600;}
+.dir-badge.buy{background:rgba(79,255,176,0.1);color:var(--green);}
+.dir-badge.sell{background:rgba(255,79,106,0.1);color:var(--red);}
+.sym-badge{padding:2px 7px;border-radius:4px;font-size:10px;background:rgba(0,212,255,0.08);color:var(--accent2);}
+
+/* ── MISC ── */
+.compress-bar{display:flex;align-items:center;gap:6px;}
+.compress-fill{height:6px;border-radius:3px;background:var(--red);}
+.compress-bg{flex:1;height:6px;background:var(--bg4);border-radius:3px;overflow:hidden;min-width:60px;}
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px;}
+.notif{position:fixed;bottom:24px;right:24px;z-index:999;background:var(--bg3);border:1px solid var(--accent);border-radius:10px;padding:12px 20px;font-size:13px;color:var(--accent);transform:translateY(80px);opacity:0;transition:all 0.3s;}
+.notif.show{transform:translateY(0);opacity:1;}
+.last-updated{font-size:10px;color:var(--text3);}
+.section-divider{height:1px;background:var(--border);margin:0 0 20px 0;}
+
+@media(max-width:900px){
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .charts-row{grid-template-columns:1fr;}
+  .analytics-grid{grid-template-columns:1fr;}
+  .perf-summary-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  .topbar{flex-wrap:wrap;height:auto;padding:10px 16px;gap:8px;}
+  .page{padding:16px;}
+  .stats-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+
+<!-- ══════════════════════════════════════════════════════════
+     TOP BAR
+════════════════════════════════════════════════════════════ -->
+<div class="topbar">
+  <div class="logo">Trade<span>Log</span></div>
+
+  <div class="market-switcher">
+    <button class="market-btn active india" onclick="switchMarket('india')">🇮🇳 INDIA</button>
+    <button class="market-btn forex" onclick="switchMarket('forex')">💱 FOREX</button>
+  </div>
+
+  <!-- INDIA nav -->
+  <div class="nav-tabs" id="india-nav">
+    <button class="nav-tab active" onclick="showPage('india','dashboard')">Dashboard</button>
+    <button class="nav-tab" onclick="showPage('india','trades')">Trades</button>
+    <button class="nav-tab" onclick="showPage('india','skipped')">Skipped</button>
+    <button class="nav-tab" onclick="showPage('india','analytics')">Analytics</button>
+  </div>
+
+  <!-- FOREX nav -->
+  <div class="nav-tabs" id="forex-nav" style="display:none">
+    <button class="nav-tab active" onclick="showPage('forex','dashboard')">Dashboard</button>
+    <button class="nav-tab" onclick="showPage('forex','signals')">Signals</button>
+    <button class="nav-tab" onclick="showPage('forex','analytics')">Analytics</button>
+  </div>
+
+  <div class="topbar-right">
+    <div class="mode-toggle" id="mode-toggle">
+      <button class="mode-btn active all" onclick="setMode('all')">ALL</button>
+      <button class="mode-btn live" onclick="setMode('live')">LIVE</button>
+      <button class="mode-btn paper" onclick="setMode('paper')">PAPER</button>
+    </div>
+    <span class="last-updated" id="last-updated">—</span>
+    <button class="refresh-btn" id="theme-btn" onclick="toggleTheme()" title="Toggle theme">☀</button>
+    <button class="refresh-btn" onclick="loadAll()">↺ Refresh</button>
+  </div>
+</div>
+
+<div id="notif" class="notif"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     INDIA SECTION
+════════════════════════════════════════════════════════════ -->
+<div class="market-section active" id="section-india">
+
+  <!-- INDIA DASHBOARD -->
+  <div class="page active" id="india-page-dashboard">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Total P&amp;L</div>
+        <div class="stat-value green" id="i-stat-pnl">—</div>
+        <div class="stat-sub" id="i-stat-pnl-pts">— points</div>
+      </div>
+      <div class="stat-card amber">
+        <div class="stat-label">Win Rate</div>
+        <div class="stat-value amber" id="i-stat-wr">—%</div>
+        <div class="stat-sub" id="i-stat-wr-sub">— closed</div>
+      </div>
+      <div class="stat-card blue">
+        <div class="stat-label">Today</div>
+        <div class="stat-value neutral" id="i-stat-today">—</div>
+        <div class="stat-sub" id="i-stat-today-pnl">P&L: —</div>
+      </div>
+      <div class="stat-card purple">
+        <div class="stat-label">Skipped</div>
+        <div class="stat-value neutral" id="i-stat-skipped">—</div>
+        <div class="stat-sub" id="i-stat-skip-reason">—</div>
+      </div>
+    </div>
+    <div class="section-title">Overview</div>
+    <div class="charts-row">
+      <div class="chart-card">
+        <div class="chart-title">Win Rate</div>
+        <div class="wr-container">
+          <div class="wr-circle">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="var(--bg4)" stroke-width="8"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="var(--accent)" stroke-width="8"
+                stroke-dasharray="251.2" id="i-wr-circle-fill" stroke-dashoffset="251.2" stroke-linecap="round"/>
+            </svg>
+            <div class="wr-text">
+              <span class="wr-pct" id="i-wr-pct-text">—%</span>
+              <span class="wr-label2">WIN RATE</span>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:center;gap:16px;margin-top:8px;">
+          <span style="font-size:11px;color:var(--green)">W: <strong id="i-wr-wins">0</strong></span>
+          <span style="font-size:11px;color:var(--red)">L: <strong id="i-wr-losses">0</strong></span>
+          <span style="font-size:11px;color:var(--text2)">BE: <strong id="i-wr-be">0</strong></span>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Strategy Win Rates</div>
+        <div id="i-strat-bars"></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">7-Day P&amp;L</div>
+        <div id="i-pnl-bars"></div>
+      </div>
+    </div>
+    <div class="section-title">Recent Trades</div>
+    <div class="trades-container">
+      <table class="trades-table">
+        <thead><tr>
+          <th>Date</th><th>Strategy</th><th>Dir</th><th>Entry</th><th>SL</th><th>Target</th><th>R:R</th><th>Exit</th><th>Points</th><th>P&amp;L</th><th>Result</th><th>Mode</th>
+        </tr></thead>
+        <tbody id="i-recent-tbody"></tbody>
+      </table>
+      <div class="empty-state" id="i-recent-empty" style="display:none"><div class="empty-icon">📊</div><div class="empty-text">No trades yet</div></div>
+    </div>
+  </div>
+
+  <!-- INDIA TRADES -->
+  <div class="page" id="india-page-trades">
+    <div class="filters-row">
+      <select class="filter-select" id="i-filter-strategy" onchange="renderIndiaTrades()"><option value="">All Strategies</option></select>
+      <select class="filter-select" id="i-filter-result" onchange="renderIndiaTrades()">
+        <option value="">All Results</option><option value="target">Target</option><option value="sl">SL</option><option value="be">BE</option><option value="open">Open</option>
+      </select>
+      <select class="filter-select" id="i-filter-dir" onchange="renderIndiaTrades()">
+        <option value="">Both Dirs</option><option value="BUY">BUY</option><option value="SELL">SELL</option>
+      </select>
+      <span class="trades-count" id="i-trades-count">—</span>
+    </div>
+    <div class="trades-container">
+      <table class="trades-table">
+        <thead><tr>
+          <th>#</th><th>Date</th><th>Time</th><th>Strategy</th><th>Dir</th><th>Symbol</th><th>Entry</th><th>SL</th><th>Target</th><th>R:R</th><th>Exit</th><th>Points</th><th>P&amp;L</th><th>ADX</th><th>VIX</th><th>Result</th><th>Mode</th>
+        </tr></thead>
+        <tbody id="i-all-tbody"></tbody>
+      </table>
+      <div class="empty-state" id="i-all-empty" style="display:none"><div class="empty-icon">📋</div><div class="empty-text">No trades match</div></div>
+    </div>
+  </div>
+
+  <!-- INDIA SKIPPED -->
+  <div class="page" id="india-page-skipped">
+    <div style="display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap;">
+      <div class="stat-card" style="flex:1;min-width:120px;padding:14px 18px;">
+        <div class="stat-label">Total Skipped</div>
+        <div class="stat-value neutral" id="i-skipped-count">—</div>
+      </div>
+      <div class="stat-card amber" style="flex:1;min-width:120px;padding:14px 18px;">
+        <div class="stat-label">Compression</div>
+        <div class="stat-value amber" id="i-skip-compress-count">—</div>
+      </div>
+      <div class="stat-card red" style="flex:1;min-width:120px;padding:14px 18px;">
+        <div class="stat-label">ADX High</div>
+        <div class="stat-value red" id="i-skip-adx-count">—</div>
+      </div>
+      <div class="stat-card blue" style="flex:1;min-width:120px;padding:14px 18px;">
+        <div class="stat-label">ADX Low</div>
+        <div class="stat-value neutral" id="i-skip-adxlow-count">—</div>
+      </div>
+      <div class="stat-card purple" style="flex:1;min-width:120px;padding:14px 18px;">
+        <div class="stat-label">VIX</div>
+        <div class="stat-value neutral" id="i-skip-other-count">—</div>
+      </div>
+    </div>
+    <div class="filters-row">
+      <select class="filter-select" id="i-skip-filter-strategy" onchange="renderIndiaSkipped()"><option value="">All Strategies</option></select>
+      <select class="filter-select" id="i-skip-filter-reason" onchange="renderIndiaSkipped()">
+        <option value="">All Reasons</option><option value="compression">Compression</option><option value="adx">ADX</option><option value="vix">VIX</option>
+      </select>
+      <select class="filter-select" id="i-skip-filter-dir" onchange="renderIndiaSkipped()">
+        <option value="">Both Dirs</option><option value="BUY">BUY</option><option value="SELL">SELL</option>
+      </select>
+    </div>
+    <div class="trades-container">
+      <table class="trades-table">
+        <thead><tr>
+          <th>#</th><th>Date</th><th>Time</th><th>Strategy</th><th>Dir</th><th>Price</th><th>Reason</th><th>Orig SL</th><th>Budget SL</th><th>Compress</th><th>ADX</th><th>VIX</th>
+        </tr></thead>
+        <tbody id="i-skip-tbody"></tbody>
+      </table>
+      <div class="empty-state" id="i-skip-empty" style="display:none"><div class="empty-icon">⏭</div><div class="empty-text">No skipped signals</div></div>
+    </div>
+  </div>
+
+  <!-- INDIA ANALYTICS -->
+  <div class="page" id="india-page-analytics">
+    <div class="analytics-grid">
+      <div class="analytics-card full">
+        <div class="chart-title">Equity Curve</div>
+        <div class="equity-canvas-wrap"><canvas id="i-equityCanvas"></canvas></div>
+      </div>
+      <div class="analytics-card">
+        <div class="chart-title">Results Breakdown</div>
+        <div id="i-results-breakdown"></div>
+      </div>
+      <div class="analytics-card">
+        <div class="chart-title">Strategy Win Rate</div>
+        <div id="i-strat-wr-breakdown"></div>
+      </div>
+      <div class="analytics-card">
+        <div class="chart-title">Skip Reasons</div>
+        <div id="i-skip-breakdown"></div>
+      </div>
+      <div class="analytics-card">
+        <div class="chart-title">Performance</div>
+        <div class="perf-summary-grid" id="i-perf-summary"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /section-india -->
+
+<!-- ══════════════════════════════════════════════════════════
+     FOREX SECTION
+════════════════════════════════════════════════════════════ -->
+<div class="market-section" id="section-forex">
+
+  <!-- FOREX DASHBOARD -->
+  <div class="page active" id="forex-page-dashboard">
+    <div class="stats-grid">
+      <div class="stat-card blue">
+        <div class="stat-label">Total Signals</div>
+        <div class="stat-value neutral" id="f-stat-total">—</div>
+        <div class="stat-sub" id="f-stat-total-sub">—</div>
+      </div>
+      <div class="stat-card amber">
+        <div class="stat-label">Win Rate</div>
+        <div class="stat-value amber" id="f-stat-wr">—%</div>
+        <div class="stat-sub" id="f-stat-wr-sub">— closed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">W / L / Pending</div>
+        <div class="stat-value" id="f-stat-wlp" style="font-size:18px;letter-spacing:1px">— / — / —</div>
+        <div class="stat-sub" id="f-stat-wlp-sub">entered signals</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Total P&amp;L (USD)</div>
+        <div class="stat-value green" id="f-stat-pnl">—</div>
+        <div class="stat-sub" id="f-stat-pnl-sub">—</div>
+      </div>
+      <div class="stat-card purple">
+        <div class="stat-label">Pending / Skipped</div>
+        <div class="stat-value neutral" id="f-stat-open">—</div>
+        <div class="stat-sub" id="f-stat-open-sub">—</div>
+      </div>
+    </div>
+
+    <div class="section-title">Overview</div>
+    <div class="charts-row">
+      <div class="chart-card">
+        <div class="chart-title">Win Rate</div>
+        <div class="wr-container">
+          <div class="wr-circle">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="var(--bg4)" stroke-width="8"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="var(--accent2)" stroke-width="8"
+                stroke-dasharray="251.2" id="f-wr-circle-fill" stroke-dashoffset="251.2" stroke-linecap="round"/>
+            </svg>
+            <div class="wr-text">
+              <span class="wr-pct" id="f-wr-pct-text" style="color:var(--accent2)">—%</span>
+              <span class="wr-label2">WIN RATE</span>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:center;gap:16px;margin-top:8px;">
+          <span style="font-size:11px;color:var(--green)">W: <strong id="f-wr-wins">0</strong></span>
+          <span style="font-size:11px;color:var(--red)">L: <strong id="f-wr-losses">0</strong></span>
+          <span style="font-size:11px;color:var(--text2)">P: <strong id="f-wr-pending">0</strong></span>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Strategy Breakdown</div>
+        <div id="f-strat-bars"></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Symbol Split</div>
+        <div id="f-symbol-bars"></div>
+      </div>
+    </div>
+
+    <div class="section-title">Recent Signals</div>
+    <div class="trades-container">
+      <table class="trades-table">
+        <thead><tr>
+          <th>Time</th><th>Strategy</th><th>Symbol</th><th>Dir</th><th>TF</th><th>Entry</th><th>SL</th><th>TP1</th><th>Lot</th><th>Risk $</th><th>Outcome</th><th>Status</th><th>Mode</th>
+        </tr></thead>
+        <tbody id="f-recent-tbody"></tbody>
+      </table>
+      <div class="empty-state" id="f-recent-empty" style="display:none"><div class="empty-icon">📡</div><div class="empty-text">No signals yet</div></div>
+    </div>
+  </div>
+
+  <!-- FOREX SIGNALS -->
+  <div class="page" id="forex-page-signals">
+    <div class="filters-row">
+      <select class="filter-select" id="f-filter-symbol" onchange="renderForexSignals()"><option value="">All Symbols</option></select>
+      <select class="filter-select" id="f-filter-strategy" onchange="renderForexSignals()"><option value="">All Strategies</option></select>
+      <select class="filter-select" id="f-filter-dir" onchange="renderForexSignals()">
+        <option value="">Both Dirs</option><option value="BUY">BUY</option><option value="SELL">SELL</option>
+      </select>
+      <select class="filter-select" id="f-filter-decision" onchange="renderForexSignals()">
+        <option value="">All Status</option><option value="pending">Pending</option><option value="entered">Entered</option><option value="skipped">Skipped</option>
+      </select>
+      <span class="trades-count" id="f-signals-count">—</span>
+    </div>
+    <div class="trades-container">
+      <table class="trades-table">
+        <thead><tr>
+          <th>#</th><th>Time</th><th>Strategy</th><th>Symbol</th><th>Dir</th><th>TF</th><th>Entry</th><th>SL</th><th>TP1</th><th>TP Max</th><th>Lot</th><th>Risk $</th><th>Outcome</th><th>Status</th><th>Mode</th>
+        </tr></thead>
+        <tbody id="f-all-tbody"></tbody>
+      </table>
+      <div class="empty-state" id="f-all-empty" style="display:none"><div class="empty-icon">📋</div><div class="empty-text">No signals match</div></div>
+    </div>
+  </div>
+
+  <!-- FOREX ANALYTICS -->
+  <div class="page" id="forex-page-analytics">
+    <div class="analytics-grid">
+      <div class="analytics-card full">
+        <div class="chart-title">P&amp;L Curve (USD)</div>
+        <div class="equity-canvas-wrap"><canvas id="f-equityCanvas"></canvas></div>
+      </div>
+      <div class="analytics-card">
+        <div class="chart-title">Results Breakdown</div>
+        <div id="f-results-breakdown"></div>
+      </div>
+      <div class="analytics-card">
+        <div class="chart-title">Strategy Breakdown</div>
+        <div id="f-strat-wr-breakdown"></div>
+      </div>
+      <div class="analytics-card">
+        <div class="chart-title">Symbol Performance</div>
+        <div id="f-symbol-breakdown"></div>
+      </div>
+      <div class="analytics-card">
+        <div class="chart-title">Performance</div>
+        <div class="perf-summary-grid" id="f-perf-summary"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /section-forex -->
+
+<script>
+// ══════════════════════════════════════════════════════════
+// STATE
+// ══════════════════════════════════════════════════════════
+let currentMarket = 'india';
+let currentMode   = 'all'; // 'all' | 'live' | 'paper'
+
+// INDIA data
+let indiaTrades  = [];
+let indiaSkipped = [];
+
+// FOREX data
+let forexSignals = [];
+
+// GitHub raw URLs
+const INDIA_TRADES_URL   = 'https://raw.githubusercontent.com/JakkaAkhilesh/tradelog/main/trades.json';
+const INDIA_SKIPPED_URL  = 'https://raw.githubusercontent.com/JakkaAkhilesh/tradelog/main/skipped_signals.json';
+const INDIA_CAPITAL_URL  = 'https://raw.githubusercontent.com/JakkaAkhilesh/tradelog/main/paper_capital.json';
+const FOREX_SIGNALS_URL  = 'https://raw.githubusercontent.com/JakkaAkhilesh/forexlog/main/signals.json';
+
+// ══════════════════════════════════════════════════════════
+// MARKET SWITCH
+// ══════════════════════════════════════════════════════════
+function switchMarket(market) {
+  currentMarket = market;
+  document.querySelectorAll('.market-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.market-btn.' + market).classList.add('active');
+  document.getElementById('india-nav').style.display  = market === 'india' ? 'flex' : 'none';
+  document.getElementById('forex-nav').style.display  = market === 'forex' ? 'flex' : 'none';
+  document.getElementById('section-india').classList.toggle('active', market === 'india');
+  document.getElementById('section-forex').classList.toggle('active', market === 'forex');
+  if (market === 'india')  renderIndiaPage();
+  if (market === 'forex')  renderForexPage();
+}
+
+// ══════════════════════════════════════════════════════════
+// MODE TOGGLE
+// ══════════════════════════════════════════════════════════
+function setMode(mode) {
+  currentMode = mode;
+  document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.mode-btn.' + mode).classList.add('active');
+  if (currentMarket === 'india') renderIndiaPage();
+  else renderForexPage();
+}
+
+function toggleTheme() {
+  const root = document.documentElement;
+  const btn = document.getElementById('theme-btn');
+  const isLight = root.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    root.removeAttribute('data-theme');
+    btn.textContent = '☀';
+    btn.title = 'Switch to light theme';
+    try { localStorage.setItem('tl-theme','dark'); } catch(e){}
+  } else {
+    root.setAttribute('data-theme','light');
+    btn.textContent = '🌙';
+    btn.title = 'Switch to dark theme';
+    try { localStorage.setItem('tl-theme','light'); } catch(e){}
   }
-]
+}
+
+function filterByMode(list, modeField='mode') {
+  if (currentMode === 'all') return list;
+  return list.filter(t => (t[modeField]||'paper').toLowerCase() === currentMode);
+}
+
+// ══════════════════════════════════════════════════════════
+// DATA LOAD
+// ══════════════════════════════════════════════════════════
+async function loadAll() {
+  document.getElementById('last-updated').textContent = 'Loading…';
+  await Promise.all([loadIndiaData(), loadForexData()]);
+  const now = new Date();
+  document.getElementById('last-updated').textContent =
+    'Updated ' + now.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
+  if (currentMarket === 'india') renderIndiaPage();
+  else renderForexPage();
+}
+
+async function loadIndiaData() {
+  try {
+    const [tr, sk] = await Promise.all([
+      fetch(INDIA_TRADES_URL  + '?t=' + Date.now()).then(r => r.ok ? r.json() : []),
+      fetch(INDIA_SKIPPED_URL + '?t=' + Date.now()).then(r => r.ok ? r.json() : []),
+    ]);
+    indiaTrades  = Array.isArray(tr) ? tr : [];
+    indiaSkipped = Array.isArray(sk) ? sk : [];
+    // Capital
+    try {
+      const cap = await fetch(INDIA_CAPITAL_URL + '?t=' + Date.now());
+      if (cap.ok) {
+        const c = await cap.json();
+        const cur = c.current_capital || 50000;
+        const start = c.starting_capital || 50000;
+        const pnl = cur - start;
+        document.getElementById('i-stat-pnl').textContent =
+          (pnl >= 0 ? 'Rs.' : '-Rs.') + Math.abs(Math.round(pnl)).toLocaleString('en-IN');
+      }
+    } catch(e) {}
+    // Populate strategy dropdowns
+    const strats = [...new Set(indiaTrades.map(t => t.strategy).filter(Boolean))];
+    ['i-filter-strategy','i-skip-filter-strategy'].forEach(id => {
+      const sel = document.getElementById(id);
+      const cur = sel.value;
+      sel.innerHTML = '<option value="">All Strategies</option>' +
+        strats.map(s => `<option value="${s}"${s===cur?' selected':''}>${s}</option>`).join('');
+    });
+  } catch(e) { console.error('India load error', e); }
+}
+
+async function loadForexData() {
+  try {
+    const data = await fetch(FOREX_SIGNALS_URL + '?t=' + Date.now()).then(r => r.ok ? r.json() : []);
+    forexSignals = Array.isArray(data) ? data : [];
+    // Populate dropdowns
+    const strats  = [...new Set(forexSignals.map(s => s.strategy).filter(Boolean))];
+    const symbols = [...new Set(forexSignals.map(s => s.symbol).filter(Boolean))];
+    const stratSel = document.getElementById('f-filter-strategy');
+    stratSel.innerHTML = '<option value="">All Strategies</option>' +
+      strats.map(s => `<option value="${s}">${s}</option>`).join('');
+    const symSel = document.getElementById('f-filter-symbol');
+    symSel.innerHTML = '<option value="">All Symbols</option>' +
+      symbols.map(s => `<option value="${s}">${s}</option>`).join('');
+  } catch(e) { console.error('Forex load error', e); }
+}
+
+// ══════════════════════════════════════════════════════════
+// PAGE NAVIGATION
+// ══════════════════════════════════════════════════════════
+function showPage(market, pageId) {
+  const prefix = market === 'india' ? 'india' : 'forex';
+  document.querySelectorAll(`#section-${market} .page`).forEach(p => p.classList.remove('active'));
+  document.getElementById(`${prefix}-page-${pageId}`).classList.add('active');
+  const nav = document.getElementById(`${market}-nav`);
+  nav.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  const tabs = nav.querySelectorAll('.nav-tab');
+  const indiaMap   = {dashboard:0, trades:1, skipped:2, analytics:3};
+  const forexMap   = {dashboard:0, signals:1, analytics:2};
+  const map = market === 'india' ? indiaMap : forexMap;
+  if (tabs[map[pageId]]) tabs[map[pageId]].classList.add('active');
+  if (market === 'india') {
+    if (pageId === 'dashboard')  renderIndiaDashboard();
+    if (pageId === 'trades')     renderIndiaTrades();
+    if (pageId === 'skipped')    renderIndiaSkipped();
+    if (pageId === 'analytics')  renderIndiaAnalytics();
+  } else {
+    if (pageId === 'dashboard')  renderForexDashboard();
+    if (pageId === 'signals')    renderForexSignals();
+    if (pageId === 'analytics')  renderForexAnalytics();
+  }
+}
+
+function renderIndiaPage() {
+  const active = document.querySelector('#section-india .page.active');
+  const id = active ? active.id.replace('india-page-','') : 'dashboard';
+  if (id==='dashboard')  renderIndiaDashboard();
+  if (id==='trades')     renderIndiaTrades();
+  if (id==='skipped')    renderIndiaSkipped();
+  if (id==='analytics')  renderIndiaAnalytics();
+}
+function renderForexPage() {
+  const active = document.querySelector('#section-forex .page.active');
+  const id = active ? active.id.replace('forex-page-','') : 'dashboard';
+  if (id==='dashboard')  renderForexDashboard();
+  if (id==='signals')    renderForexSignals();
+  if (id==='analytics')  renderForexAnalytics();
+}
+
+// ══════════════════════════════════════════════════════════
+// INDIA RENDER
+// ══════════════════════════════════════════════════════════
+function renderIndiaDashboard() {
+  const ft = filterByMode(indiaTrades);
+  const closed = ft.filter(t => t.result && !['open','skipped','failed'].includes(t.result));
+  const wins = closed.filter(t => t.result === 'target');
+  const losses = closed.filter(t => t.result === 'sl');
+  const bes = closed.filter(t => t.result === 'be');
+  const totalPnl = ft.reduce((s,t) => s+(t.pnl||0), 0);
+  const wr = closed.length ? ((wins.length/closed.length)*100).toFixed(1) : 0;
+  const totalPts = ft.reduce((s,t) => s+(t.points||0), 0);
+  const today = new Date().toISOString().split('T')[0];
+  const todayTrades = ft.filter(t => t.date === today);
+  const todayPnl = todayTrades.reduce((s,t) => s+(t.pnl||0), 0);
+  const todaySkips = indiaSkipped.filter(s => (s.date||'').startsWith(today));
+
+  document.getElementById('i-stat-pnl').textContent = (totalPnl>=0?'Rs.':'-Rs.')+Math.abs(Math.round(totalPnl)).toLocaleString('en-IN');
+  document.getElementById('i-stat-pnl').className = 'stat-value '+(totalPnl>=0?'green':'red');
+  document.getElementById('i-stat-pnl-pts').textContent = (totalPts>=0?'+':'')+totalPts.toFixed(1)+' points';
+  document.getElementById('i-stat-wr').textContent = wr+'%';
+  document.getElementById('i-stat-wr-sub').textContent = closed.length+' closed';
+  document.getElementById('i-stat-today').textContent = todayTrades.length;
+  document.getElementById('i-stat-today-pnl').textContent = 'P&L: '+(todayPnl>=0?'Rs.':'-Rs.')+Math.abs(Math.round(todayPnl));
+  document.getElementById('i-stat-skipped').textContent = filterByMode(indiaSkipped).length;
+  document.getElementById('i-stat-skip-reason').textContent = todaySkips.length+' skipped today';
+
+  const circ = 251.2;
+  document.getElementById('i-wr-circle-fill').style.strokeDashoffset = circ - (parseFloat(wr)/100)*circ;
+  document.getElementById('i-wr-pct-text').textContent = wr+'%';
+  document.getElementById('i-wr-wins').textContent = wins.length;
+  document.getElementById('i-wr-losses').textContent = losses.length;
+  document.getElementById('i-wr-be').textContent = bes.length;
+
+  renderIndiaStratBars(ft);
+  renderIndiaPnlBars(ft);
+
+  const tbody = document.getElementById('i-recent-tbody');
+  const empty = document.getElementById('i-recent-empty');
+  const recent = [...ft].reverse().slice(0,8);
+  if (!recent.length) { tbody.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display = 'none';
+  tbody.innerHTML = recent.map(t => `<tr>
+    <td style="color:var(--text3)">${t.date||'—'}</td>
+    <td style="color:var(--accent2)">${t.strategy||'—'}</td>
+    <td><span style="color:${t.direction==='BUY'?'var(--green)':'var(--red)'}">${t.direction||'—'}</span></td>
+    <td>${t.entry_price||t.entry||'—'}</td>
+    <td style="color:var(--red)">${t.sl||'—'}</td>
+    <td style="color:var(--green)">${t.target||'—'}</td>
+    <td style="color:var(--text2)">${t.rr?'1:'+t.rr:'—'}</td>
+    <td>${t.exit_price||t.exit||'—'}</td>
+    <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
+    <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'}; font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
+    <td><span class="result-badge ${(t.result||'open').toLowerCase()}">${t.result||'open'}</span></td>
+    <td><span style="padding:2px 7px;border-radius:4px;font-size:10px;background:${(t.mode||'paper')==='live'?'rgba(79,255,176,0.1)':'rgba(255,184,48,0.1)'};color:${(t.mode||'paper')==='live'?'var(--accent)':'var(--amber)'};">${(t.mode||'paper').toUpperCase()}</span></td>
+  </tr>`).join('');
+}
+
+function renderIndiaStratBars(ft) {
+  ft = ft || filterByMode(indiaTrades);
+  const stratMap = {};
+  ft.filter(t=>t.result&&t.result!=='open').forEach(t=>{
+    if(!stratMap[t.strategy]) stratMap[t.strategy]={w:0,total:0};
+    stratMap[t.strategy].total++;
+    if(t.result==='target') stratMap[t.strategy].w++;
+  });
+  const container = document.getElementById('i-strat-bars');
+  const entries = Object.entries(stratMap).sort((a,b)=>(b[1].w/b[1].total)-(a[1].w/a[1].total)).slice(0,5);
+  if(!entries.length){container.innerHTML='<div style="color:var(--text3);font-size:12px;text-align:center;padding:20px">No data</div>';return;}
+  const colors=['var(--accent)','var(--accent2)','var(--amber)','var(--purple)','var(--red)'];
+  container.innerHTML=entries.map(([name,d],i)=>{
+    const wr=((d.w/d.total)*100).toFixed(0);
+    return`<div class="strat-bar-row"><div class="strat-name-label" title="${name}">${name}</div><div class="strat-bar-bg"><div class="strat-bar-fill" style="width:${wr}%;background:${colors[i]}"></div></div><div class="strat-pct-label">${wr}%</div></div>`;
+  }).join('');
+}
+
+function renderIndiaPnlBars(ft) {
+  const container = document.getElementById('i-pnl-bars');
+  const days={};
+  const today=new Date();
+  for(let i=6;i>=0;i--){const d=new Date(today);d.setDate(d.getDate()-i);days[d.toISOString().split('T')[0]]=0;}
+  (ft||filterByMode(indiaTrades)).forEach(t=>{if(days[t.date]!==undefined)days[t.date]+=(t.pnl||0);});
+  const maxAbs=Math.max(...Object.values(days).map(Math.abs),1);
+  container.innerHTML=Object.entries(days).map(([date,pnl])=>{
+    const label=new Date(date).toLocaleDateString('en-IN',{weekday:'short'}).substring(0,3);
+    const barW=Math.max((Math.abs(pnl)/maxAbs)*100,pnl!==0?4:0);
+    return`<div class="pnl-bar-row"><div class="pnl-day-label">${label}</div><div class="pnl-bar-wrap"><div class="${pnl>=0?'pnl-bar-pos':'pnl-bar-neg'}" style="width:${barW}%"></div></div><div class="pnl-val" style="color:${pnl>=0?'var(--green)':'var(--red)'}">${pnl>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(pnl))}</div></div>`;
+  }).join('');
+}
+
+function renderIndiaTrades() {
+  const fs=document.getElementById('i-filter-strategy').value;
+  const fr=document.getElementById('i-filter-result').value;
+  const fd=document.getElementById('i-filter-dir').value;
+  let filtered=filterByMode(indiaTrades).filter(t=>(!fs||t.strategy===fs)&&(!fr||(t.result||'').toLowerCase()===fr)&&(!fd||t.direction===fd));
+  document.getElementById('i-trades-count').textContent=filtered.length+' trades';
+  const tbody=document.getElementById('i-all-tbody');
+  const empty=document.getElementById('i-all-empty');
+  if(!filtered.length){tbody.innerHTML='';empty.style.display='block';return;}
+  empty.style.display='none';
+  tbody.innerHTML=filtered.map((t,i)=>`<tr>
+    <td style="color:var(--text3)">${i+1}</td>
+    <td style="color:var(--text3)">${t.date||'—'}</td>
+    <td style="color:var(--text3)">${t.time||'—'}</td>
+    <td style="color:var(--accent2)">${t.strategy||'—'}</td>
+    <td><span style="color:${t.direction==='BUY'?'var(--green)':'var(--red)'}">${t.direction||'—'}</span></td>
+    <td style="font-size:11px">${t.option_symbol||t.strike||'—'}</td>
+    <td>${t.entry_price||t.entry||'—'}</td>
+    <td style="color:var(--red)">${t.sl||'—'}</td>
+    <td style="color:var(--green)">${t.target||'—'}</td>
+    <td style="color:var(--text2)">${t.rr?'1:'+t.rr:'—'}</td>
+    <td>${t.exit_price||t.exit||'—'}</td>
+    <td style="color:${(t.points||0)>=0?'var(--green)':'var(--red)'};font-weight:600">${(t.points||0)>0?'+':''}${(t.points||0).toFixed(1)}</td>
+    <td style="color:${(t.pnl||0)>=0?'var(--green)':'var(--red)'};font-weight:600">${(t.pnl||0)>=0?'Rs.':'-Rs.'}${Math.abs(Math.round(t.pnl||0))}</td>
+    <td style="color:var(--text2)">${t.adx||'—'}</td>
+    <td style="color:var(--text2)">${t.vix_ratio||'—'}</td>
+    <td><span class="result-badge ${(t.result||'open').toLowerCase()}">${t.result||'open'}</span></td>
+    <td><span style="padding:2px 7px;border-radius:4px;font-size:10px;background:${(t.mode||'paper')==='live'?'rgba(79,255,176,0.1)':'rgba(255,184,48,0.1)'};color:${(t.mode||'paper')==='live'?'var(--accent)':'var(--amber)'};">${(t.mode||'paper').toUpperCase()}</span></td>
+  </tr>`).join('');
+}
+
+function renderIndiaSkipped() {
+  const fs=document.getElementById('i-skip-filter-strategy').value;
+  const fr=document.getElementById('i-skip-filter-reason').value;
+  const fd=document.getElementById('i-skip-filter-dir').value;
+  const modeFiltered=filterByMode(indiaSkipped);
+  let filtered=modeFiltered.filter(s=>(!fs||s.strategy===fs)&&(!fr||(s.skip_reason||s.reason||'').includes(fr))&&(!fd||s.direction===fd));
+  document.getElementById('i-skipped-count').textContent=modeFiltered.length;
+  document.getElementById('i-skip-compress-count').textContent=modeFiltered.filter(s=>(s.skip_reason||'').includes('compression')).length;
+  document.getElementById('i-skip-adx-count').textContent=modeFiltered.filter(s=>(s.reason||'').toLowerCase().includes('exhaustion')).length;
+  document.getElementById('i-skip-adxlow-count').textContent=modeFiltered.filter(s=>(s.reason||'').toLowerCase().includes('adx')&&!(s.reason||'').toLowerCase().includes('exhaustion')).length;
+  document.getElementById('i-skip-other-count').textContent=modeFiltered.filter(s=>(s.reason||'').toLowerCase().includes('vix')).length;
+  const tbody=document.getElementById('i-skip-tbody');
+  const empty=document.getElementById('i-skip-empty');
+  if(!filtered.length){tbody.innerHTML='';empty.style.display='block';return;}
+  empty.style.display='none';
+  tbody.innerHTML=filtered.map((s,i)=>{
+    const reason=s.reason||s.skip_reason||'—';
+    const shortReason=reason.length>40?reason.substring(0,40)+'...':reason;
+    const compress=s.compression_pct||(s.compression_ratio?Math.round((1-s.compression_ratio)*100):null);
+    return`<tr>
+      <td style="color:var(--text3)">${i+1}</td>
+      <td style="color:var(--text3)">${s.date||'—'}</td>
+      <td style="color:var(--text3)">${s.time||'—'}</td>
+      <td style="color:var(--accent2)">${s.strategy||'—'}</td>
+      <td><span style="color:${s.direction==='BUY'?'var(--green)':'var(--red)'}">${s.direction||'—'}</span></td>
+      <td>${s.signal_price||s.price||'—'}</td>
+      <td><span style="padding:3px 10px;border-radius:4px;font-size:10px;background:rgba(255,184,48,0.1);color:var(--amber)" title="${reason}">${shortReason}</span></td>
+      <td style="color:var(--red)">${s.original_sl_pts?s.original_sl_pts+' pts':'—'}</td>
+      <td style="color:var(--amber)">${s.adjusted_sl_pts?s.adjusted_sl_pts+' pts':'—'}</td>
+      <td>${compress?`<div class="compress-bar"><div class="compress-bg"><div class="compress-fill" style="width:${Math.min(compress,100)}%"></div></div><span style="font-size:11px;color:var(--red);margin-left:4px">${compress}%</span></div>`:'—'}</td>
+      <td style="color:var(--text2)">${s.adx||'—'}</td>
+      <td style="color:var(--text2)">${s.vix_ratio||'—'}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderIndiaAnalytics() {
+  const ft=filterByMode(indiaTrades);
+  drawEquityCurve(ft,'i-equityCanvas','#4fffb0');
+  const closed=ft.filter(t=>t.result&&!['open','skipped','failed'].includes(t.result));
+  const wins=closed.filter(t=>t.result==='target');
+  const losses=closed.filter(t=>t.result==='sl');
+  const bes=closed.filter(t=>t.result==='be');
+  const total=closed.length||1;
+  const rb=document.getElementById('i-results-breakdown');
+  rb.innerHTML=[{label:'Target Hit',count:wins.length,color:'var(--green)'},{label:'SL Hit',count:losses.length,color:'var(--red)'},{label:'Breakeven',count:bes.length,color:'var(--text2)'}].map(r=>`<div style="margin-bottom:12px;"><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:12px;color:var(--text2)">${r.label}</span><span style="font-size:12px;color:${r.color};font-weight:600">${r.count} (${((r.count/total)*100).toFixed(0)}%)</span></div><div style="height:6px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${(r.count/total)*100}%;background:${r.color};border-radius:3px;"></div></div></div>`).join('');
+  const stratWR={};
+  closed.forEach(t=>{if(!stratWR[t.strategy])stratWR[t.strategy]={w:0,t:0};stratWR[t.strategy].t++;if(t.result==='target')stratWR[t.strategy].w++;});
+  const swr=document.getElementById('i-strat-wr-breakdown');
+  const swrEntries=Object.entries(stratWR).sort((a,b)=>(b[1].w/b[1].t)-(a[1].w/a[1].t));
+  swr.innerHTML=swrEntries.length?swrEntries.map(([name,d])=>{const wr=((d.w/d.t)*100).toFixed(0);return`<div style="margin-bottom:10px;"><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:var(--text2)">${name}</span><span style="font-size:11px;color:${wr>=60?'var(--green)':wr>=50?'var(--amber)':'var(--red)'}">${wr}% (${d.t})</span></div><div style="height:5px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${wr}%;background:${wr>=60?'var(--green)':wr>=50?'var(--amber)':'var(--red)'};border-radius:3px;"></div></div></div>`}).join(''):'<div style="color:var(--text3);font-size:12px;text-align:center;padding:20px">No data</div>';
+  const skipReasons={};
+  filterByMode(indiaSkipped).forEach(s=>{const r=s.skip_reason||'other';skipReasons[r]=(skipReasons[r]||0)+1;});
+  const sb=document.getElementById('i-skip-breakdown');
+  const sbTotal=Object.values(skipReasons).reduce((a,b)=>a+b,0)||1;
+  sb.innerHTML=Object.entries(skipReasons).sort((a,b)=>b[1]-a[1]).map(([reason,count])=>`<div style="margin-bottom:10px;"><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:var(--amber)">${reason}</span><span style="font-size:11px;color:var(--text2)">${count} (${((count/sbTotal)*100).toFixed(0)}%)</span></div><div style="height:5px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${(count/sbTotal)*100}%;background:var(--amber);border-radius:3px;"></div></div></div>`).join('')||'<div style="color:var(--text3);font-size:12px;text-align:center;padding:20px">No skips</div>';
+  const totalPnl=ft.reduce((s,t)=>s+(t.pnl||0),0);
+  const avgWin=wins.length?(wins.reduce((s,t)=>s+Math.abs(t.pnl||0),0)/wins.length).toFixed(0):0;
+  const avgLoss=losses.length?(losses.reduce((s,t)=>s+Math.abs(t.pnl||0),0)/losses.length).toFixed(0):0;
+  const best=ft.reduce((b,t)=>(t.pnl||0)>(b.pnl||0)?t:b,{pnl:0});
+  const worst=ft.reduce((w,t)=>(t.pnl||0)<(w.pnl||0)?t:w,{pnl:0});
+  document.getElementById('i-perf-summary').innerHTML=[
+    {label:'Total P&L',val:(totalPnl>=0?'Rs.':'-Rs.')+Math.abs(Math.round(totalPnl)).toLocaleString('en-IN'),color:totalPnl>=0?'var(--green)':'var(--red)'},
+    {label:'Avg Win',val:'Rs.'+Number(avgWin).toLocaleString('en-IN'),color:'var(--green)'},
+    {label:'Avg Loss',val:'Rs.'+Number(avgLoss).toLocaleString('en-IN'),color:'var(--red)'},
+    {label:'Best',val:'Rs.'+Math.abs(Math.round(best.pnl||0)).toLocaleString('en-IN'),color:'var(--green)'},
+    {label:'Worst',val:'-Rs.'+Math.abs(Math.round(worst.pnl||0)).toLocaleString('en-IN'),color:'var(--red)'},
+  ].map(s=>`<div style="text-align:center;background:var(--bg3);padding:14px;border-radius:8px;"><div style="font-size:10px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;">${s.label}</div><div style="font-family:var(--font-head);font-size:18px;font-weight:700;color:${s.color}">${s.val}</div></div>`).join('');
+}
+
+// ══════════════════════════════════════════════════════════
+// FOREX RENDER
+// ══════════════════════════════════════════════════════════
+function forexModeBadge(sig) {
+  const m = (sig.mode||'paper').toLowerCase();
+  return `<span style="padding:2px 7px;border-radius:4px;font-size:10px;background:${m==='live'?'rgba(79,255,176,0.1)':'rgba(255,184,48,0.1)'};color:${m==='live'?'var(--accent)':'var(--amber)'};">${m.toUpperCase()}</span>`;
+}
+
+function renderForexDashboard() {
+  const ft = filterByMode(forexSignals);
+  const WIN_OUTCOMES = ['tp_max','tp1','tp2_trail'];
+  const closed = ft.filter(s => s.outcome && s.outcome !== null);
+  const wins   = closed.filter(s => WIN_OUTCOMES.includes(s.outcome));
+  const losses = closed.filter(s => s.outcome === 'sl_hit');
+  const taken  = ft.filter(s => s.decision === 'entered');
+  const pending= ft.filter(s => s.decision === 'pending' || !s.decision);
+  const wr     = closed.length ? ((wins.length/closed.length)*100).toFixed(1) : 0;
+  const totalPnl = ft.reduce((s,sig)=>s+(sig.pnl_usd||0),0);
+
+  const skipped = ft.filter(s=>s.decision==='skipped');
+  document.getElementById('f-stat-total').textContent = ft.length;
+  document.getElementById('f-stat-total-sub').textContent = taken.length+' entered';
+  document.getElementById('f-stat-wr').textContent = wr+'%';
+  document.getElementById('f-stat-wr-sub').textContent = closed.length+' closed';
+  const wlpEl = document.getElementById('f-stat-wlp');
+  wlpEl.innerHTML = `<span style="color:var(--green)">${wins.length}</span> / <span style="color:var(--red)">${losses.length}</span> / <span style="color:var(--text2)">${pending.length}</span>`;
+  document.getElementById('f-stat-wlp-sub').textContent = taken.length+' entered signals';
+  document.getElementById('f-stat-pnl').textContent = (totalPnl>=0?'$':'-$')+Math.abs(totalPnl).toFixed(2);
+  document.getElementById('f-stat-pnl').className = 'stat-value '+(totalPnl>=0?'green':'red');
+  document.getElementById('f-stat-pnl-sub').textContent = wins.length+' wins · '+losses.length+' losses';
+  document.getElementById('f-stat-open').textContent = pending.length+' / '+skipped.length;
+  document.getElementById('f-stat-open-sub').textContent = 'pending / skipped';
+
+  const circ = 251.2;
+  document.getElementById('f-wr-circle-fill').style.strokeDashoffset = circ - (parseFloat(wr)/100)*circ;
+  document.getElementById('f-wr-pct-text').textContent = wr+'%';
+  document.getElementById('f-wr-wins').textContent = wins.length;
+  document.getElementById('f-wr-losses').textContent = losses.length;
+  document.getElementById('f-wr-pending').textContent = pending.length;
+
+  renderForexStratBars(ft);
+  renderForexSymbolBars(ft);
+
+  const tbody = document.getElementById('f-recent-tbody');
+  const empty = document.getElementById('f-recent-empty');
+  const recent = [...ft].reverse().slice(0,10);
+  if(!recent.length){tbody.innerHTML='';empty.style.display='block';return;}
+  empty.style.display='none';
+  tbody.innerHTML = recent.map(sig=>`<tr>
+    <td style="color:var(--text3);font-size:11px">${(sig.time||'—').substring(0,16)}</td>
+    <td style="color:var(--accent2);font-size:11px">${sig.strategy||'—'}</td>
+    <td><span class="sym-badge">${sig.symbol||'—'}</span></td>
+    <td><span class="dir-badge ${(sig.direction||'').toLowerCase()}">${sig.direction||'—'}</span></td>
+    <td style="color:var(--text3)">${sig.timeframe||'—'}</td>
+    <td>${sig.entry||'—'}</td>
+    <td style="color:var(--red)">${sig.sl||'—'}</td>
+    <td style="color:var(--green)">${sig.tp1||'—'}</td>
+    <td style="color:var(--text2)">${sig.lot||'—'}</td>
+    <td style="color:var(--amber)">$${sig.risk_usd||'—'}</td>
+    <td style="color:${['tp_max','tp1','tp2_trail'].includes(sig.outcome)?'var(--green)':sig.outcome==='sl_hit'?'var(--red)':'var(--text3)'};font-size:11px">${sig.outcome||'—'}</td>
+    <td><span class="result-badge ${(sig.decision||'pending').toLowerCase()}">${sig.decision||'pending'}</span></td>
+    <td>${forexModeBadge(sig)}</td>
+  </tr>`).join('');
+}
+
+function renderForexStratBars(ft) {
+  const map={};
+  (ft||filterByMode(forexSignals)).forEach(s=>{
+    if(!map[s.strategy])map[s.strategy]={taken:0,total:0};
+    map[s.strategy].total++;
+    if(s.decision==='entered')map[s.strategy].taken++;
+  });
+  const container=document.getElementById('f-strat-bars');
+  const entries=Object.entries(map).sort((a,b)=>b[1].total-a[1].total).slice(0,5);
+  if(!entries.length){container.innerHTML='<div style="color:var(--text3);font-size:12px;text-align:center;padding:20px">No data</div>';return;}
+  const colors=['var(--accent2)','var(--accent)','var(--amber)','var(--purple)','var(--red)'];
+  container.innerHTML=entries.map(([name,d],i)=>{
+    const pct=((d.taken/d.total)*100).toFixed(0);
+    return`<div class="strat-bar-row"><div class="strat-name-label" title="${name}">${name.replace('_',' ')}</div><div class="strat-bar-bg"><div class="strat-bar-fill" style="width:${pct}%;background:${colors[i]}"></div></div><div class="strat-pct-label">${d.total}</div></div>`;
+  }).join('');
+}
+
+function renderForexSymbolBars(ft) {
+  const map={};
+  (ft||filterByMode(forexSignals)).forEach(s=>{map[s.symbol]=(map[s.symbol]||0)+1;});
+  const total=Object.values(map).reduce((a,b)=>a+b,0)||1;
+  const container=document.getElementById('f-symbol-bars');
+  const colors=['var(--accent)','var(--accent2)','var(--amber)','var(--purple)'];
+  container.innerHTML=Object.entries(map).sort((a,b)=>b[1]-a[1]).map(([sym,count],i)=>`<div class="strat-bar-row"><div class="strat-name-label">${sym}</div><div class="strat-bar-bg"><div class="strat-bar-fill" style="width:${(count/total)*100}%;background:${colors[i%colors.length]}"></div></div><div class="strat-pct-label">${count}</div></div>`).join('');
+}
+
+function renderForexSignals() {
+  const fsy=document.getElementById('f-filter-symbol').value;
+  const fst=document.getElementById('f-filter-strategy').value;
+  const fd =document.getElementById('f-filter-dir').value;
+  const fde=document.getElementById('f-filter-decision').value;
+  let filtered=filterByMode(forexSignals).filter(s=>
+    (!fsy||s.symbol===fsy)&&(!fst||s.strategy===fst)&&(!fd||s.direction===fd)&&(!fde||(s.decision||'pending').toLowerCase()===fde)
+  );
+  document.getElementById('f-signals-count').textContent=filtered.length+' signals';
+  const tbody=document.getElementById('f-all-tbody');
+  const empty=document.getElementById('f-all-empty');
+  if(!filtered.length){tbody.innerHTML='';empty.style.display='block';return;}
+  empty.style.display='none';
+  tbody.innerHTML=[...filtered].reverse().map((sig,i)=>`<tr>
+    <td style="color:var(--text3)">${i+1}</td>
+    <td style="color:var(--text3);font-size:11px">${(sig.time||'—').substring(0,16)}</td>
+    <td style="color:var(--accent2);font-size:11px">${sig.strategy||'—'}</td>
+    <td><span class="sym-badge">${sig.symbol||'—'}</span></td>
+    <td><span class="dir-badge ${(sig.direction||'').toLowerCase()}">${sig.direction||'—'}</span></td>
+    <td style="color:var(--text3)">${sig.timeframe||'—'}</td>
+    <td>${sig.entry||'—'}</td>
+    <td style="color:var(--red)">${sig.sl||'—'}</td>
+    <td style="color:var(--green)">${sig.tp1||'—'}</td>
+    <td style="color:var(--accent2)">${sig.tp_max||'—'}</td>
+    <td style="color:var(--text2)">${sig.lot||'—'}</td>
+    <td style="color:var(--amber)">$${sig.risk_usd||'—'}</td>
+    <td style="color:${['tp_max','tp1','tp2_trail'].includes(sig.outcome)?'var(--green)':sig.outcome==='sl_hit'?'var(--red)':'var(--text3)'}">${sig.outcome||'—'}</td>
+    <td><span class="result-badge ${(sig.decision||'pending').toLowerCase()}">${sig.decision||'pending'}</span></td>
+    <td>${forexModeBadge(sig)}</td>
+  </tr>`).join('');
+}
+
+function renderForexAnalytics() {
+  const ft=filterByMode(forexSignals);
+  drawEquityCurve(ft,'f-equityCanvas','#00d4ff', sig=>sig.pnl_usd||0);
+  const WIN_OUTCOMES_A=['tp_max','tp1','tp2_trail'];
+  const taken=ft.filter(s=>s.decision==='entered');
+  const wins=taken.filter(s=>WIN_OUTCOMES_A.includes(s.outcome));
+  const losses=taken.filter(s=>s.outcome==='sl_hit');
+  const total=taken.length||1;
+  const rb=document.getElementById('f-results-breakdown');
+  rb.innerHTML=[{label:'Win',count:wins.length,color:'var(--green)'},{label:'Loss',count:losses.length,color:'var(--red)'},{label:'Skipped',count:ft.filter(s=>s.decision==='skipped').length,color:'var(--amber)'}].map(r=>`<div style="margin-bottom:12px;"><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:12px;color:var(--text2)">${r.label}</span><span style="font-size:12px;color:${r.color};font-weight:600">${r.count} (${((r.count/total)*100).toFixed(0)}%)</span></div><div style="height:6px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${(r.count/total)*100}%;background:${r.color};border-radius:3px;"></div></div></div>`).join('');
+  const stratMap={};
+  taken.forEach(s=>{if(!stratMap[s.strategy])stratMap[s.strategy]={w:0,t:0};stratMap[s.strategy].t++;if(WIN_OUTCOMES_A.includes(s.outcome))stratMap[s.strategy].w++;});
+  const swr=document.getElementById('f-strat-wr-breakdown');
+  swr.innerHTML=Object.entries(stratMap).sort((a,b)=>(b[1].w/b[1].t)-(a[1].w/a[1].t)).map(([name,d])=>{const wr=((d.w/d.t)*100).toFixed(0);return`<div style="margin-bottom:10px;"><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:var(--text2)">${name}</span><span style="font-size:11px;color:${wr>=60?'var(--green)':wr>=50?'var(--amber)':'var(--red)'}">${wr}% (${d.t})</span></div><div style="height:5px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${wr}%;background:${wr>=60?'var(--green)':wr>=50?'var(--amber)':'var(--red)'};border-radius:3px;"></div></div></div>`}).join('')||'<div style="color:var(--text3);font-size:12px;text-align:center;padding:20px">No closed trades</div>';
+  const symMap={};
+  taken.forEach(s=>{if(!symMap[s.symbol])symMap[s.symbol]={w:0,t:0,pnl:0};symMap[s.symbol].t++;if(WIN_OUTCOMES_A.includes(s.outcome))symMap[s.symbol].w++;symMap[s.symbol].pnl+=(s.pnl_usd||0);});
+  const sb=document.getElementById('f-symbol-breakdown');
+  sb.innerHTML=Object.entries(symMap).sort((a,b)=>b[1].pnl-a[1].pnl).map(([sym,d])=>{const wr=d.t?((d.w/d.t)*100).toFixed(0):0;return`<div style="margin-bottom:10px;"><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:var(--accent2)">${sym}</span><span style="font-size:11px;color:${d.pnl>=0?'var(--green)':'var(--red)'}">${wr}% | $${d.pnl.toFixed(2)}</span></div><div style="height:5px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${wr}%;background:${wr>=60?'var(--green)':wr>=50?'var(--amber)':'var(--red)'};border-radius:3px;"></div></div></div>`}).join('')||'<div style="color:var(--text3);font-size:12px;text-align:center;padding:20px">No data</div>';
+  const totalPnl=ft.reduce((s,sig)=>s+(sig.pnl_usd||0),0);
+  const avgWin=wins.length?(wins.reduce((s,sig)=>s+Math.abs(sig.pnl_usd||0),0)/wins.length).toFixed(2):0;
+  const avgLoss=losses.length?(losses.reduce((s,sig)=>s+Math.abs(sig.pnl_usd||0),0)/losses.length).toFixed(2):0;
+  document.getElementById('f-perf-summary').innerHTML=[
+    {label:'Total P&L',val:(totalPnl>=0?'$':'-$')+Math.abs(totalPnl).toFixed(2),color:totalPnl>=0?'var(--green)':'var(--red)'},
+    {label:'Avg Win',val:'$'+avgWin,color:'var(--green)'},
+    {label:'Avg Loss',val:'$'+avgLoss,color:'var(--red)'},
+    {label:'Entered',val:taken.length,color:'var(--accent2)'},
+    {label:'Skipped',val:ft.filter(s=>s.decision==='skipped').length,color:'var(--amber)'},
+  ].map(s=>`<div style="text-align:center;background:var(--bg3);padding:14px;border-radius:8px;"><div style="font-size:10px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;">${s.label}</div><div style="font-family:var(--font-head);font-size:18px;font-weight:700;color:${s.color}">${s.val}</div></div>`).join('');
+}
+
+// ══════════════════════════════════════════════════════════
+// SHARED: EQUITY CURVE
+// ══════════════════════════════════════════════════════════
+function drawEquityCurve(list, canvasId, lineColor, pnlFn) {
+  pnlFn = pnlFn || (t => t.pnl||0);
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const wrap = canvas.parentElement;
+  canvas.width = wrap.offsetWidth || 400;
+  canvas.height = 150;
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  const sorted = [...list].filter(t=>!['skipped','failed'].includes(t.result||'')).sort((a,b)=>new Date(a.time||a.date)-new Date(b.time||b.date));
+  if(sorted.length < 2){
+    ctx.fillStyle='rgba(139,144,160,0.3)'; ctx.font='12px monospace'; ctx.textAlign='center';
+    ctx.fillText('No closed trades yet',canvas.width/2,75); return;
+  }
+  let cum=0;
+  const points=[{x:0,y:0}];
+  sorted.forEach((t,i)=>{cum+=pnlFn(t);points.push({x:i+1,y:cum});});
+  const maxY=Math.max(...points.map(p=>p.y),1);
+  const minY=Math.min(...points.map(p=>p.y),-1);
+  const rangeY=maxY-minY||1;
+  const pad=20; const w=canvas.width-pad*2; const h=canvas.height-pad*2;
+  const toX=i=>pad+(i/(points.length-1))*w;
+  const toY=v=>pad+h-((v-minY)/rangeY)*h;
+  ctx.strokeStyle='rgba(255,255,255,0.08)'; ctx.lineWidth=1; ctx.setLineDash([4,4]);
+  ctx.beginPath(); ctx.moveTo(pad,toY(0)); ctx.lineTo(pad+w,toY(0)); ctx.stroke();
+  ctx.setLineDash([]);
+  const grad=ctx.createLinearGradient(0,pad,0,pad+h);
+  grad.addColorStop(0,lineColor+'55'); grad.addColorStop(1,lineColor+'00');
+  ctx.beginPath(); ctx.moveTo(toX(0),toY(0));
+  points.forEach((p,i)=>ctx.lineTo(toX(i),toY(p.y)));
+  ctx.lineTo(toX(points.length-1),toY(0)); ctx.closePath();
+  ctx.fillStyle=grad; ctx.fill();
+  ctx.beginPath(); ctx.strokeStyle=lineColor; ctx.lineWidth=2; ctx.lineJoin='round';
+  points.forEach((p,i)=>i===0?ctx.moveTo(toX(i),toY(p.y)):ctx.lineTo(toX(i),toY(p.y)));
+  ctx.stroke();
+  points.forEach((p,i)=>{
+    ctx.beginPath(); ctx.arc(toX(i),toY(p.y),2.5,0,Math.PI*2);
+    ctx.fillStyle=p.y>=0?lineColor:'#ff4f6a'; ctx.fill();
+  });
+}
+
+function showNotif(msg){
+  const el=document.getElementById('notif');
+  el.textContent=msg; el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'),2500);
+}
+
+// ══════════════════════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', () => {
+  // restore saved theme
+  try {
+    const saved = localStorage.getItem('tl-theme');
+    const btn = document.getElementById('theme-btn');
+    if (saved === 'light') {
+      document.documentElement.setAttribute('data-theme','light');
+      if (btn) { btn.textContent='🌙'; btn.title='Switch to dark theme'; }
+    } else {
+      if (btn) { btn.textContent='☀'; btn.title='Switch to light theme'; }
+    }
+  } catch(e){}
+  loadAll();
+  setInterval(loadAll, 300000); // auto-refresh every 5 min
+});
+</script>
