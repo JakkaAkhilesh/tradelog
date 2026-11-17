@@ -9,15 +9,8 @@
   --amber:#ffb830; --green:#4fffb0; --purple:#a78bfa;
   --font-head:'Syne',sans-serif; --font-mono:'DM Mono',monospace;
 }
-:root[data-theme="light"] {
-  --bg:#f4f6fa; --bg2:#ffffff; --bg3:#e8ecf4; --bg4:#dde2ee;
-  --border:rgba(0,0,0,0.08); --border2:rgba(0,0,0,0.14);
-  --text:#1a1d26; --text2:#4a5068; --text3:#8a90a4;
-  --accent:#00a86b; --accent2:#0088cc; --red:#d93025;
-  --amber:#c97a00; --green:#00a86b; --purple:#6b4fc8;
-}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{background:var(--bg);color:var(--text);font-family:var(--font-mono);min-height:100vh;overflow-x:hidden;transition:background 0.3s,color 0.3s;}
+body{background:var(--bg);color:var(--text);font-family:var(--font-mono);min-height:100vh;overflow-x:hidden;}
 
 /* ── TOP BAR ── */
 .topbar{position:sticky;top:0;z-index:100;background:rgba(10,12,15,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px;}
@@ -185,7 +178,6 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-mono);min-hei
       <button class="mode-btn paper" onclick="setMode('paper')">PAPER</button>
     </div>
     <span class="last-updated" id="last-updated">—</span>
-    <button class="refresh-btn" id="theme-btn" onclick="toggleTheme()" title="Toggle theme">☀</button>
     <button class="refresh-btn" onclick="loadAll()">↺ Refresh</button>
   </div>
 </div>
@@ -444,7 +436,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-mono);min-hei
         <option value="">Both Dirs</option><option value="BUY">BUY</option><option value="SELL">SELL</option>
       </select>
       <select class="filter-select" id="f-filter-decision" onchange="renderForexSignals()">
-        <option value="">All Status</option><option value="pending">Pending</option><option value="entered">Entered</option><option value="skipped">Skipped</option>
+        <option value="">All Status</option><option value="pending">Pending</option><option value="taken">Taken</option><option value="skipped">Skipped</option>
       </select>
       <span class="trades-count" id="f-signals-count">—</span>
     </div>
@@ -531,23 +523,6 @@ function setMode(mode) {
   document.querySelector('.mode-btn.' + mode).classList.add('active');
   if (currentMarket === 'india') renderIndiaPage();
   else renderForexPage();
-}
-
-function toggleTheme() {
-  const root = document.documentElement;
-  const btn = document.getElementById('theme-btn');
-  const isLight = root.getAttribute('data-theme') === 'light';
-  if (isLight) {
-    root.removeAttribute('data-theme');
-    btn.textContent = '☀';
-    btn.title = 'Switch to light theme';
-    try { localStorage.setItem('tl-theme','dark'); } catch(e){}
-  } else {
-    root.setAttribute('data-theme','light');
-    btn.textContent = '🌙';
-    btn.title = 'Switch to dark theme';
-    try { localStorage.setItem('tl-theme','light'); } catch(e){}
-  }
 }
 
 function filterByMode(list, modeField='mode') {
@@ -858,17 +833,16 @@ function forexModeBadge(sig) {
 
 function renderForexDashboard() {
   const ft = filterByMode(forexSignals);
-  const WIN_OUTCOMES = ['tp_max','tp1','tp2_trail'];
-  const closed = ft.filter(s => s.outcome && s.outcome !== null);
-  const wins   = closed.filter(s => WIN_OUTCOMES.includes(s.outcome));
-  const losses = closed.filter(s => s.outcome === 'sl_hit');
-  const taken  = ft.filter(s => s.decision === 'entered');
+  const closed = ft.filter(s => s.outcome && s.outcome !== 'pending');
+  const wins   = closed.filter(s => s.outcome === 'win' || s.decision === 'taken' && s.outcome === 'win');
+  const losses = closed.filter(s => s.outcome === 'loss');
+  const taken  = ft.filter(s => s.decision === 'taken');
   const pending= ft.filter(s => s.decision === 'pending' || !s.decision);
   const wr     = closed.length ? ((wins.length/closed.length)*100).toFixed(1) : 0;
   const totalPnl = ft.reduce((s,sig)=>s+(sig.pnl_usd||0),0);
 
   document.getElementById('f-stat-total').textContent = ft.length;
-  document.getElementById('f-stat-total-sub').textContent = taken.length+' entered';
+  document.getElementById('f-stat-total-sub').textContent = taken.length+' taken';
   document.getElementById('f-stat-wr').textContent = wr+'%';
   document.getElementById('f-stat-wr-sub').textContent = closed.length+' closed';
   document.getElementById('f-stat-pnl').textContent = (totalPnl>=0?'$':'-$')+Math.abs(totalPnl.toFixed(2));
@@ -913,7 +887,7 @@ function renderForexStratBars(ft) {
   (ft||filterByMode(forexSignals)).forEach(s=>{
     if(!map[s.strategy])map[s.strategy]={taken:0,total:0};
     map[s.strategy].total++;
-    if(s.decision==='entered')map[s.strategy].taken++;
+    if(s.decision==='taken')map[s.strategy].taken++;
   });
   const container=document.getElementById('f-strat-bars');
   const entries=Object.entries(map).sort((a,b)=>b[1].total-a[1].total).slice(0,5);
@@ -960,7 +934,7 @@ function renderForexSignals() {
     <td style="color:var(--accent2)">${sig.tp_max||'—'}</td>
     <td style="color:var(--text2)">${sig.lot||'—'}</td>
     <td style="color:var(--amber)">$${sig.risk_usd||'—'}</td>
-    <td style="color:${['tp_max','tp1','tp2_trail'].includes(sig.outcome)?'var(--green)':sig.outcome==='sl_hit'?'var(--red)':'var(--text3)'}">${sig.outcome||'—'}</td>
+    <td style="color:${sig.outcome==='win'?'var(--green)':sig.outcome==='loss'?'var(--red)':'var(--text3)'}">${sig.outcome||'—'}</td>
     <td><span class="result-badge ${(sig.decision||'pending').toLowerCase()}">${sig.decision||'pending'}</span></td>
     <td>${forexModeBadge(sig)}</td>
   </tr>`).join('');
@@ -969,19 +943,18 @@ function renderForexSignals() {
 function renderForexAnalytics() {
   const ft=filterByMode(forexSignals);
   drawEquityCurve(ft,'f-equityCanvas','#00d4ff', sig=>sig.pnl_usd||0);
-  const WIN_OUTCOMES_A=['tp_max','tp1','tp2_trail'];
-  const taken=ft.filter(s=>s.decision==='entered');
-  const wins=taken.filter(s=>WIN_OUTCOMES_A.includes(s.outcome));
-  const losses=taken.filter(s=>s.outcome==='sl_hit');
+  const taken=ft.filter(s=>s.decision==='taken');
+  const wins=taken.filter(s=>s.outcome==='win');
+  const losses=taken.filter(s=>s.outcome==='loss');
   const total=taken.length||1;
   const rb=document.getElementById('f-results-breakdown');
   rb.innerHTML=[{label:'Win',count:wins.length,color:'var(--green)'},{label:'Loss',count:losses.length,color:'var(--red)'},{label:'Skipped',count:ft.filter(s=>s.decision==='skipped').length,color:'var(--amber)'}].map(r=>`<div style="margin-bottom:12px;"><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:12px;color:var(--text2)">${r.label}</span><span style="font-size:12px;color:${r.color};font-weight:600">${r.count} (${((r.count/total)*100).toFixed(0)}%)</span></div><div style="height:6px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${(r.count/total)*100}%;background:${r.color};border-radius:3px;"></div></div></div>`).join('');
   const stratMap={};
-  taken.forEach(s=>{if(!stratMap[s.strategy])stratMap[s.strategy]={w:0,t:0};stratMap[s.strategy].t++;if(WIN_OUTCOMES_A.includes(s.outcome))stratMap[s.strategy].w++;});
+  taken.forEach(s=>{if(!stratMap[s.strategy])stratMap[s.strategy]={w:0,t:0};stratMap[s.strategy].t++;if(s.outcome==='win')stratMap[s.strategy].w++;});
   const swr=document.getElementById('f-strat-wr-breakdown');
   swr.innerHTML=Object.entries(stratMap).sort((a,b)=>(b[1].w/b[1].t)-(a[1].w/a[1].t)).map(([name,d])=>{const wr=((d.w/d.t)*100).toFixed(0);return`<div style="margin-bottom:10px;"><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:var(--text2)">${name}</span><span style="font-size:11px;color:${wr>=60?'var(--green)':wr>=50?'var(--amber)':'var(--red)'}">${wr}% (${d.t})</span></div><div style="height:5px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${wr}%;background:${wr>=60?'var(--green)':wr>=50?'var(--amber)':'var(--red)'};border-radius:3px;"></div></div></div>`}).join('')||'<div style="color:var(--text3);font-size:12px;text-align:center;padding:20px">No closed trades</div>';
   const symMap={};
-  taken.forEach(s=>{if(!symMap[s.symbol])symMap[s.symbol]={w:0,t:0,pnl:0};symMap[s.symbol].t++;if(WIN_OUTCOMES_A.includes(s.outcome))symMap[s.symbol].w++;symMap[s.symbol].pnl+=(s.pnl_usd||0);});
+  taken.forEach(s=>{if(!symMap[s.symbol])symMap[s.symbol]={w:0,t:0,pnl:0};symMap[s.symbol].t++;if(s.outcome==='win')symMap[s.symbol].w++;symMap[s.symbol].pnl+=(s.pnl_usd||0);});
   const sb=document.getElementById('f-symbol-breakdown');
   sb.innerHTML=Object.entries(symMap).sort((a,b)=>b[1].pnl-a[1].pnl).map(([sym,d])=>{const wr=d.t?((d.w/d.t)*100).toFixed(0):0;return`<div style="margin-bottom:10px;"><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:var(--accent2)">${sym}</span><span style="font-size:11px;color:${d.pnl>=0?'var(--green)':'var(--red)'}">${wr}% | $${d.pnl.toFixed(2)}</span></div><div style="height:5px;background:var(--bg4);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${wr}%;background:${wr>=60?'var(--green)':wr>=50?'var(--amber)':'var(--red)'};border-radius:3px;"></div></div></div>`}).join('')||'<div style="color:var(--text3);font-size:12px;text-align:center;padding:20px">No data</div>';
   const totalPnl=ft.reduce((s,sig)=>s+(sig.pnl_usd||0),0);
@@ -991,7 +964,7 @@ function renderForexAnalytics() {
     {label:'Total P&L',val:(totalPnl>=0?'$':'-$')+Math.abs(totalPnl).toFixed(2),color:totalPnl>=0?'var(--green)':'var(--red)'},
     {label:'Avg Win',val:'$'+avgWin,color:'var(--green)'},
     {label:'Avg Loss',val:'$'+avgLoss,color:'var(--red)'},
-    {label:'Entered',val:taken.length,color:'var(--accent2)'},
+    {label:'Taken',val:taken.length,color:'var(--accent2)'},
     {label:'Skipped',val:ft.filter(s=>s.decision==='skipped').length,color:'var(--amber)'},
   ].map(s=>`<div style="text-align:center;background:var(--bg3);padding:14px;border-radius:8px;"><div style="font-size:10px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;">${s.label}</div><div style="font-family:var(--font-head);font-size:18px;font-weight:700;color:${s.color}">${s.val}</div></div>`).join('');
 }
@@ -1050,17 +1023,6 @@ function showNotif(msg){
 // INIT
 // ══════════════════════════════════════════════════════════
 document.addEventListener('DOMContentLoaded', () => {
-  // restore saved theme
-  try {
-    const saved = localStorage.getItem('tl-theme');
-    const btn = document.getElementById('theme-btn');
-    if (saved === 'light') {
-      document.documentElement.setAttribute('data-theme','light');
-      if (btn) { btn.textContent='🌙'; btn.title='Switch to dark theme'; }
-    } else {
-      if (btn) { btn.textContent='☀'; btn.title='Switch to light theme'; }
-    }
-  } catch(e){}
   loadAll();
   setInterval(loadAll, 300000); // auto-refresh every 5 min
 });
