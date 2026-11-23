@@ -1,41 +1,5 @@
 [
   {
-    "datetime": "2026-07-09T13:56:12.056706",
-    "date": "2026-07-09",
-    "time": "13:56",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 12.3 < 22",
-    "conditions": {
-      "adx": 12.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:57:27.326915",
-    "date": "2026-07-09",
-    "time": "13:57",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 12.3 < 22",
-    "conditions": {
-      "adx": 12.3
-    },
-    "mode": "live"
-  },
-  {
-    "datetime": "2026-07-09T13:58:41.331402",
-    "date": "2026-07-09",
-    "time": "13:58",
-    "strategy": "GAP",
-    "direction": "SELL",
-    "reason": "ADX 12.3 < 22",
-    "conditions": {
-      "adx": 12.3
-    },
-    "mode": "live"
-  },
-  {
     "datetime": "2026-07-09T13:59:56.201205",
     "date": "2026-07-09",
     "time": "13:59",
@@ -3153,6 +3117,60 @@
       "target": 25494.68,
       "rr": 3.0,
       "signal_reason": "GAP BUY 2H: Gap-0.16% DCC bull. SL=25421.24 Tgt=25494.68 RR=1:3"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-23T14:05:52.382122",
+    "date": "2026-11-23",
+    "time": "14:05",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "gap_late_high_adx",
+    "reason": "GAP late-session high-ADX filter: time=14:05 (>=14:00) and ADX=38.0 (>35)",
+    "conditions": {
+      "adx": 38.0,
+      "entry_price": 25428.15,
+      "sl": 25453.52,
+      "target": 25352.04,
+      "rr": 3.0,
+      "signal_reason": "GAP SELL 2H: Gap+0.50% DCC bear. SL=25453.52 Tgt=25352.04 RR=1:3"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-23T14:06:52.617897",
+    "date": "2026-11-23",
+    "time": "14:06",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "gap_late_high_adx",
+    "reason": "GAP late-session high-ADX filter: time=14:06 (>=14:00) and ADX=38.5 (>35)",
+    "conditions": {
+      "adx": 38.5,
+      "entry_price": 25415.55,
+      "sl": 25442.12,
+      "target": 25335.84,
+      "rr": 3.0,
+      "signal_reason": "GAP SELL 2H: Gap+0.50% DCC bear. SL=25442.12 Tgt=25335.84 RR=1:3"
+    },
+    "mode": "live"
+  },
+  {
+    "datetime": "2026-11-23T14:07:52.811793",
+    "date": "2026-11-23",
+    "time": "14:07",
+    "strategy": "GAP",
+    "direction": "SELL",
+    "skip_reason": "gap_late_high_adx",
+    "reason": "GAP late-session high-ADX filter: time=14:07 (>=14:00) and ADX=38.7 (>35)",
+    "conditions": {
+      "adx": 38.7,
+      "entry_price": 25407.05,
+      "sl": 25434.22,
+      "target": 25325.54,
+      "rr": 3.0,
+      "signal_reason": "GAP SELL 2H: Gap+0.50% DCC bear. SL=25434.22 Tgt=25325.54 RR=1:3"
     },
     "mode": "live"
   }
